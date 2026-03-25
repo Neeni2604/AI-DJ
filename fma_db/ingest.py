@@ -194,6 +194,7 @@ def _import_tracks(
             row.get("track__id")
             or row.get("track_id")
             or row.get("Unnamed: 0_level_0__Unnamed: 0_level_1")
+            or row.get("column_0")
         )
         if track_id is None:
             continue
@@ -324,7 +325,12 @@ def _import_features(
         else {}
     )
 
-    all_track_ids = set(features_rows) | set(echonest_rows)
+    existing_ids = {
+        row[0]
+        for row in connection.execute("SELECT fma_track_id FROM fma_tracks").fetchall()
+    }
+
+    all_track_ids = (set(features_rows) | set(echonest_rows)) & existing_ids
     for track_id in all_track_ids:
         connection.execute(
             """
