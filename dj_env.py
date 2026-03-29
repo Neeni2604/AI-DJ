@@ -227,7 +227,7 @@ class DJEnv(gym.Env):
         loudness, chroma_mean, rms_mean
 
     Action:
-        Tuple(Discrete(n_tracks), Discrete(3))
+        MultiDiscrete([n_tracks, 3])
         - Index of next track to play
         - Transition type: 0=cut, 1=fade, 2=beatmatch
 
@@ -236,6 +236,7 @@ class DJEnv(gym.Env):
         bpm_score        * 0.3
         transition_score * 0.2
         energy_flow      * 0.1
+        repeat_penalty   for choosing the same track again
     """
 
     metadata = {"render_modes": ["human"]}
@@ -264,11 +265,13 @@ class DJEnv(gym.Env):
         subset_name: str | None = None,
         limit: int | None = None,
         episode_length: int = 10,
+        repeat_track_penalty: float = 0.25,
         render_mode: str | None = None,
     ):
         super().__init__()
 
         self.episode_length = episode_length
+        self.repeat_track_penalty = repeat_track_penalty
         self.render_mode    = render_mode
 
         self.tracks = load_tracks_from_db(db_path, subset_name=subset_name, limit=limit)
@@ -286,10 +289,9 @@ class DJEnv(gym.Env):
             shape=(len(self.FEATURE_KEYS),),
             dtype=np.float32,
         )
-        self.action_space = spaces.Tuple((
-            spaces.Discrete(self.n_tracks),
-            spaces.Discrete(len(TRANSITION_TYPES)),
-        ))
+        self.action_space = spaces.MultiDiscrete(
+            np.array([self.n_tracks, len(TRANSITION_TYPES)], dtype=np.int64)
+        )
 
         self._current_idx: int = 0
         self._step_count:  int = 0
@@ -326,9 +328,28 @@ class DJEnv(gym.Env):
         self._history     = [self._current_idx]
         return self._obs(), self._info()
 
+    def _decode_action(self, action) -> tuple[int, int]:
+        if isinstance(action, np.ndarray):
+            values = action.astype(int).reshape(-1).tolist()
+        elif isinstance(action, (list, tuple)):
+            values = [int(v) for v in action]
+        else:
+            raise ValueError(
+                "Action must be a 2-item sequence: [next_track_idx, transition_idx]."
+            )
+
+        if len(values) != 2:
+            raise ValueError(
+                "Action must contain exactly two integers: "
+                "[next_track_idx, transition_idx]."
+            )
+
+        next_idx = int(np.clip(values[0], 0, self.n_tracks - 1))
+        transition_idx = int(np.clip(values[1], 0, len(TRANSITION_TYPES) - 1))
+        return next_idx, transition_idx
+
     def step(self, action):
-        next_idx       = int(np.clip(action[0], 0, self.n_tracks - 1))
-        transition_idx = int(np.clip(action[1], 0, len(TRANSITION_TYPES) - 1))
+        next_idx, transition_idx = self._decode_action(action)
 
         curr = self.tracks[self._current_idx]
         nxt  = self.tracks[next_idx]
@@ -340,7 +361,9 @@ class DJEnv(gym.Env):
         t_score      = transition_reward(transition_idx, bpm_delta, energy_delta)
         energy_flow  = float(np.clip(energy_delta * 2.0, -1.0, 1.0)) * 0.5 + 0.5
 
-        reward = h_score * 0.4 + b_score * 0.3 + t_score * 0.2 + energy_flow * 0.1
+        base_reward = h_score * 0.4 + b_score * 0.3 + t_score * 0.2 + energy_flow * 0.1
+        repeat_penalty = self.repeat_track_penalty if next_idx == self._current_idx else 0.0
+        reward = float(np.clip(base_reward - repeat_penalty, -1.0, 1.0))
 
         self._current_idx = next_idx
         self._step_count += 1
@@ -354,6 +377,9 @@ class DJEnv(gym.Env):
             "transition_score": t_score,
             "energy_flow":      energy_flow,
             "transition_type":  TRANSITION_TYPES[transition_idx],
+            "base_reward":      base_reward,
+            "repeat_penalty":   repeat_penalty,
+            "repeated_track":   next_idx == self._history[-2],
             "reward":           reward,
         })
 
@@ -388,6 +414,7 @@ if __name__ == "__main__":
     parser.add_argument("--limit",    type=int, default=500)
     parser.add_argument("--episodes", type=int, default=3)
     parser.add_argument("--steps",    type=int, default=10)
+    parser.add_argument("--repeat-penalty", type=float, default=0.25)
     args = parser.parse_args()
 
     env = DJEnv(
@@ -395,6 +422,7 @@ if __name__ == "__main__":
         subset_name=args.subset,
         limit=args.limit,
         episode_length=args.steps,
+        repeat_track_penalty=args.repeat_penalty,
         render_mode="human",
     )
 
