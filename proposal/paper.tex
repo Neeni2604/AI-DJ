@@ -1,0 +1,92 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+
+\title{Final Project Proposal}
+
+\author{
+Neeraja Vasa \\
+Hanwen Guo \\
+Lilian Pu
+}
+
+\begin{document}
+
+\maketitle
+
+\section{Abstract}
+
+Getting a machine to DJ well is not a simple task. Picking the next song requires juggling harmonic compatibility, energy pacing, and transition timing all at once, and any hand-written rules for doing this tend to break down quickly across different genres and contexts. We propose an RL-based AI DJ that learns to sequence tracks using PPO, with rewards learned from human preference comparisons rather than a fixed reward function. We plan to evaluate our agent by comparing sets generated under a proxy reward against sets generated under a Deep RLHF preference model, using both quantitative metrics and human preference win rates.
+
+\section{Introduction}
+
+A DJ's job is not just picking songs. It involves managing energy levels across a set, making sure transitions between tracks feel smooth, and reading what is working in real time. The challenge is that what makes a good sequence is subjective and hard to pin down with explicit rules. Hand-crafted reward functions tend to make assumptions that work for some genres but fall apart in others.
+
+We frame this as a sequential decision-making problem over a music library. At each step, the agent observes the current track's audio features and chooses which track to play next along with how to transition into it. The experimental domain is the Free Music Archive dataset, which has over 100,000 tracks spanning 163 genres, each with precomputed audio features including tempo, key, energy, and danceability. This gives the agent a large and diverse pool to learn from.
+
+Instead of designing a reward function ourselves, we learn one from human feedback. Annotators compare pairs of generated sequences and pick the one that sounds better. Those comparisons train a preference reward model, which then guides PPO during training. This is directly relevant to the course because it combines two algorithms we studied, PPO for policy optimization and Deep RLHF for reward learning, and applies them to a setting where the reward signal cannot be easily specified by hand. That is exactly the kind of problem these methods were designed for.
+
+\section{Method}
+
+Our key idea is that good DJ behavior is easier to be recognized than to be specified. Hence, rather than relying on hand-written rewards, we choose approaches that can automatically learn the reward. We plan to first train an agent with simple proxy rewards metrics that capture the quality of transition between tracks, then refine it using a learned reward model trained from human preferences. More concretely, we model the (simplified) task of DJ as a sequential decision-making problem, where the agent observes the current track and recent tracks history, then chooses the next track. The state will include track-level information about the audio such as tempo, key, energy, and danceability. The action space will consist of selecting the next track from a candidate pool and making a transition between tracks.
+
+We will implement this problem as a custom gymnasium environment and begin with PPO as the main reinforcement learning algorithm. For initial training, we will use a proxy reward composed of interpretable metrics: BPM smoothness, harmonic compatibility, and energy-curve variance. BPM smoothness calculates the difference of the BPM/tempo transition. Harmonic compatibility calculates whether the two tracks are compatible musically. This relies on their key (C-B, probably sharp and flat) and mode (major or minor).
+
+Energy curve variance measures the rate of energy changing; the best transition is gradually changing or waving. These metrics give the agent a stable starting signal and let us verify that the environment and training loop work end to end. After that, we will build a preference-comparison interface that presents annotators with pairs of short generated sequences and asks which one sounds better overall. We will use these pairwise judgments to train a preference reward model, and then fine-tune PPO using this learned reward instead of the hand-crafted proxy reward.
+
+Our method therefore has two stages: first, learn a reasonable sequencing policy from structured proxy rewards; second, improve that policy with human-centered reward learning so that the agent better captures subjective notions of set quality.
+
+\section{Experimental Design}
+
+We will test the following hypotheses:
+
+H1: A PPO agent trained with the proxy reward will learn better sequencing behavior than a random or heuristic baseline, as measured by smoother BPM transitions, higher harmonic compatibility, and more stable energy progression.
+
+H2: A PPO agent fine-tuned with a learned preference reward will generate sequences that humans prefer over those produced by the proxy-reward PPO agent, while maintaining competitive performance on objective transition metrics.
+
+Our primary test domain will be a large music dataset from Free Music Archive with track-level audio features as the main experimental domain. Each track provides features such as tempo, key, energy, and danceability, which are sufficient to construct states and compute proxy transition metrics. The task domain is simplified DJ sequencing: given the current song and recent history, select the next song and transition that produces a coherent short sequence.
+
+To test H1, we will run controlled training experiments comparing three agents: a random policy, a simple heuristic policy based on hand-designed feature matching, and PPO trained on the proxy reward. We will evaluate them on held-out episodes using average BPM smoothness penalty, harmonic compatibility score, energy-curve variance, and cumulative episode reward. Evidence for the hypothesis will be that PPO significantly outperforms the random and heuristic baselines on these objective measures.
+
+To test H2, we will collect approximately 100--200 pairwise human preference labels on short generated sequences. These labels will train a learned reward model, which will then be used to fine-tune PPO. We will compare the resulting preference-trained agent against the proxy-reward PPO agent by showing human evaluators pairs of generated 5-song sequences and asking which sequence sounds better overall in terms of flow, transition quality, and energy progression. Our main evaluation criterion will be human preference win rate: if the preference-trained agent is chosen more than 50\% of the time by a meaningful margin, we will treat that as support for the hypothesis. We will also evaluate both agents on the same objective metrics used in the first experiment, including BPM smoothness, harmonic compatibility, and energy-curve variance, to determine whether improvements in human preference are achieved without sacrificing structured transition quality.
+
+\section{References}
+
+\href{https://medium.com/@freeasabird7774/ai-dj-affective-state-optimization-through-reinforcement-learning-based-musical-composition-491d114976cf}{AI DJ - Affective State Optimization Through Reinforcement Learning-Based Musical Composition | by Ghost Writer | Medium}\\
+
+\href{https://arxiv.org/abs/1612.01840}{[1612.01840] FMA: A Dataset For Music Analysis}\\
+
+\href{https://www.diva-portal.org/smash/get/diva2:1383502/FULLTEXT01.pdf}{Mixing Music Using Deep Reinforcement Learning}\\
+
+\href{https://pdf.sciencedirectassets.com/280203/1-s2.0-S1877050924X00162/1-s2.0-S1877050924027522/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQCSggW9gXjM%2FDfWHlQed%2FrFBZfW7O9wZSjKbE7nEdFhxAIgO5oSFbdrJ3DHKkGAxV0vHonWng0LZSKHsbbvepBC1xsqsgUIWxAFGgwwNTkwMDM1NDY4NjUiDDcL9YvR9vmpMF07IiqPBct11NEjtBETvJVACjYYtiP2LQMlD8L6MWJwH70XuApLJqdF8U8Csxqb8fK6ZOd32Nh18UCEZmyN%2FC6XGX8ykVwFsVv1EnFFvQcNGo6qvOBZEv1lgekx%2BRW2vkQgKZ2yBukwjsxFJydfCx6C2RTJjQ4UgRvJ5JQ68soo8q2WMZ%2FRux6XEqrGmnqW2JUa%2BMIlAlefH17TfCGEVWy%2F%2Fg8GpQsl2f4UkJvzfRIuvSXeCO8L39EAwAkNpYZ3Btcz1P32g34034RPRuIzlv7Aj%2FEJ%2BOlFXhyy1WSTOn7kMzsdIm16nzPeN4b8o5fkyYPINZXdSzVlqZ6dU%2BTrV8Dm4j1Ceb6X25e2d766KPsUBqGTdvv7UJBjE4zia4ImNQ5FJyTvEwl%2FvYnWfkcQio3p%2FkJTOq72YqeKCtaCT3n9DztyaUiFsjPuWscO0%2BZzdWdHp3xWvjwCePLFHOxDtofTDANpQg4e2Y2nYsle7m83CzINSmfX45mV7q4l9q3wbB8QAJMFzMrMe6rs3ruJHCG4tM03o79JH%2FOeOgr1W3iuwC%2FbA100FP7mu%2BGOARpUquH%2FQuSkuJQ3rCBfHZjl%2F509WMJJS7WpRp%2FNGfvfGS7ZdalblKejwheMp1JCc0wT3g63TS%2B2uJN82N1uQcvQkAuZ3hNp3oC%2Bx3fHZcxze6ret41Jh5JQxwhdxpJeLz3mYFsNRqNFblxh6jV1nS7huRcxrLC%2FoLuW%2F5RTGb2l%2FX%2FbG%2Ft6L1pQ2thn2v5MgSKOVPfhvPx3SZP6rOs73XzX3I0%2B8tKopa%2F%2BmZMZMV1iBkUFY8LYqCBzSEYPA3MXbn2IiiDFM%2FI5qolDe3qxtq1fWj8spJ7th9WFTYX80uHj%2FK0itFLmllEwy8G1zgY6sQFzI4hN6orfTKkrg35kLSp3vGtMS%2BcxsHLEtsB7Ovo2re76M0nLALBPRxulv%2FpvXck2JGj1TRQNkGsWxj%2BtxhoqEUQdvm7%2Fu6vR7S5Etmq55kpkH8eXXUKUgzgFjy6Zce4h7vt%2F5CyX4W%2B02Y8xW89QGg7Q9SktYGJ%2BzMMk7yxMIz1QUB4X9AdhA5VJ5fto08KYPkTD7DKq0FIxzSOXvzpGEM7qQf4twbk8ud%2BgGFs9e1A%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260401T185722Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY4PVZWEKO%2F20260401%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=7acdc80269e2d575572f60268f94f991b962eea496ca33937dbdc02c2b7db887&hash=9c6482f510b03274a0d34a9aafb8cba1b824c4d229e5f58b66b0848e746d9e3b&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S1877050924027522&tid=spdf-110553f9-3165-4224-a62e-64c6bb249383&sid=b6b13585367b514bd1295d1151d61505b113gxrqa&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&rh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=151c5d03535705570c&rr=9e59d1b37b69328e&cc=us}{Music Generation with Machine Learning and Deep Neural Music Generation with Machine Learning and Deep Neural Networks}\\
+
+\href{https://arxiv.org/abs/2208.11428}{[2208.11428] Automatic music mixing with deep learning and out-of-domain data}\\
+
+\bigskip
+
+\textbf{FMA Dataset (Defferrard et al.)} ~ \\
+Introduces a large-scale, open music dataset with rich annotations like tempo, key, and energy. It acts as the infrastructure for our project by providing the diverse, feature-rich environment needed to train our RL-DJ; unlike our work, it focuses on foundational data rather than tackling the decision-making or reward-learning policy.
+
+\bigskip
+
+\textbf{Music Generation with Deep Neural Networks (Pricop \& Iftene)} ~ \\
+Explores hybrid composition using VAEs and Transformers for temporal modeling. While this focuses on raw supervised music generation, our approach frames DJing as sequential decision-making over existing tracks, optimizing for subjective flow and set quality through PPO and human preference signals.
+
+\bigskip
+
+\textbf{Mixing Music Using Deep Reinforcement Learning (Kronvall – DeepFADE)} ~ \\
+Uses A3C and DQN to automate mixing via hand-crafted rewards like BPM alignment and harmonic compatibility. It is conceptually similar but limited by reward hacking and brittle heuristics; our method improves this by using RLHF to learn a reward model from actual human preferences.
+
+\bigskip
+
+\textbf{Automatic Music Mixing with Deep Learning (Martínez-Ramírez et al.)} ~ \\
+Tackles audio-level mixing (EQ, panning, effects) using supervised deep learning. This is complementary to our work: we operate at the high-level sequencing and track selection layer, while their low-level signal processing handles how the final mix should sound.
+
+\bigskip
+
+\textbf{AI DJ with Affective Reinforcement Learning (Project Proposal)} ~ \\
+Optimizes mood and engagement using CV-inferred emotional states as real-time reward signals. We share the goal of learning subjective rewards, but our RLHF approach offers a more scalable training alternative, with live affective feedback serving as a potential future extension for adaptive DJing.
+
+\end{document}

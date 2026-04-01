@@ -1,0 +1,38 @@
+\begin{thebibliography}{
+    @article{defferrard2017fma,
+    title={FMA: A Dataset for Music Analysis},
+    author={Defferrard, Micha{\"e}l and Benzi, Kirell and Vandergheynst, Pierre and Bresson, Xavier},
+    journal={arXiv preprint arXiv:1612.01840},
+    year={2017}
+    }
+
+    @article{ghostwriter2023aidj,
+    title={AI DJ - Affective State Optimization Through Reinforcement Learning-Based Musical Composition},
+    author={Ghost Writer},
+    journal={Medium},
+    year={2023},
+    note={Online article}
+    }
+
+    @mastersthesis{kronvall2019deepfade,
+    title={Mixing Music Using Deep Reinforcement Learning},
+    author={Kronvall, Viktor},
+    school={KTH Royal Institute of Technology},
+    year={2019}
+    }
+
+    @inproceedings{pricop2024musicgen,
+    title={Music Generation with Machine Learning and Deep Neural Networks},
+    author={Pricop, Tudor-Constantin and Iftene, Adrian},
+    booktitle={Procedia Computer Science},
+    year={2024}
+    }
+
+    @inproceedings{martinez2022automix,
+    title={Automatic Music Mixing with Deep Learning and Out-of-Domain Data},
+    author={Mart{\'\i}nez-Ram{\'\i}rez, Marco A. and Liao, Wei-Hsiang and Fabbro, Giorgio and Uhlich, Stefan and Nagashima, Chihiro and Mitsufuji, Yuki},
+    booktitle={Proceedings of the International Society for Music Information Retrieval Conference},
+    year={2022}
+    }
+}
+\end{thebibliography}
