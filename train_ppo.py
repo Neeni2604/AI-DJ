@@ -283,7 +283,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--db", default="fma_db/data/fma.db", help="Path to the SQLite FMA database.")
     parser.add_argument("--subset", default=None, help="Optional FMA subset filter, e.g. 'small'.")
-    parser.add_argument("--limit", type=int, default=64, help="Number of tracks to load from SQLite.")
+    parser.add_argument("--limit", type=int, default=500, help="Number of tracks to load from SQLite.")
     parser.add_argument(
         "--episode-length",
         type=int,
