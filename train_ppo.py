@@ -31,7 +31,7 @@ from stable_baselines3.common.evaluation import evaluate_policy
 from stable_baselines3.common.monitor import Monitor
 from stable_baselines3.common.utils import set_random_seed
 
-from dj_env import DJEnv
+from dj_env import DJEnv, HeuristicDJPolicy
 
 
 @dataclass
@@ -51,6 +51,8 @@ class TrainingSummary:
     evaluation_sampling_mode: str
     baseline_mean_reward: float
     baseline_reward_std: float
+    heuristic_mean_reward: float
+    heuristic_reward_std: float
     trained_mean_reward: float
     trained_reward_std: float
     episode_count: int
@@ -200,6 +202,28 @@ def evaluate_random_policy(env: Monitor, n_eval_episodes: int, seed: int) -> tup
 
         while not (terminated or truncated):
             action = env.action_space.sample()
+            observation, reward, terminated, truncated, _ = env.step(action)
+            total_reward += float(reward)
+
+        episode_rewards.append(total_reward)
+
+    rewards = np.array(episode_rewards, dtype=np.float64)
+    return float(np.mean(rewards)), float(np.std(rewards))
+
+
+def evaluate_heuristic_policy(env: Monitor, n_eval_episodes: int, seed: int) -> tuple[float, float]:
+    """Estimate a greedy-heuristic baseline on the same environment configuration."""
+
+    policy = HeuristicDJPolicy(env)
+    episode_rewards: list[float] = []
+    for episode_idx in range(n_eval_episodes):
+        observation, _ = env.reset(seed=seed + episode_idx)
+        terminated = False
+        truncated = False
+        total_reward = 0.0
+
+        while not (terminated or truncated):
+            action, _ = policy.predict(observation)
             observation, reward, terminated, truncated, _ = env.step(action)
             total_reward += float(reward)
 
@@ -415,6 +439,11 @@ def main() -> None:
             n_eval_episodes=args.eval_episodes,
             seed=args.seed,
         )
+        heuristic_mean_reward, heuristic_reward_std = evaluate_heuristic_policy(
+            eval_env,
+            n_eval_episodes=args.eval_episodes,
+            seed=args.seed,
+        )
         model.learn(total_timesteps=args.timesteps)
         trained_mean_reward, trained_reward_std = evaluate_policy(
             model,
@@ -469,6 +498,8 @@ def main() -> None:
         evaluation_sampling_mode="stochastic",
         baseline_mean_reward=float(baseline_mean_reward),
         baseline_reward_std=float(baseline_reward_std),
+        heuristic_mean_reward=float(heuristic_mean_reward),
+        heuristic_reward_std=float(heuristic_reward_std),
         trained_mean_reward=float(trained_mean_reward),
         trained_reward_std=float(trained_reward_std),
         episode_count=len(monitor_rows),

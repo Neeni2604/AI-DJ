@@ -403,6 +403,66 @@ class DJEnv(gym.Env):
 
 
 # ---------------------------------------------------------------------------
+# Heuristic policy
+# ---------------------------------------------------------------------------
+
+class HeuristicDJPolicy:
+    """Greedy heuristic: at each step pick the track that maximises the proxy reward.
+
+    Uses the same weights as DJEnv.step so it is a fair upper-bound comparison
+    for the random baseline without any learning.  The best transition type for
+    each candidate track is chosen by exhaustive search over the three options.
+
+    The predict() signature mirrors SB3's model.predict() so the class can be
+    used as a drop-in replacement in rollout helpers.
+    """
+
+    def __init__(self, env) -> None:
+        # Unwrap Monitor or other gymnasium wrappers to reach the raw DJEnv.
+        self._env: DJEnv = env.unwrapped if hasattr(env, "unwrapped") else env
+
+    def predict(
+        self,
+        obs: np.ndarray,
+        deterministic: bool = True,
+        state=None,
+        episode_start=None,
+    ) -> tuple[np.ndarray, None]:
+        env = self._env
+        curr = env.tracks[env._current_idx]
+        history_set = set(env._history)
+
+        best_score = -np.inf
+        best_track_idx = 0
+        best_transition_idx = 0
+
+        for i, track in enumerate(env.tracks):
+            h_score = harmonic_compatibility(
+                curr["key"], curr["mode"], track["key"], track["mode"]
+            )
+            b_score = bpm_smoothness(curr["tempo"], track["tempo"])
+            energy_delta = track["energy"] - curr["energy"]
+            bpm_delta = abs(track["tempo"] - curr["tempo"])
+
+            # pick the transition type that maximises transition_reward
+            t_scores = [transition_reward(t, bpm_delta, energy_delta) for t in range(3)]
+            best_t = int(np.argmax(t_scores))
+            t_score = t_scores[best_t]
+
+            energy_flow = float(np.clip(energy_delta * 2.0, -1.0, 1.0)) * 0.5 + 0.5
+            score = h_score * 0.4 + b_score * 0.3 + t_score * 0.2 + energy_flow * 0.1
+            if i in history_set:
+                score -= env.repeat_track_penalty
+
+            if score > best_score:
+                best_score = score
+                best_track_idx = i
+                best_transition_idx = best_t
+
+        return np.array([best_track_idx, best_transition_idx], dtype=np.int64), None
+
+
+# ---------------------------------------------------------------------------
 # Sanity check
 # ---------------------------------------------------------------------------
 if __name__ == "__main__":

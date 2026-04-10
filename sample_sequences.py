@@ -31,7 +31,7 @@ import numpy as np
 from stable_baselines3 import PPO
 from stable_baselines3.common.utils import set_random_seed
 
-from dj_env import DJEnv
+from dj_env import DJEnv, HeuristicDJPolicy
 
 KEY_NAMES = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
 
@@ -45,9 +45,26 @@ def _make_env(db_path: Path, limit: int | None, sequence_length: int) -> DJEnv:
     return DJEnv(db_path=db_path, limit=limit, episode_length=sequence_length)
 
 
+def _source_label(model_arg: str | None) -> str:
+    if model_arg is None:
+        return "random"
+    if model_arg.lower() == "heuristic":
+        return "heuristic"
+    return f"ppo:{Path(model_arg).name}"
+
+
+def _build_policy(model_arg: str | None, env: DJEnv):
+    """Return a policy object (PPO, HeuristicDJPolicy, or None for random)."""
+    if model_arg is None:
+        return None
+    if model_arg.lower() == "heuristic":
+        return HeuristicDJPolicy(env)
+    return PPO.load(model_arg)
+
+
 def _rollout(
     env: DJEnv,
-    model: PPO | None,
+    model,
     sequence_length: int,
     seed: int,
 ) -> list[dict[str, Any]]:
@@ -136,14 +153,14 @@ def main() -> None:
     if not db_path.exists():
         raise FileNotFoundError(f"DB not found: {db_path}")
 
-    model_a = PPO.load(args.model_a) if args.model_a else None
-    model_b = PPO.load(args.model_b) if args.model_b else None
-
-    label_a = f"ppo:{Path(args.model_a).name}" if args.model_a else "random"
-    label_b = f"ppo:{Path(args.model_b).name}" if args.model_b else "random"
+    label_a = _source_label(args.model_a)
+    label_b = _source_label(args.model_b)
 
     env_a = _make_env(db_path, args.limit, args.sequence_length)
     env_b = _make_env(db_path, args.limit, args.sequence_length)
+
+    model_a = _build_policy(args.model_a, env_a)
+    model_b = _build_policy(args.model_b, env_b)
 
     pairs: list[dict[str, Any]] = []
     try:
