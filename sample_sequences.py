@@ -179,7 +179,7 @@ def main() -> None:
     model_a = _build_policy(args.model_a, env_a)
     model_b = _build_policy(args.model_b, env_b)
 
-    _MAX_RETRIES = 50  # attempts per pair before giving up
+    _MAX_RETRIES = 500  # attempts per pair before giving up
 
     pairs: list[dict[str, Any]] = []
     try:
