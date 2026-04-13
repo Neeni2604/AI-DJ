@@ -260,25 +260,22 @@ class DJEnv(gym.Env):
         - Transition type: 0=cut, 1=fade, 2=beatmatch
 
     Proxy reward (replaced by your RLHF preference model in Week 3):
-        harmonic_score   * 0.4
-        bpm_score        * 0.3
-        transition_score * 0.2
-        energy_flow      * 0.1
+        bpm_score        * 0.5
+        transition_score * 0.3
+        energy_flow      * 0.2
         repeat_penalty   for choosing the same track again
     """
 
     metadata = {"render_modes": ["human"]}
 
     FEATURE_KEYS = [
-        "tempo", "key", "mode", "energy", "valence",
+        "tempo", "energy", "valence",
         "danceability", "loudness", "chroma_mean", "rms_mean",
     ]
 
     # Known min/max ranges for normalisation
     FEATURE_RANGES: dict[str, tuple[float, float]] = {
         "tempo":        (40.0,  220.0),
-        "key":          (0.0,   11.0),
-        "mode":         (0.0,   1.0),
         "energy":       (0.0,   1.0),
         "valence":      (0.0,   1.0),
         "danceability": (0.0,   1.0),
@@ -392,14 +389,13 @@ class DJEnv(gym.Env):
         curr = self.tracks[self._current_idx]
         nxt  = self.tracks[next_idx]
 
-        h_score      = harmonic_compatibility(curr["key"], curr["mode"], nxt["key"], nxt["mode"])
         b_score      = bpm_smoothness(curr["tempo"], nxt["tempo"])
         energy_delta = nxt["energy"] - curr["energy"]
         bpm_delta    = abs(nxt["tempo"] - curr["tempo"])
         t_score      = transition_reward(transition_idx, bpm_delta, energy_delta)
         energy_flow  = float(np.clip(energy_delta * 2.0, -1.0, 1.0)) * 0.5 + 0.5
 
-        base_reward = h_score * 0.4 + b_score * 0.3 + t_score * 0.2 + energy_flow * 0.1
+        base_reward = b_score * 0.5 + t_score * 0.3 + energy_flow * 0.2
         # Soft penalty still applies for choosing the immediately preceding track
         # (catches self-loops when prevent_revisits=False or at episode start).
         repeat_penalty = self.repeat_track_penalty if next_idx == self._current_idx else 0.0
@@ -412,7 +408,6 @@ class DJEnv(gym.Env):
         terminated = self._step_count >= self.episode_length
         info = self._info()
         info.update({
-            "harmonic_score":   h_score,
             "bpm_score":        b_score,
             "transition_score": t_score,
             "energy_flow":      energy_flow,
@@ -477,9 +472,6 @@ class HeuristicDJPolicy:
         best_transition_idx = 0
 
         for i, track in enumerate(env.tracks):
-            h_score = harmonic_compatibility(
-                curr["key"], curr["mode"], track["key"], track["mode"]
-            )
             b_score = bpm_smoothness(curr["tempo"], track["tempo"])
             energy_delta = track["energy"] - curr["energy"]
             bpm_delta = abs(track["tempo"] - curr["tempo"])
@@ -490,7 +482,7 @@ class HeuristicDJPolicy:
             t_score = t_scores[best_t]
 
             energy_flow = float(np.clip(energy_delta * 2.0, -1.0, 1.0)) * 0.5 + 0.5
-            score = h_score * 0.4 + b_score * 0.3 + t_score * 0.2 + energy_flow * 0.1
+            score = b_score * 0.5 + t_score * 0.3 + energy_flow * 0.2
             if i in history_set:
                 score -= env.repeat_track_penalty
 

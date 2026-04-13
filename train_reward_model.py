@@ -7,11 +7,9 @@ and outputs a scalar reward score. It is trained with a Bradley-Terry pairwise
 ranking loss: for each (winner, loser) pair the model is penalised whenever it
 scores the loser higher than the winner.
 
-Feature encoding (7 values per track × 6 tracks = 42 inputs by default):
+Feature encoding (5 values per track × 6 tracks = 30 inputs by default):
   - tempo:          normalised to [0, 1] using range [40, 220]
   - energy:         already in [0, 1]
-  - key index:      0–11 normalised to [0, 1]
-  - mode:           0 (minor) or 1 (major)
   - transition_cut:       1 if cut,       else 0  (0 for the first track)
   - transition_fade:      1 if fade,      else 0
   - transition_beatmatch: 1 if beatmatch, else 0
@@ -39,31 +37,20 @@ import torch.optim as optim
 # ---------------------------------------------------------------------------
 
 TEMPO_MIN, TEMPO_MAX = 40.0, 220.0
-KEY_NAMES = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
-KEY_INDEX: dict[str, int] = {k: i for i, k in enumerate(KEY_NAMES)}
 TRANSITION_TYPES = ["cut", "fade", "beatmatch"]
-FEATURES_PER_STEP = 7  # tempo, energy, key, mode, cut, fade, beatmatch
-
-
-def _parse_key(key_str: str) -> tuple[float, float]:
-    """'C maj' → (0.0, 1.0),  'A min' → (9/11, 0.0)."""
-    parts = (key_str or "C maj").split()
-    key_idx = KEY_INDEX.get(parts[0], 0)
-    mode = 1.0 if len(parts) > 1 and parts[1] == "maj" else 0.0
-    return key_idx / 11.0, mode
+FEATURES_PER_STEP = 5  # tempo, energy, cut, fade, beatmatch
 
 
 def _encode_step(step: dict[str, Any]) -> list[float]:
     tempo = float(np.clip((step.get("tempo", 120.0) - TEMPO_MIN) / (TEMPO_MAX - TEMPO_MIN), 0.0, 1.0))
     energy = float(np.clip(step.get("energy", 0.5), 0.0, 1.0))
-    key_norm, mode = _parse_key(step.get("key", "C maj"))
 
     transition = step.get("transition_type")
     t_cut       = 1.0 if transition == "cut"       else 0.0
     t_fade      = 1.0 if transition == "fade"      else 0.0
     t_beatmatch = 1.0 if transition == "beatmatch" else 0.0
 
-    return [tempo, energy, key_norm, mode, t_cut, t_fade, t_beatmatch]
+    return [tempo, energy, t_cut, t_fade, t_beatmatch]
 
 
 def encode_sequence(steps: list[dict[str, Any]], max_steps: int) -> np.ndarray:
