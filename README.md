@@ -25,6 +25,7 @@ generated visualizations are saved in `graphs/`.
 
 The current graph set is:
 
+- `graphs/pipeline_diagrams.md`
 - `graphs/ppo_latest_learning_curve.png`
 - `graphs/rlhf_latest_learning_curve.png`
 - `graphs/reward_model_loss.png`
@@ -34,6 +35,10 @@ The current graph set is:
 
 These graphs are generated from the saved artifact files already present in the
 repo, not from live retraining.
+
+`graphs/pipeline_diagrams.md` contains step-by-step pipeline diagrams for the
+full algorithm, PPO training, preference data collection, reward-model
+training, RLHF fine-tuning, and demo/inference rollouts.
 
 **1. PPO Latest Learning Curve**
 
