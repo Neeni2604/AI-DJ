@@ -309,6 +309,33 @@ def _feature_payload(rows: list[dict[str, str]], track_id_key: str) -> dict[int,
     return payload
 
 
+_ECHONEST_AUDIO_SUFFIXES = ("tempo", "energy", "key", "mode", "danceability")
+
+
+def _validated_echonest_json(row: dict[str, Any] | None) -> str | None:
+    """Return JSON for the echonest row only if it contains real audio feature values.
+
+    Tracks that were never analysed by Echonest have empty or null cells for
+    all audio feature columns.  Storing those rows causes downstream code to
+    fall back to default feature values (tempo=120, energy=0.5, …), which
+    makes the tracks look artificially compatible with everything and pollutes
+    the training pool.  We store NULL instead so the quality filter in
+    load_tracks_from_db can exclude them.
+    """
+    if row is None:
+        return None
+    for key, value in row.items():
+        key_lower = key.lower()
+        if any(key_lower.endswith(suffix) for suffix in _ECHONEST_AUDIO_SUFFIXES):
+            cleaned = str(value).strip() if value is not None else ""
+            try:
+                if cleaned and float(cleaned) != 0.0:
+                    return json.dumps(row)
+            except ValueError:
+                pass
+    return None  # no real audio feature values found
+
+
 def _import_features(
     connection: sqlite3.Connection,
     features_path: Path | None,
@@ -332,6 +359,7 @@ def _import_features(
 
     all_track_ids = (set(features_rows) | set(echonest_rows)) & existing_ids
     for track_id in all_track_ids:
+        echonest_json_val = _validated_echonest_json(echonest_rows.get(track_id))
         connection.execute(
             """
             INSERT INTO fma_track_features(fma_track_id, features_json, echonest_json, updated_at)
@@ -344,7 +372,7 @@ def _import_features(
             (
                 track_id,
                 json.dumps(features_rows.get(track_id)) if track_id in features_rows else None,
-                json.dumps(echonest_rows.get(track_id)) if track_id in echonest_rows else None,
+                echonest_json_val,
             ),
         )
 

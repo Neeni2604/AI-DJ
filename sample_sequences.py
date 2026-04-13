@@ -113,6 +113,23 @@ def _rollout(
     return steps
 
 
+# Maximum BPM allowed between consecutive tracks.  Beyond this the transition
+# is musically incoherent regardless of transition type.
+_MAX_BPM_DELTA = 30.0
+
+
+def _sequence_ok(steps: list[dict[str, Any]]) -> tuple[bool, str]:
+    """Return (True, 'ok') or (False, reason) for a generated sequence."""
+    track_ids = [s["fma_track_id"] for s in steps]
+    if len(track_ids) != len(set(track_ids)):
+        return False, "repeated track"
+    for i in range(1, len(steps)):
+        delta = abs(steps[i]["tempo"] - steps[i - 1]["tempo"])
+        if delta > _MAX_BPM_DELTA:
+            return False, f"BPM jump {delta:.1f} at step {i}"
+    return True, "ok"
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Generate sequence pairs for human preference annotation.",
@@ -162,11 +179,24 @@ def main() -> None:
     model_a = _build_policy(args.model_a, env_a)
     model_b = _build_policy(args.model_b, env_b)
 
+    _MAX_RETRIES = 50  # attempts per pair before giving up
+
     pairs: list[dict[str, Any]] = []
     try:
         for i in range(args.n_pairs):
-            seq_a = _rollout(env_a, model_a, args.sequence_length, seed=args.seed + i * 2)
-            seq_b = _rollout(env_b, model_b, args.sequence_length, seed=args.seed + i * 2 + 1)
+            seq_a = seq_b = None
+            for attempt in range(_MAX_RETRIES):
+                base = args.seed + i * _MAX_RETRIES + attempt
+                candidate_a = _rollout(env_a, model_a, args.sequence_length, seed=base * 2)
+                candidate_b = _rollout(env_b, model_b, args.sequence_length, seed=base * 2 + 1)
+                ok_a, reason_a = _sequence_ok(candidate_a)
+                ok_b, reason_b = _sequence_ok(candidate_b)
+                if ok_a and ok_b:
+                    seq_a, seq_b = candidate_a, candidate_b
+                    break
+            if seq_a is None:
+                print(f"\nWarning: could not generate clean pair {i + 1} after {_MAX_RETRIES} attempts — skipping.")
+                continue
 
             # Randomly swap A/B so position bias doesn't favour either policy
             if rng.random() < 0.5:
@@ -177,14 +207,14 @@ def main() -> None:
 
             pairs.append(
                 {
-                    "pair_id": i,
+                    "pair_id": len(pairs),
                     "source_a": src_a,
                     "source_b": src_b,
                     "sequence_a": seq_a,
                     "sequence_b": seq_b,
                 }
             )
-            print(f"Generated pair {i + 1}/{args.n_pairs}", end="\r", flush=True)
+            print(f"Generated pair {len(pairs)}/{args.n_pairs}", end="\r", flush=True)
     finally:
         env_a.close()
         env_b.close()

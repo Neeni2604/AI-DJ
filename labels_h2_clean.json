@@ -1,0 +1,129 @@
+{
+  "pairs_metadata": {
+    "generated_at": "2026-04-13T00:58:35.559480",
+    "db_path": "fma_db\\data\\fma.db",
+    "track_limit": 500,
+    "sequence_length": 5,
+    "n_pairs": 20,
+    "source_a": "ppo:ppo_ai_dj.zip",
+    "source_b": "ppo:ppo_rlhf.zip",
+    "seed": 42
+  },
+  "annotator_id": "neeraja",
+  "annotations": [
+    {
+      "pair_id": 0,
+      "preference": "A",
+      "annotator_id": "neeraja",
+      "timestamp": "2026-04-13T00:59:40.064397"
+    },
+    {
+      "pair_id": 1,
+      "preference": "B",
+      "annotator_id": "neeraja",
+      "timestamp": "2026-04-13T01:00:23.496901"
+    },
+    {
+      "pair_id": 2,
+      "preference": "B",
+      "annotator_id": "neeraja",
+      "timestamp": "2026-04-13T01:00:39.984757"
+    },
+    {
+      "pair_id": 3,
+      "preference": "A",
+      "annotator_id": "neeraja",
+      "timestamp": "2026-04-13T02:32:13.802336"
+    },
+    {
+      "pair_id": 4,
+      "preference": null,
+      "annotator_id": "neeraja",
+      "timestamp": "2026-04-13T02:32:35.467767"
+    },
+    {
+      "pair_id": 5,
+      "preference": "A",
+      "annotator_id": "neeraja",
+      "timestamp": "2026-04-13T02:32:54.853073"
+    },
+    {
+      "pair_id": 6,
+      "preference": "B",
+      "annotator_id": "neeraja",
+      "timestamp": "2026-04-13T02:33:09.562830"
+    },
+    {
+      "pair_id": 7,
+      "preference": "A",
+      "annotator_id": "neeraja",
+      "timestamp": "2026-04-13T02:33:27.394620"
+    },
+    {
+      "pair_id": 8,
+      "preference": null,
+      "annotator_id": "neeraja",
+      "timestamp": "2026-04-13T02:33:40.539082"
+    },
+    {
+      "pair_id": 9,
+      "preference": "B",
+      "annotator_id": "neeraja",
+      "timestamp": "2026-04-13T02:33:57.731008"
+    },
+    {
+      "pair_id": 10,
+      "preference": null,
+      "annotator_id": "neeraja",
+      "timestamp": "2026-04-13T02:34:22.058256"
+    },
+    {
+      "pair_id": 11,
+      "preference": "B",
+      "annotator_id": "neeraja",
+      "timestamp": "2026-04-13T02:34:47.059409"
+    },
+    {
+      "pair_id": 12,
+      "preference": "A",
+      "annotator_id": "neeraja",
+      "timestamp": "2026-04-13T02:35:02.659203"
+    },
+    {
+      "pair_id": 13,
+      "preference": "A",
+      "annotator_id": "neeraja",
+      "timestamp": "2026-04-13T02:35:29.002767"
+    },
+    {
+      "pair_id": 14,
+      "preference": "B",
+      "annotator_id": "neeraja",
+      "timestamp": "2026-04-13T02:35:46.458803"
+    },
+    {
+      "pair_id": 15,
+      "preference": "A",
+      "annotator_id": "neeraja",
+      "timestamp": "2026-04-13T02:36:04.954158"
+    },
+    {
+      "pair_id": 16,
+      "preference": "B",
+      "annotator_id": "neeraja",
+      "timestamp": "2026-04-13T02:36:28.771557"
+    },
+    {
+      "pair_id": 17,
+      "preference": "B",
+      "annotator_id": "neeraja",
+      "timestamp": "2026-04-13T02:36:46.178591"
+    },
+    {
+      "pair_id": 18,
+      "preference": "B",
+      "annotator_id": "neeraja",
+      "timestamp": "2026-04-13T02:37:01.827510"
+    }
+  ]
+}

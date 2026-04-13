@@ -1,0 +1,6347 @@
+{
+  "pairs_metadata": {
+    "generated_at": "2026-04-10T14:05:34.503738",
+    "db_path": "fma_db\\data\\fma.db",
+    "track_limit": 500,
+    "sequence_length": 5,
+    "n_pairs": 50,
+    "source_a": "ppo:ppo_ai_dj.zip",
+    "source_b": "random",
+    "seed": 42
+  },
+  "stats": {
+    "total_pairs": 50,
+    "usable_pairs": 43,
+    "dropped_ties": 7,
+    "dropped_all_skipped": 0,
+    "annotator_ids": [
+      "neeraja",
+      "hanwen",
+      "lilian"
+    ],
+    "pairwise_agreement": 0.5982
+  },
+  "training_pairs": [
+    {
+      "pair_id": 0,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 170,
+          "title": "Industry Standard Massacre",
+          "artist": "Argumentix",
+          "genre": "Rock",
+          "tempo": 97.9,
+          "energy": 0.744,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 418,
+          "title": "Track1",
+          "artist": "Brian Joseph Davis",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 328,
+          "title": "Central Park",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 114.9,
+          "energy": 0.177,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 654,
+          "title": "Side Three - Part Four",
+          "artist": "Ethan Persoff",
+          "genre": "Electronic",
+          "tempo": 129.6,
+          "energy": 0.697,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 727,
+          "title": "Track 02",
+          "artist": "Gang Wizard",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 466,
+          "title": "Asterism",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 167,
+          "title": "Track 12",
+          "artist": "Area C",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 406,
+          "title": "ELI",
+          "artist": "Borful Tang",
+          "genre": "Electronic",
+          "tempo": 112.4,
+          "energy": 0.57,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 672,
+          "title": "Rise",
+          "artist": "Fanatic",
+          "genre": "Hip-Hop",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 626,
+          "title": "At Home In The Factory",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 100.6,
+          "energy": 0.35,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 511,
+          "title": "Sharper &amp; Clearer",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "consensus": "A",
+      "votes_for_winner": 2,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "A",
+        "hanwen": "B",
+        "lilian": "A"
+      }
+    },
+    {
+      "pair_id": 1,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 556,
+          "title": "The Applemen",
+          "artist": "Nicky Cook",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 325,
+          "title": "Liquidizing Chickens",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 114.8,
+          "energy": 0.129,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 418,
+          "title": "Track1",
+          "artist": "Brian Joseph Davis",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 343,
+          "title": "Cybernetics",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 124.6,
+          "energy": 0.182,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 324,
+          "title": "I just don't know",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 112.0,
+          "energy": 0.343,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 696,
+          "title": "Korea",
+          "artist": "Foot Village",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 569,
+          "title": "Shadow Law",
+          "artist": "Cinwaves",
+          "genre": "Rock",
+          "tempo": 137.0,
+          "energy": 0.694,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 469,
+          "title": "Waverly",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 563,
+          "title": "Dumb Me Down",
+          "artist": "Cinwaves",
+          "genre": "Rock",
+          "tempo": 157.8,
+          "energy": 0.266,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 459,
+          "title": "Machines and Muscles",
+          "artist": "CAVE",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 135,
+          "title": "Father's Day",
+          "artist": "Abominog",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "consensus": "B",
+      "votes_for_winner": 3,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "B",
+        "hanwen": "B",
+        "lilian": "B"
+      }
+    },
+    {
+      "pair_id": 2,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 174,
+          "title": "Senator's Stance",
+          "artist": "Argumentix",
+          "genre": "Rock",
+          "tempo": 70.9,
+          "energy": 0.847,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 209,
+          "title": "Safe Harbor",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 96.1,
+          "energy": 0.575,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 622,
+          "title": "Paper Cup",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 81.0,
+          "energy": 0.285,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 731,
+          "title": "Track 05",
+          "artist": "Gang Wizard",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 174,
+          "title": "Senator's Stance",
+          "artist": "Argumentix",
+          "genre": "Rock",
+          "tempo": 70.9,
+          "energy": 0.847,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 439,
+          "title": "All you get from love is 22 Love Songs",
+          "artist": "Brian Joseph Davis",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 465,
+          "title": "Thinking Of You",
+          "artist": "Cantonement Jazz Band",
+          "genre": "Unknown",
+          "tempo": 122.5,
+          "energy": 0.52,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 196,
+          "title": "Bright Mr Brother",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 107.3,
+          "energy": 0.147,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 164,
+          "title": "Track 09",
+          "artist": "Area C",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 483,
+          "title": "Magnolias Milan",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "consensus": "A",
+      "votes_for_winner": 2,
+      "total_votes": 2,
+      "raw_votes": {
+        "neeraja": null,
+        "hanwen": "A",
+        "lilian": "A"
+      }
+    },
+    {
+      "pair_id": 3,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 147,
+          "title": "Repetitive Motion Sickness",
+          "artist": "Amoebic Ensemble",
+          "genre": "Jazz",
+          "tempo": 120.2,
+          "energy": 0.866,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 194,
+          "title": "All I want to Do",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 103.8,
+          "energy": 0.2,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 534,
+          "title": "I Can See You",
+          "artist": "Charles Manson",
+          "genre": "Folk",
+          "tempo": 79.8,
+          "energy": 0.144,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 308,
+          "title": "The Hotel",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 93.0,
+          "energy": 0.035,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 182,
+          "title": "Jules Lost His Jewels",
+          "artist": "Ariel Pink's Haunted Graffiti",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 194,
+          "title": "All I want to Do",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 103.8,
+          "energy": 0.2,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 719,
+          "title": "Florida Tags",
+          "artist": "Fuzz Unlimited",
+          "genre": "Rock",
+          "tempo": 123.5,
+          "energy": 0.791,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 323,
+          "title": "Crocodile Song",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 73.9,
+          "energy": 0.126,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 717,
+          "title": "Tyranny",
+          "artist": "Fursaxa",
+          "genre": "Folk",
+          "tempo": 124.1,
+          "energy": 0.126,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 445,
+          "title": "Lyftoff",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "consensus": "A",
+      "votes_for_winner": 3,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "A",
+        "hanwen": "A",
+        "lilian": "A"
+      }
+    },
+    {
+      "pair_id": 4,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 397,
+          "title": "The Tides Of Land",
+          "artist": "Borful Tang",
+          "genre": "Electronic",
+          "tempo": 74.4,
+          "energy": 0.167,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 614,
+          "title": "Plaisir D'Amour (feat. Dana Dart Maclean)",
+          "artist": "Dragging an Ox Through Water",
+          "genre": "Folk",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 320,
+          "title": "The Natives are Restless",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 126.7,
+          "energy": 0.117,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 443,
+          "title": "Bastard Boise",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 573,
+          "title": "When My Ship Comes In",
+          "artist": "Clockcleaner",
+          "genre": "Rock",
+          "tempo": 125.6,
+          "energy": 0.64,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 506,
+          "title": "Moths!!!",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 622,
+          "title": "Paper Cup",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 81.0,
+          "energy": 0.285,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 717,
+          "title": "Tyranny",
+          "artist": "Fursaxa",
+          "genre": "Folk",
+          "tempo": 124.1,
+          "energy": 0.126,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 418,
+          "title": "Track1",
+          "artist": "Brian Joseph Davis",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 343,
+          "title": "Cybernetics",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 124.6,
+          "energy": 0.182,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 285,
+          "title": "Earth aint Enuff",
+          "artist": "Black Pus",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 684,
+          "title": "Late Night Show",
+          "artist": "Fanatic",
+          "genre": "Hip-Hop",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "consensus": "B",
+      "votes_for_winner": 2,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "B",
+        "hanwen": "B",
+        "lilian": "A"
+      }
+    },
+    {
+      "pair_id": 6,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 343,
+          "title": "Cybernetics",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 124.6,
+          "energy": 0.182,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 525,
+          "title": "I Have Not Spoken All Day",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 135.0,
+          "energy": 0.37,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 196,
+          "title": "Bright Mr Brother",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 107.3,
+          "energy": 0.147,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 446,
+          "title": "Media Library",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 360,
+          "title": "Radio Jazz with Mr Rhodes",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 501,
+          "title": "Utmost House",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 716,
+          "title": "Saxalainen",
+          "artist": "Fursaxa",
+          "genre": "Folk",
+          "tempo": 145.7,
+          "energy": 0.026,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 422,
+          "title": "Track3",
+          "artist": "Brian Joseph Davis",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 592,
+          "title": "Song X",
+          "artist": "Delta Dreambox",
+          "genre": "Jazz",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 684,
+          "title": "Late Night Show",
+          "artist": "Fanatic",
+          "genre": "Hip-Hop",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 571,
+          "title": "Medicine Chant",
+          "artist": "Cinwaves",
+          "genre": "Rock",
+          "tempo": 136.9,
+          "energy": 0.133,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 586,
+          "title": "War Is What They Got (Epilogue)",
+          "artist": "DJ's of Mass Destruction",
+          "genre": "Hip-Hop",
+          "tempo": 92.1,
+          "energy": 0.543,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "consensus": "A",
+      "votes_for_winner": 2,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "A",
+        "hanwen": "A",
+        "lilian": "B"
+      }
+    },
+    {
+      "pair_id": 7,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 371,
+          "title": "vermalderhide",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 719,
+          "title": "Florida Tags",
+          "artist": "Fuzz Unlimited",
+          "genre": "Rock",
+          "tempo": 123.5,
+          "energy": 0.791,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 360,
+          "title": "Radio Jazz with Mr Rhodes",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 603,
+          "title": "Lover of Nightmares",
+          "artist": "Dora Bleu",
+          "genre": "Folk",
+          "tempo": 114.4,
+          "energy": 0.066,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 643,
+          "title": "Side One - The Talent Contest",
+          "artist": "Ethan Persoff",
+          "genre": "Electronic",
+          "tempo": 120.6,
+          "energy": 0.391,
+          "key": "C maj",
+          "transition_type": "fade"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 158,
+          "title": "Track 03",
+          "artist": "Area C",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 273,
+          "title": "Dildoughnuts",
+          "artist": "Black Pus",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 471,
+          "title": "Ephrata Cloister",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 385,
+          "title": "Lucky 45",
+          "artist": "Blanketship",
+          "genre": "Electronic",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 606,
+          "title": "Attack of the Clones",
+          "artist": "Double Dagger",
+          "genre": "Rock",
+          "tempo": 108.2,
+          "energy": 0.94,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 335,
+          "title": "Bored",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 111.8,
+          "energy": 0.212,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "consensus": "B",
+      "votes_for_winner": 2,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "A",
+        "hanwen": "B",
+        "lilian": "B"
+      }
+    },
+    {
+      "pair_id": 8,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 626,
+          "title": "At Home In The Factory",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 100.6,
+          "energy": 0.35,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 407,
+          "title": "Soundclash At Wonder Inn (ft. Qulfus)",
+          "artist": "Borful Tang",
+          "genre": "Electronic",
+          "tempo": 96.4,
+          "energy": 0.856,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 637,
+          "title": "The March",
+          "artist": "Eric Leonardson",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 698,
+          "title": "Iran",
+          "artist": "Foot Village",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 443,
+          "title": "Bastard Boise",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 136,
+          "title": "Peel Back The Mountain Sky",
+          "artist": "Abominog",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 469,
+          "title": "Waverly",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 360,
+          "title": "Radio Jazz with Mr Rhodes",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 357,
+          "title": "Mr Mystery",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 418,
+          "title": "Track1",
+          "artist": "Brian Joseph Davis",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "consensus": "A",
+      "votes_for_winner": 2,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "A",
+        "hanwen": "A",
+        "lilian": "B"
+      }
+    },
+    {
+      "pair_id": 9,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 419,
+          "title": "The Franklin Mint Job",
+          "artist": "Brian Joseph Davis",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 618,
+          "title": "Smoke",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 96.0,
+          "energy": 0.328,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 535,
+          "title": "Angels Fear To Tread",
+          "artist": "Charles Manson",
+          "genre": "Folk",
+          "tempo": 88.7,
+          "energy": 0.147,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 194,
+          "title": "All I want to Do",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 103.8,
+          "energy": 0.2,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 327,
+          "title": "Hands Beckoning",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 110.0,
+          "energy": 0.304,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 337,
+          "title": "Brian's Garage",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 87.1,
+          "energy": 0.414,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 236,
+          "title": "Push Am (Left, Right)",
+          "artist": "Banana Clipz",
+          "genre": "Unknown",
+          "tempo": 120.1,
+          "energy": 0.445,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 360,
+          "title": "Radio Jazz with Mr Rhodes",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 654,
+          "title": "Side Three - Part Four",
+          "artist": "Ethan Persoff",
+          "genre": "Electronic",
+          "tempo": 129.6,
+          "energy": 0.697,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 343,
+          "title": "Cybernetics",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 124.6,
+          "energy": 0.182,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "consensus": "A",
+      "votes_for_winner": 2,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "A",
+        "hanwen": "A",
+        "lilian": "B"
+      }
+    },
+    {
+      "pair_id": 10,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 431,
+          "title": "1977",
+          "artist": "Brian Joseph Davis",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 623,
+          "title": "The Cup Bearer (Jony Mede)",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 106.5,
+          "energy": 0.058,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 328,
+          "title": "Central Park",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 114.9,
+          "energy": 0.177,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 684,
+          "title": "Late Night Show",
+          "artist": "Fanatic",
+          "genre": "Hip-Hop",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 167,
+          "title": "Track 12",
+          "artist": "Area C",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 360,
+          "title": "Radio Jazz with Mr Rhodes",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 435,
+          "title": "1989",
+          "artist": "Brian Joseph Davis",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 159,
+          "title": "Track 04",
+          "artist": "Area C",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 680,
+          "title": "Sunshine",
+          "artist": "Fanatic",
+          "genre": "Hip-Hop",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 152,
+          "title": "Untitled 11",
+          "artist": "Animal Writes",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 542,
+          "title": "Self Is Eternal (What Our World Will Be)",
+          "artist": "Charles Manson",
+          "genre": "Folk",
+          "tempo": 82.4,
+          "energy": 0.256,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 429,
+          "title": "1963/2005",
+          "artist": "Brian Joseph Davis",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "consensus": "B",
+      "votes_for_winner": 2,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "B",
+        "hanwen": "B",
+        "lilian": "A"
+      }
+    },
+    {
+      "pair_id": 11,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 469,
+          "title": "Waverly",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 447,
+          "title": "Back/Forth",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 167,
+          "title": "Track 12",
+          "artist": "Area C",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 483,
+          "title": "Magnolias Milan",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 466,
+          "title": "Asterism",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 482,
+          "title": "Hall Blvd.",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 236,
+          "title": "Push Am (Left, Right)",
+          "artist": "Banana Clipz",
+          "genre": "Unknown",
+          "tempo": 120.1,
+          "energy": 0.445,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 160,
+          "title": "Track 05",
+          "artist": "Area C",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 166,
+          "title": "Track 11",
+          "artist": "Area C",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 634,
+          "title": "LGNO",
+          "artist": "El Jesus De Magico",
+          "genre": "Rock",
+          "tempo": 170.1,
+          "energy": 0.927,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 734,
+          "title": "Crystal Migraine",
+          "artist": "Glass Candy",
+          "genre": "Soul-RnB",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 176,
+          "title": "Step Up to Legends",
+          "artist": "Argumentix",
+          "genre": "Rock",
+          "tempo": 123.6,
+          "energy": 0.779,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "consensus": "A",
+      "votes_for_winner": 2,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "A",
+        "hanwen": "A",
+        "lilian": "B"
+      }
+    },
+    {
+      "pair_id": 12,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 705,
+          "title": "Tio Cocodrilo",
+          "artist": "F\u00f3sforo",
+          "genre": "International",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 704,
+          "title": "Mano De Dios",
+          "artist": "F\u00f3sforo",
+          "genre": "International",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 276,
+          "title": "The Devilhellipers",
+          "artist": "Black Pus",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 192,
+          "title": "Ed Talk WNYC",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 129.7,
+          "energy": 0.044,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 510,
+          "title": "Sac City",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 623,
+          "title": "The Cup Bearer (Jony Mede)",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 106.5,
+          "energy": 0.058,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 716,
+          "title": "Saxalainen",
+          "artist": "Fursaxa",
+          "genre": "Folk",
+          "tempo": 145.7,
+          "energy": 0.026,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 511,
+          "title": "Sharper &amp; Clearer",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 294,
+          "title": "Magic Bullet",
+          "artist": "Black Pus",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 574,
+          "title": "Caliente Queen",
+          "artist": "Clockcleaner",
+          "genre": "Rock",
+          "tempo": 178.2,
+          "energy": 0.985,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 371,
+          "title": "vermalderhide",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        }
+      ],
+      "consensus": "B",
+      "votes_for_winner": 2,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "B",
+        "hanwen": "B",
+        "lilian": "A"
+      }
+    },
+    {
+      "pair_id": 13,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 152,
+          "title": "Untitled 11",
+          "artist": "Animal Writes",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 589,
+          "title": "A Time To Bear Arms",
+          "artist": "Death Sentence: Panda!",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 145,
+          "title": "Amoebiasis",
+          "artist": "Amoebic Ensemble",
+          "genre": "Jazz",
+          "tempo": 120.8,
+          "energy": 0.488,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 481,
+          "title": "Council Bluffs",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 252,
+          "title": "It's Becoming a Stranger",
+          "artist": "Bird Names",
+          "genre": "Rock",
+          "tempo": 111.2,
+          "energy": 0.251,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 313,
+          "title": "Think Things Of You",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 101.1,
+          "energy": 0.131,
+          "key": "C maj",
+          "transition_type": "fade"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 451,
+          "title": "Killer Murderer",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 590,
+          "title": "Stuck",
+          "artist": "Delta Dreambox",
+          "genre": "Jazz",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 590,
+          "title": "Stuck",
+          "artist": "Delta Dreambox",
+          "genre": "Jazz",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 664,
+          "title": "side 6 - not funny",
+          "artist": "Ethan Persoff",
+          "genre": "Electronic",
+          "tempo": 114.6,
+          "energy": 0.249,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 590,
+          "title": "Stuck",
+          "artist": "Delta Dreambox",
+          "genre": "Jazz",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "consensus": "A",
+      "votes_for_winner": 3,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "A",
+        "hanwen": "A",
+        "lilian": "A"
+      }
+    },
+    {
+      "pair_id": 14,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 711,
+          "title": "Kamikaze!",
+          "artist": "The Functional Blackouts",
+          "genre": "Rock",
+          "tempo": 141.0,
+          "energy": 0.984,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 701,
+          "title": "Japan",
+          "artist": "Foot Village",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 405,
+          "title": "Majestic Shuffle",
+          "artist": "Borful Tang",
+          "genre": "Electronic",
+          "tempo": 88.7,
+          "energy": 0.285,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 408,
+          "title": "The Tides Of Land",
+          "artist": "Borful Tang",
+          "genre": "Electronic",
+          "tempo": 84.6,
+          "energy": 0.236,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 202,
+          "title": "Palomino",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 111.0,
+          "energy": 0.211,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 475,
+          "title": "Buddy Alan In Reno",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 543,
+          "title": "Sometimes It Works Just Right",
+          "artist": "Charles Manson",
+          "genre": "Folk",
+          "tempo": 93.5,
+          "energy": 0.308,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 360,
+          "title": "Radio Jazz with Mr Rhodes",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 719,
+          "title": "Florida Tags",
+          "artist": "Fuzz Unlimited",
+          "genre": "Rock",
+          "tempo": 123.5,
+          "energy": 0.791,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 325,
+          "title": "Liquidizing Chickens",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 114.8,
+          "energy": 0.129,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 684,
+          "title": "Late Night Show",
+          "artist": "Fanatic",
+          "genre": "Hip-Hop",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "consensus": "B",
+      "votes_for_winner": 2,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "A",
+        "hanwen": "B",
+        "lilian": "B"
+      }
+    },
+    {
+      "pair_id": 15,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 643,
+          "title": "Side One - The Talent Contest",
+          "artist": "Ethan Persoff",
+          "genre": "Electronic",
+          "tempo": 120.6,
+          "energy": 0.391,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 485,
+          "title": "Asterism (Kelly Haus)",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 210,
+          "title": "In the French Court",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 96.8,
+          "energy": 0.227,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 451,
+          "title": "Killer Murderer",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 138,
+          "title": "Side B",
+          "artist": "Airway",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 468,
+          "title": "Vast and Sad (KPSU)",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 711,
+          "title": "Kamikaze!",
+          "artist": "The Functional Blackouts",
+          "genre": "Rock",
+          "tempo": 141.0,
+          "energy": 0.984,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 308,
+          "title": "The Hotel",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 93.0,
+          "energy": 0.035,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 167,
+          "title": "Track 12",
+          "artist": "Area C",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 479,
+          "title": "White Shoulders",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 330,
+          "title": "White Man",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "consensus": "B",
+      "votes_for_winner": 3,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "B",
+        "hanwen": "B",
+        "lilian": "B"
+      }
+    },
+    {
+      "pair_id": 18,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 179,
+          "title": "Ready to Die",
+          "artist": "Argumentix",
+          "genre": "Rock",
+          "tempo": 84.2,
+          "energy": 0.989,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 185,
+          "title": "Want Me",
+          "artist": "Ariel Pink's Haunted Graffiti",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 631,
+          "title": "Buddha Smiles",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 98.0,
+          "energy": 0.545,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 338,
+          "title": "Cabages in the sunset",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 118.8,
+          "energy": 0.044,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 147,
+          "title": "Repetitive Motion Sickness",
+          "artist": "Amoebic Ensemble",
+          "genre": "Jazz",
+          "tempo": 120.2,
+          "energy": 0.866,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 644,
+          "title": "SNAP! (side two of two)",
+          "artist": "Ethan Persoff",
+          "genre": "Electronic",
+          "tempo": 71.1,
+          "energy": 0.26,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 591,
+          "title": "Without A Sound",
+          "artist": "Delta Dreambox",
+          "genre": "Jazz",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 285,
+          "title": "Earth aint Enuff",
+          "artist": "Black Pus",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 467,
+          "title": "Let's Climb a Mossy Hill",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 360,
+          "title": "Radio Jazz with Mr Rhodes",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 476,
+          "title": "Leftward Glance",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "consensus": "B",
+      "votes_for_winner": 2,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "A",
+        "hanwen": "B",
+        "lilian": "B"
+      }
+    },
+    {
+      "pair_id": 20,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 605,
+          "title": "I Was So Bored I Wanted To Hang Myself On The Dancefloor",
+          "artist": "Double Dagger",
+          "genre": "Rock",
+          "tempo": 151.5,
+          "energy": 0.983,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 174,
+          "title": "Senator's Stance",
+          "artist": "Argumentix",
+          "genre": "Rock",
+          "tempo": 70.9,
+          "energy": 0.847,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 357,
+          "title": "Mr Mystery",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 134,
+          "title": "Street Music",
+          "artist": "AWOL",
+          "genre": "Hip-Hop",
+          "tempo": 114.3,
+          "energy": 0.56,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 205,
+          "title": "What Crow Saw",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 103.4,
+          "energy": 0.134,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 577,
+          "title": "It Got in The Way",
+          "artist": "Clyde Rourke",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 583,
+          "title": "WAR (If It Feels Good, Do It!)",
+          "artist": "DJ's of Mass Destruction",
+          "genre": "Hip-Hop",
+          "tempo": 180.0,
+          "energy": 0.513,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 590,
+          "title": "Stuck",
+          "artist": "Delta Dreambox",
+          "genre": "Jazz",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 276,
+          "title": "The Devilhellipers",
+          "artist": "Black Pus",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 418,
+          "title": "Track1",
+          "artist": "Brian Joseph Davis",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 684,
+          "title": "Late Night Show",
+          "artist": "Fanatic",
+          "genre": "Hip-Hop",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 483,
+          "title": "Magnolias Milan",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "consensus": "B",
+      "votes_for_winner": 2,
+      "total_votes": 2,
+      "raw_votes": {
+        "neeraja": null,
+        "hanwen": "B",
+        "lilian": "B"
+      }
+    },
+    {
+      "pair_id": 21,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 547,
+          "title": "I Keep On Wondering (Interrupted)",
+          "artist": "Charles Manson",
+          "genre": "Folk",
+          "tempo": 64.7,
+          "energy": 0.163,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 320,
+          "title": "The Natives are Restless",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 126.7,
+          "energy": 0.117,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 467,
+          "title": "Let's Climb a Mossy Hill",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 423,
+          "title": "Track4",
+          "artist": "Brian Joseph Davis",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 360,
+          "title": "Radio Jazz with Mr Rhodes",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 360,
+          "title": "Radio Jazz with Mr Rhodes",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 579,
+          "title": "(Tryin' To) Read My Mind",
+          "artist": "CoCoComa",
+          "genre": "Rock",
+          "tempo": 173.2,
+          "energy": 0.912,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 422,
+          "title": "Track3",
+          "artist": "Brian Joseph Davis",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 563,
+          "title": "Dumb Me Down",
+          "artist": "Cinwaves",
+          "genre": "Rock",
+          "tempo": 157.8,
+          "energy": 0.266,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 467,
+          "title": "Let's Climb a Mossy Hill",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 625,
+          "title": "Climbing To The Top",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 92.7,
+          "energy": 0.294,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 663,
+          "title": "side 5 - conclusion",
+          "artist": "Ethan Persoff",
+          "genre": "Electronic",
+          "tempo": 106.5,
+          "energy": 0.349,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "consensus": "A",
+      "votes_for_winner": 2,
+      "total_votes": 2,
+      "raw_votes": {
+        "neeraja": null,
+        "hanwen": "A",
+        "lilian": "A"
+      }
+    },
+    {
+      "pair_id": 22,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 713,
+          "title": "No Idea",
+          "artist": "The Functional Blackouts",
+          "genre": "Rock",
+          "tempo": 122.1,
+          "energy": 0.996,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 719,
+          "title": "Florida Tags",
+          "artist": "Fuzz Unlimited",
+          "genre": "Rock",
+          "tempo": 123.5,
+          "energy": 0.791,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 150,
+          "title": "... listening to the sunshine burn the grass",
+          "artist": "Andy Hayleck",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 422,
+          "title": "Track3",
+          "artist": "Brian Joseph Davis",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 466,
+          "title": "Asterism",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 152,
+          "title": "Untitled 11",
+          "artist": "Animal Writes",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 527,
+          "title": "For Jake Erdmann Et Al.",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 152.0,
+          "energy": 0.783,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 440,
+          "title": "The Beats",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 447,
+          "title": "Back/Forth",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 147,
+          "title": "Repetitive Motion Sickness",
+          "artist": "Amoebic Ensemble",
+          "genre": "Jazz",
+          "tempo": 120.2,
+          "energy": 0.866,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 484,
+          "title": "One Rose Among Many",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 571,
+          "title": "Medicine Chant",
+          "artist": "Cinwaves",
+          "genre": "Rock",
+          "tempo": 136.9,
+          "energy": 0.133,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "consensus": "B",
+      "votes_for_winner": 3,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "B",
+        "hanwen": "B",
+        "lilian": "B"
+      }
+    },
+    {
+      "pair_id": 23,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 464,
+          "title": "The Way I Feel Today",
+          "artist": "Cantonement Jazz Band",
+          "genre": "Unknown",
+          "tempo": 114.8,
+          "energy": 0.382,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 360,
+          "title": "Radio Jazz with Mr Rhodes",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 435,
+          "title": "1989",
+          "artist": "Brian Joseph Davis",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 654,
+          "title": "Side Three - Part Four",
+          "artist": "Ethan Persoff",
+          "genre": "Electronic",
+          "tempo": 129.6,
+          "energy": 0.697,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 719,
+          "title": "Florida Tags",
+          "artist": "Fuzz Unlimited",
+          "genre": "Rock",
+          "tempo": 123.5,
+          "energy": 0.791,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 360,
+          "title": "Radio Jazz with Mr Rhodes",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 663,
+          "title": "side 5 - conclusion",
+          "artist": "Ethan Persoff",
+          "genre": "Electronic",
+          "tempo": 106.5,
+          "energy": 0.349,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 483,
+          "title": "Magnolias Milan",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 405,
+          "title": "Majestic Shuffle",
+          "artist": "Borful Tang",
+          "genre": "Electronic",
+          "tempo": 88.7,
+          "energy": 0.285,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 332,
+          "title": "39th floor Club",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 101.6,
+          "energy": 0.591,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 282,
+          "title": "New Atlantis A",
+          "artist": "Black Pus",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 317,
+          "title": "Very Nice",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 113.0,
+          "energy": 0.334,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "consensus": "B",
+      "votes_for_winner": 2,
+      "total_votes": 2,
+      "raw_votes": {
+        "neeraja": null,
+        "hanwen": "B",
+        "lilian": "B"
+      }
+    },
+    {
+      "pair_id": 24,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 592,
+          "title": "Song X",
+          "artist": "Delta Dreambox",
+          "genre": "Jazz",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 134,
+          "title": "Street Music",
+          "artist": "AWOL",
+          "genre": "Hip-Hop",
+          "tempo": 114.3,
+          "energy": 0.56,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 139,
+          "title": "CandyAss",
+          "artist": "Alec K. Redfearn & the Eyesores",
+          "genre": "Folk",
+          "tempo": 197.0,
+          "energy": 0.607,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 308,
+          "title": "The Hotel",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 93.0,
+          "energy": 0.035,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 521,
+          "title": "A River Frozen In Place",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 89.0,
+          "energy": 0.542,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 674,
+          "title": "Enterprizin",
+          "artist": "Fanatic",
+          "genre": "Hip-Hop",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 547,
+          "title": "I Keep On Wondering (Interrupted)",
+          "artist": "Charles Manson",
+          "genre": "Folk",
+          "tempo": 64.7,
+          "energy": 0.163,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 684,
+          "title": "Late Night Show",
+          "artist": "Fanatic",
+          "genre": "Hip-Hop",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 719,
+          "title": "Florida Tags",
+          "artist": "Fuzz Unlimited",
+          "genre": "Rock",
+          "tempo": 123.5,
+          "energy": 0.791,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 171,
+          "title": "Marching as Technitions",
+          "artist": "Argumentix",
+          "genre": "Rock",
+          "tempo": 125.6,
+          "energy": 0.213,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 285,
+          "title": "Earth aint Enuff",
+          "artist": "Black Pus",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 305,
+          "title": "Disney on Ice",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 108.1,
+          "energy": 0.079,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "consensus": "B",
+      "votes_for_winner": 2,
+      "total_votes": 2,
+      "raw_votes": {
+        "neeraja": null,
+        "hanwen": "B",
+        "lilian": "B"
+      }
+    },
+    {
+      "pair_id": 25,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 432,
+          "title": "1984",
+          "artist": "Brian Joseph Davis",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 417,
+          "title": "Eula",
+          "artist": "Brian Joseph Davis",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 285,
+          "title": "Earth aint Enuff",
+          "artist": "Black Pus",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 185,
+          "title": "Want Me",
+          "artist": "Ariel Pink's Haunted Graffiti",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 167,
+          "title": "Track 12",
+          "artist": "Area C",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 467,
+          "title": "Let's Climb a Mossy Hill",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 712,
+          "title": "Loch Ness Primitive",
+          "artist": "The Functional Blackouts",
+          "genre": "Rock",
+          "tempo": 108.3,
+          "energy": 0.997,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 252,
+          "title": "It's Becoming a Stranger",
+          "artist": "Bird Names",
+          "genre": "Rock",
+          "tempo": 111.2,
+          "energy": 0.251,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 142,
+          "title": "Punjabi Watery Grave",
+          "artist": "Alec K. Redfearn & the Eyesores",
+          "genre": "Folk",
+          "tempo": 147.8,
+          "energy": 0.824,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 190,
+          "title": "Castle Of Stars",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 100.9,
+          "energy": 0.371,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 197,
+          "title": "Piano 2",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 128.7,
+          "energy": 0.007,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 693,
+          "title": "Trauma 11",
+          "artist": "Flying Luttenbachers",
+          "genre": "Rock",
+          "tempo": 131.9,
+          "energy": 0.957,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "consensus": "B",
+      "votes_for_winner": 2,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "B",
+        "hanwen": "B",
+        "lilian": "A"
+      }
+    },
+    {
+      "pair_id": 26,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 148,
+          "title": "Blackout 2",
+          "artist": "Contradiction",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 417,
+          "title": "Eula",
+          "artist": "Brian Joseph Davis",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 479,
+          "title": "White Shoulders",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 466,
+          "title": "Asterism",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 418,
+          "title": "Track1",
+          "artist": "Brian Joseph Davis",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 432,
+          "title": "1984",
+          "artist": "Brian Joseph Davis",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 402,
+          "title": "Oh Kap Soon",
+          "artist": "Borful Tang",
+          "genre": "Electronic",
+          "tempo": 84.4,
+          "energy": 0.121,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 173,
+          "title": "Save Life's Golden Receipt In Case Refund Needed",
+          "artist": "Argumentix",
+          "genre": "Rock",
+          "tempo": 166.6,
+          "energy": 0.565,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 684,
+          "title": "Late Night Show",
+          "artist": "Fanatic",
+          "genre": "Hip-Hop",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 293,
+          "title": "Berserk is the Best",
+          "artist": "Black Pus",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 434,
+          "title": "1988",
+          "artist": "Brian Joseph Davis",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        }
+      ],
+      "consensus": "B",
+      "votes_for_winner": 2,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "B",
+        "hanwen": "B",
+        "lilian": "A"
+      }
+    },
+    {
+      "pair_id": 27,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 197,
+          "title": "Piano 2",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 128.7,
+          "energy": 0.007,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 529,
+          "title": "For the Dishroom at Meridian Park Hospital",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 185.2,
+          "energy": 0.926,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 403,
+          "title": "Roach",
+          "artist": "Borful Tang",
+          "genre": "Electronic",
+          "tempo": 115.8,
+          "energy": 0.863,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 699,
+          "title": "Antarctica",
+          "artist": "Foot Village",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 5,
+          "title": "This World",
+          "artist": "AWOL",
+          "genre": "Hip-Hop",
+          "tempo": 100.3,
+          "energy": 0.701,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 667,
+          "title": "Sharpen The Knife",
+          "artist": "Explode Into Colors",
+          "genre": "International",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 647,
+          "title": "Side Two - Reset (and the Great Joke)",
+          "artist": "Ethan Persoff",
+          "genre": "Electronic",
+          "tempo": 208.4,
+          "energy": 0.833,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 684,
+          "title": "Late Night Show",
+          "artist": "Fanatic",
+          "genre": "Hip-Hop",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 303,
+          "title": "Splish spladdy",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 129.6,
+          "energy": 0.243,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 343,
+          "title": "Cybernetics",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 124.6,
+          "energy": 0.182,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "consensus": "A",
+      "votes_for_winner": 2,
+      "total_votes": 2,
+      "raw_votes": {
+        "neeraja": null,
+        "hanwen": "A",
+        "lilian": "A"
+      }
+    },
+    {
+      "pair_id": 29,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 343,
+          "title": "Cybernetics",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 124.6,
+          "energy": 0.182,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 20,
+          "title": "Spiritual Level",
+          "artist": "Nicky Cook",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 461,
+          "title": "Bessemer",
+          "artist": "Cantonement Jazz Band",
+          "genre": "Unknown",
+          "tempo": 107.2,
+          "energy": 0.32,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 170,
+          "title": "Industry Standard Massacre",
+          "artist": "Argumentix",
+          "genre": "Rock",
+          "tempo": 97.9,
+          "energy": 0.744,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 536,
+          "title": "Riding On Your Fears",
+          "artist": "Charles Manson",
+          "genre": "Folk",
+          "tempo": 127.1,
+          "energy": 0.201,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 615,
+          "title": "Immaterial, side A",
+          "artist": "EKG",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 482,
+          "title": "Hall Blvd.",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 167,
+          "title": "Track 12",
+          "artist": "Area C",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 418,
+          "title": "Track1",
+          "artist": "Brian Joseph Davis",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 343,
+          "title": "Cybernetics",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 124.6,
+          "energy": 0.182,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 717,
+          "title": "Tyranny",
+          "artist": "Fursaxa",
+          "genre": "Folk",
+          "tempo": 124.1,
+          "energy": 0.126,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "consensus": "B",
+      "votes_for_winner": 2,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "A",
+        "hanwen": "B",
+        "lilian": "B"
+      }
+    },
+    {
+      "pair_id": 30,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 429,
+          "title": "1963/2005",
+          "artist": "Brian Joseph Davis",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 360,
+          "title": "Radio Jazz with Mr Rhodes",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 691,
+          "title": "Into the Vastness of Stupidity",
+          "artist": "Flying Luttenbachers",
+          "genre": "Rock",
+          "tempo": 128.1,
+          "energy": 0.707,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 479,
+          "title": "White Shoulders",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 684,
+          "title": "Late Night Show",
+          "artist": "Fanatic",
+          "genre": "Hip-Hop",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 684,
+          "title": "Late Night Show",
+          "artist": "Fanatic",
+          "genre": "Hip-Hop",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 491,
+          "title": "For To Pour",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 591,
+          "title": "Without A Sound",
+          "artist": "Delta Dreambox",
+          "genre": "Jazz",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 309,
+          "title": "Where are all the people",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 60.4,
+          "energy": 0.021,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 540,
+          "title": "The Black Pirate",
+          "artist": "Charles Manson",
+          "genre": "Folk",
+          "tempo": 45.5,
+          "energy": 0.149,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 589,
+          "title": "A Time To Bear Arms",
+          "artist": "Death Sentence: Panda!",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 510,
+          "title": "Sac City",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "consensus": "A",
+      "votes_for_winner": 2,
+      "total_votes": 2,
+      "raw_votes": {
+        "neeraja": null,
+        "hanwen": "A",
+        "lilian": "A"
+      }
+    },
+    {
+      "pair_id": 31,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 574,
+          "title": "Caliente Queen",
+          "artist": "Clockcleaner",
+          "genre": "Rock",
+          "tempo": 178.2,
+          "energy": 0.985,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 343,
+          "title": "Cybernetics",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 124.6,
+          "energy": 0.182,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 276,
+          "title": "The Devilhellipers",
+          "artist": "Black Pus",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 467,
+          "title": "Let's Climb a Mossy Hill",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 504,
+          "title": "Cry",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 704,
+          "title": "Mano De Dios",
+          "artist": "F\u00f3sforo",
+          "genre": "International",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 326,
+          "title": "Burn",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 197.9,
+          "energy": 0.711,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 20,
+          "title": "Spiritual Level",
+          "artist": "Nicky Cook",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 371,
+          "title": "vermalderhide",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 656,
+          "title": "Side Four - Easy Slow and Easy (finale)",
+          "artist": "Ethan Persoff",
+          "genre": "Electronic",
+          "tempo": 116.8,
+          "energy": 0.588,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 318,
+          "title": "1-2-3-4",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 78.2,
+          "energy": 0.26,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 30,
+          "title": "Too Happy",
+          "artist": "Nicky Cook",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "consensus": "A",
+      "votes_for_winner": 3,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "A",
+        "hanwen": "A",
+        "lilian": "A"
+      }
+    },
+    {
+      "pair_id": 32,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 489,
+          "title": "Nevertheless",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 343,
+          "title": "Cybernetics",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 124.6,
+          "energy": 0.182,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 501,
+          "title": "Utmost House",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 360,
+          "title": "Radio Jazz with Mr Rhodes",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 719,
+          "title": "Florida Tags",
+          "artist": "Fuzz Unlimited",
+          "genre": "Rock",
+          "tempo": 123.5,
+          "energy": 0.791,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 343,
+          "title": "Cybernetics",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 124.6,
+          "energy": 0.182,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 178,
+          "title": "Lend Me a Blanket",
+          "artist": "Argumentix",
+          "genre": "Rock",
+          "tempo": 61.3,
+          "energy": 0.413,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 396,
+          "title": "Juggernaut Soliloquy",
+          "artist": "Borful Tang",
+          "genre": "Electronic",
+          "tempo": 94.0,
+          "energy": 0.628,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 570,
+          "title": "Old Route 13",
+          "artist": "Cinwaves",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.399,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 168,
+          "title": "Track 13",
+          "artist": "Area C",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 275,
+          "title": "Swampus",
+          "artist": "Black Pus",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 651,
+          "title": "Side Three - Part One / Start",
+          "artist": "Ethan Persoff",
+          "genre": "Electronic",
+          "tempo": 176.3,
+          "energy": 0.726,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "consensus": "A",
+      "votes_for_winner": 2,
+      "total_votes": 2,
+      "raw_votes": {
+        "neeraja": null,
+        "hanwen": "A",
+        "lilian": "A"
+      }
+    },
+    {
+      "pair_id": 33,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 492,
+          "title": "I Can't Hear the Birds Sing",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 2,
+          "title": "Food",
+          "artist": "AWOL",
+          "genre": "Hip-Hop",
+          "tempo": 165.9,
+          "energy": 0.634,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 583,
+          "title": "WAR (If It Feels Good, Do It!)",
+          "artist": "DJ's of Mass Destruction",
+          "genre": "Hip-Hop",
+          "tempo": 180.0,
+          "energy": 0.513,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 569,
+          "title": "Shadow Law",
+          "artist": "Cinwaves",
+          "genre": "Rock",
+          "tempo": 137.0,
+          "energy": 0.694,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 255,
+          "title": "We Want to be Old",
+          "artist": "Bird Names",
+          "genre": "Rock",
+          "tempo": 122.8,
+          "energy": 0.436,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 3,
+          "title": "Electric Ave",
+          "artist": "AWOL",
+          "genre": "Hip-Hop",
+          "tempo": 127.0,
+          "energy": 0.817,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 5,
+          "title": "This World",
+          "artist": "AWOL",
+          "genre": "Hip-Hop",
+          "tempo": 100.3,
+          "energy": 0.701,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 418,
+          "title": "Track1",
+          "artist": "Brian Joseph Davis",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 140,
+          "title": "Queen Of The Wires",
+          "artist": "Alec K. Redfearn & the Eyesores",
+          "genre": "Folk",
+          "tempo": 108.0,
+          "energy": 0.266,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 479,
+          "title": "White Shoulders",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 360,
+          "title": "Radio Jazz with Mr Rhodes",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "consensus": "B",
+      "votes_for_winner": 2,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "A",
+        "hanwen": "B",
+        "lilian": "B"
+      }
+    },
+    {
+      "pair_id": 34,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 517,
+          "title": "Narcotic Effect On Bees",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 324,
+          "title": "I just don't know",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 112.0,
+          "energy": 0.343,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 717,
+          "title": "Tyranny",
+          "artist": "Fursaxa",
+          "genre": "Folk",
+          "tempo": 124.1,
+          "energy": 0.126,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 589,
+          "title": "A Time To Bear Arms",
+          "artist": "Death Sentence: Panda!",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 654,
+          "title": "Side Three - Part Four",
+          "artist": "Ethan Persoff",
+          "genre": "Electronic",
+          "tempo": 129.6,
+          "energy": 0.697,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 445,
+          "title": "Lyftoff",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 30,
+          "title": "Too Happy",
+          "artist": "Nicky Cook",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 195,
+          "title": "I Remember You",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 50.2,
+          "energy": 0.185,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 659,
+          "title": "side 1 - complaint (knock on wood)",
+          "artist": "Ethan Persoff",
+          "genre": "Electronic",
+          "tempo": 120.1,
+          "energy": 0.215,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 185,
+          "title": "Want Me",
+          "artist": "Ariel Pink's Haunted Graffiti",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 434,
+          "title": "1988",
+          "artist": "Brian Joseph Davis",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "consensus": "B",
+      "votes_for_winner": 3,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "B",
+        "hanwen": "B",
+        "lilian": "B"
+      }
+    },
+    {
+      "pair_id": 35,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 332,
+          "title": "39th floor Club",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 101.6,
+          "energy": 0.591,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 623,
+          "title": "The Cup Bearer (Jony Mede)",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 106.5,
+          "energy": 0.058,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 722,
+          "title": "Looking For A kiss",
+          "artist": "Fuzz Unlimited",
+          "genre": "Rock",
+          "tempo": 137.3,
+          "energy": 0.834,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 649,
+          "title": "Side Two - Bean Bag",
+          "artist": "Ethan Persoff",
+          "genre": "Electronic",
+          "tempo": 159.6,
+          "energy": 0.558,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 322,
+          "title": "Shopping Bag",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 143.5,
+          "energy": 0.183,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 321,
+          "title": "Heart Attack",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 147.5,
+          "energy": 0.272,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 252,
+          "title": "It's Becoming a Stranger",
+          "artist": "Bird Names",
+          "genre": "Rock",
+          "tempo": 111.2,
+          "energy": 0.251,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 704,
+          "title": "Mano De Dios",
+          "artist": "F\u00f3sforo",
+          "genre": "International",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 717,
+          "title": "Tyranny",
+          "artist": "Fursaxa",
+          "genre": "Folk",
+          "tempo": 124.1,
+          "energy": 0.126,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 167,
+          "title": "Track 12",
+          "artist": "Area C",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "consensus": "B",
+      "votes_for_winner": 2,
+      "total_votes": 2,
+      "raw_votes": {
+        "neeraja": null,
+        "hanwen": "B",
+        "lilian": "B"
+      }
+    },
+    {
+      "pair_id": 36,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 209,
+          "title": "Safe Harbor",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 96.1,
+          "energy": 0.575,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 684,
+          "title": "Late Night Show",
+          "artist": "Fanatic",
+          "genre": "Hip-Hop",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 483,
+          "title": "Magnolias Milan",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 285,
+          "title": "Earth aint Enuff",
+          "artist": "Black Pus",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 167,
+          "title": "Track 12",
+          "artist": "Area C",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 285,
+          "title": "Earth aint Enuff",
+          "artist": "Black Pus",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 534,
+          "title": "I Can See You",
+          "artist": "Charles Manson",
+          "genre": "Folk",
+          "tempo": 79.8,
+          "energy": 0.144,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 168,
+          "title": "Track 13",
+          "artist": "Area C",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 420,
+          "title": "Track2",
+          "artist": "Brian Joseph Davis",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 333,
+          "title": "Blah intro",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 92.5,
+          "energy": 0.114,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 334,
+          "title": "Blahpunk",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 149.2,
+          "energy": 0.642,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 496,
+          "title": "Winged Ear",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "consensus": "A",
+      "votes_for_winner": 2,
+      "total_votes": 2,
+      "raw_votes": {
+        "neeraja": null,
+        "hanwen": "A",
+        "lilian": "A"
+      }
+    },
+    {
+      "pair_id": 37,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 305,
+          "title": "Disney on Ice",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 108.1,
+          "energy": 0.079,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 182,
+          "title": "Jules Lost His Jewels",
+          "artist": "Ariel Pink's Haunted Graffiti",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 137,
+          "title": "Side A",
+          "artist": "Airway",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 360,
+          "title": "Radio Jazz with Mr Rhodes",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 195,
+          "title": "I Remember You",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 50.2,
+          "energy": 0.185,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 669,
+          "title": "Dream",
+          "artist": "Fanatic",
+          "genre": "Hip-Hop",
+          "tempo": 168.4,
+          "energy": 0.535,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 150,
+          "title": "... listening to the sunshine burn the grass",
+          "artist": "Andy Hayleck",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 208,
+          "title": "Safe Harbor",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 110.6,
+          "energy": 0.363,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 155,
+          "title": "Maps of the Stars Homes",
+          "artist": "Arc and Sender",
+          "genre": "Rock",
+          "tempo": 91.9,
+          "energy": 0.912,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 436,
+          "title": "voice over",
+          "artist": "Brian Joseph Davis",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "consensus": "A",
+      "votes_for_winner": 2,
+      "total_votes": 2,
+      "raw_votes": {
+        "neeraja": null,
+        "hanwen": "A",
+        "lilian": "A"
+      }
+    },
+    {
+      "pair_id": 39,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 350,
+          "title": "Gotta Go",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 99.4,
+          "energy": 0.364,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 603,
+          "title": "Lover of Nightmares",
+          "artist": "Dora Bleu",
+          "genre": "Folk",
+          "tempo": 114.4,
+          "energy": 0.066,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 171,
+          "title": "Marching as Technitions",
+          "artist": "Argumentix",
+          "genre": "Rock",
+          "tempo": 125.6,
+          "energy": 0.213,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 717,
+          "title": "Tyranny",
+          "artist": "Fursaxa",
+          "genre": "Folk",
+          "tempo": 124.1,
+          "energy": 0.126,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 483,
+          "title": "Magnolias Milan",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 322,
+          "title": "Shopping Bag",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 143.5,
+          "energy": 0.183,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 545,
+          "title": "Interpretations",
+          "artist": "Charles Manson",
+          "genre": "Folk",
+          "tempo": 87.1,
+          "energy": 0.219,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 325,
+          "title": "Liquidizing Chickens",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 114.8,
+          "energy": 0.129,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 319,
+          "title": "Complete Shakespeare",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 133.9,
+          "energy": 0.06,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 364,
+          "title": "Sunspot activity",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 109.3,
+          "energy": 0.156,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 634,
+          "title": "LGNO",
+          "artist": "El Jesus De Magico",
+          "genre": "Rock",
+          "tempo": 170.1,
+          "energy": 0.927,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "consensus": "A",
+      "votes_for_winner": 2,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "A",
+        "hanwen": "A",
+        "lilian": "B"
+      }
+    },
+    {
+      "pair_id": 40,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 665,
+          "title": "Disneyland (edit)",
+          "artist": "Ethan Persoff",
+          "genre": "Electronic",
+          "tempo": 109.9,
+          "energy": 0.662,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 719,
+          "title": "Florida Tags",
+          "artist": "Fuzz Unlimited",
+          "genre": "Rock",
+          "tempo": 123.5,
+          "energy": 0.791,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 708,
+          "title": "Desconocido",
+          "artist": "F\u00f3sforo",
+          "genre": "International",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 418,
+          "title": "Track1",
+          "artist": "Brian Joseph Davis",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 463,
+          "title": "I'll Be Blue",
+          "artist": "Cantonement Jazz Band",
+          "genre": "Unknown",
+          "tempo": 115.4,
+          "energy": 0.309,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 276,
+          "title": "The Devilhellipers",
+          "artist": "Black Pus",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 46,
+          "title": "Yosemite",
+          "artist": "Nicky Cook",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 159,
+          "title": "Track 04",
+          "artist": "Area C",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 504,
+          "title": "Cry",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 696,
+          "title": "Korea",
+          "artist": "Foot Village",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 420,
+          "title": "Track2",
+          "artist": "Brian Joseph Davis",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 590,
+          "title": "Stuck",
+          "artist": "Delta Dreambox",
+          "genre": "Jazz",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "consensus": "A",
+      "votes_for_winner": 3,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "A",
+        "hanwen": "A",
+        "lilian": "A"
+      }
+    },
+    {
+      "pair_id": 41,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 673,
+          "title": "Rise",
+          "artist": "Fanatic",
+          "genre": "Hip-Hop",
+          "tempo": 169.6,
+          "energy": 0.436,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 719,
+          "title": "Florida Tags",
+          "artist": "Fuzz Unlimited",
+          "genre": "Rock",
+          "tempo": 123.5,
+          "energy": 0.791,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 360,
+          "title": "Radio Jazz with Mr Rhodes",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 433,
+          "title": "1987",
+          "artist": "Brian Joseph Davis",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 542,
+          "title": "Self Is Eternal (What Our World Will Be)",
+          "artist": "Charles Manson",
+          "genre": "Folk",
+          "tempo": 82.4,
+          "energy": 0.256,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 371,
+          "title": "vermalderhide",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 310,
+          "title": "Going Down to Soho",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 142.6,
+          "energy": 0.425,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 708,
+          "title": "Desconocido",
+          "artist": "F\u00f3sforo",
+          "genre": "International",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 417,
+          "title": "Eula",
+          "artist": "Brian Joseph Davis",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "consensus": "B",
+      "votes_for_winner": 2,
+      "total_votes": 2,
+      "raw_votes": {
+        "neeraja": null,
+        "hanwen": "B",
+        "lilian": "B"
+      }
+    },
+    {
+      "pair_id": 42,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 339,
+          "title": "Chimpanzees disease",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 126.3,
+          "energy": 0.098,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 501,
+          "title": "Utmost House",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 424,
+          "title": "The Ambient Honky",
+          "artist": "Brian Joseph Davis",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 684,
+          "title": "Late Night Show",
+          "artist": "Fanatic",
+          "genre": "Hip-Hop",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 504,
+          "title": "Cry",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 590,
+          "title": "Stuck",
+          "artist": "Delta Dreambox",
+          "genre": "Jazz",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 468,
+          "title": "Vast and Sad (KPSU)",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 465,
+          "title": "Thinking Of You",
+          "artist": "Cantonement Jazz Band",
+          "genre": "Unknown",
+          "tempo": 122.5,
+          "energy": 0.52,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 276,
+          "title": "The Devilhellipers",
+          "artist": "Black Pus",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 147,
+          "title": "Repetitive Motion Sickness",
+          "artist": "Amoebic Ensemble",
+          "genre": "Jazz",
+          "tempo": 120.2,
+          "energy": 0.866,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 48,
+          "title": "Light of Light",
+          "artist": "Nicky Cook",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 714,
+          "title": "Circle Moon",
+          "artist": "Fursaxa",
+          "genre": "Folk",
+          "tempo": 45.5,
+          "energy": 0.072,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "consensus": "B",
+      "votes_for_winner": 3,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "B",
+        "hanwen": "B",
+        "lilian": "B"
+      }
+    },
+    {
+      "pair_id": 44,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 587,
+          "title": "A+ Cannibal",
+          "artist": "Death Sentence: Panda!",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 717,
+          "title": "Tyranny",
+          "artist": "Fursaxa",
+          "genre": "Folk",
+          "tempo": 124.1,
+          "energy": 0.126,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 654,
+          "title": "Side Three - Part Four",
+          "artist": "Ethan Persoff",
+          "genre": "Electronic",
+          "tempo": 129.6,
+          "energy": 0.697,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 466,
+          "title": "Asterism",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 167,
+          "title": "Track 12",
+          "artist": "Area C",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 440,
+          "title": "The Beats",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 254,
+          "title": "Masters Of Enjoyment",
+          "artist": "Bird Names",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 237,
+          "title": "Garbage and (Garbage and Fire)",
+          "artist": "Barnacled",
+          "genre": "Jazz",
+          "tempo": 131.0,
+          "energy": 0.541,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 476,
+          "title": "Leftward Glance",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 396,
+          "title": "Juggernaut Soliloquy",
+          "artist": "Borful Tang",
+          "genre": "Electronic",
+          "tempo": 94.0,
+          "energy": 0.628,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 704,
+          "title": "Mano De Dios",
+          "artist": "F\u00f3sforo",
+          "genre": "International",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "consensus": "B",
+      "votes_for_winner": 2,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "B",
+        "hanwen": "A",
+        "lilian": "B"
+      }
+    },
+    {
+      "pair_id": 45,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 661,
+          "title": "side 3 - hidden speaking powers!",
+          "artist": "Ethan Persoff",
+          "genre": "Electronic",
+          "tempo": 114.8,
+          "energy": 0.302,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 150,
+          "title": "... listening to the sunshine burn the grass",
+          "artist": "Andy Hayleck",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 719,
+          "title": "Florida Tags",
+          "artist": "Fuzz Unlimited",
+          "genre": "Rock",
+          "tempo": 123.5,
+          "energy": 0.791,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 360,
+          "title": "Radio Jazz with Mr Rhodes",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 654,
+          "title": "Side Three - Part Four",
+          "artist": "Ethan Persoff",
+          "genre": "Electronic",
+          "tempo": 129.6,
+          "energy": 0.697,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 717,
+          "title": "Tyranny",
+          "artist": "Fursaxa",
+          "genre": "Folk",
+          "tempo": 124.1,
+          "energy": 0.126,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 475,
+          "title": "Buddy Alan In Reno",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 634,
+          "title": "LGNO",
+          "artist": "El Jesus De Magico",
+          "genre": "Rock",
+          "tempo": 170.1,
+          "energy": 0.927,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 562,
+          "title": "Ex Lucky",
+          "artist": "Cinwaves",
+          "genre": "Rock",
+          "tempo": 130.3,
+          "energy": 0.078,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 531,
+          "title": "Night Air, Portland",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 130.2,
+          "energy": 0.385,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 310,
+          "title": "Going Down to Soho",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 142.6,
+          "energy": 0.425,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 205,
+          "title": "What Crow Saw",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 103.4,
+          "energy": 0.134,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "consensus": "B",
+      "votes_for_winner": 2,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "B",
+        "hanwen": "B",
+        "lilian": "A"
+      }
+    },
+    {
+      "pair_id": 46,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 623,
+          "title": "The Cup Bearer (Jony Mede)",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 106.5,
+          "energy": 0.058,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 276,
+          "title": "The Devilhellipers",
+          "artist": "Black Pus",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 417,
+          "title": "Eula",
+          "artist": "Brian Joseph Davis",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 418,
+          "title": "Track1",
+          "artist": "Brian Joseph Davis",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 320,
+          "title": "The Natives are Restless",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 126.7,
+          "energy": 0.117,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 446,
+          "title": "Media Library",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 526,
+          "title": "Do Not Talk",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 156.6,
+          "energy": 0.302,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 419,
+          "title": "The Franklin Mint Job",
+          "artist": "Brian Joseph Davis",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 509,
+          "title": "A Wren's Heart",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 248,
+          "title": "Ghosts",
+          "artist": "Bird Names",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 468,
+          "title": "Vast and Sad (KPSU)",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        }
+      ],
+      "consensus": "B",
+      "votes_for_winner": 3,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "B",
+        "hanwen": "B",
+        "lilian": "B"
+      }
+    },
+    {
+      "pair_id": 47,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 729,
+          "title": "Track 03",
+          "artist": "Gang Wizard",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 152,
+          "title": "Untitled 11",
+          "artist": "Animal Writes",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 504,
+          "title": "Cry",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 719,
+          "title": "Florida Tags",
+          "artist": "Fuzz Unlimited",
+          "genre": "Rock",
+          "tempo": 123.5,
+          "energy": 0.791,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 479,
+          "title": "White Shoulders",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 167,
+          "title": "Track 12",
+          "artist": "Area C",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 458,
+          "title": "Hunt Like Devil 4",
+          "artist": "CAVE",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 162,
+          "title": "Track 07",
+          "artist": "Area C",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 200,
+          "title": "Baby Come Home",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 200.4,
+          "energy": 0.295,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 213,
+          "title": "Boute",
+          "artist": "Au",
+          "genre": "Pop",
+          "tempo": 142.5,
+          "energy": 0.341,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 654,
+          "title": "Side Three - Part Four",
+          "artist": "Ethan Persoff",
+          "genre": "Electronic",
+          "tempo": 129.6,
+          "energy": 0.697,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 503,
+          "title": "Carted Off",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        }
+      ],
+      "consensus": "B",
+      "votes_for_winner": 3,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "B",
+        "hanwen": "B",
+        "lilian": "B"
+      }
+    },
+    {
+      "pair_id": 48,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 429,
+          "title": "1963/2005",
+          "artist": "Brian Joseph Davis",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 384,
+          "title": "Baja Jones",
+          "artist": "Blanketship",
+          "genre": "Electronic",
+          "tempo": 91.1,
+          "energy": 0.701,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 350,
+          "title": "Gotta Go",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 99.4,
+          "energy": 0.364,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 165,
+          "title": "Track 10",
+          "artist": "Area C",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 450,
+          "title": "Excuses",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 328,
+          "title": "Central Park",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 114.9,
+          "energy": 0.177,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 542,
+          "title": "Self Is Eternal (What Our World Will Be)",
+          "artist": "Charles Manson",
+          "genre": "Folk",
+          "tempo": 82.4,
+          "energy": 0.256,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 719,
+          "title": "Florida Tags",
+          "artist": "Fuzz Unlimited",
+          "genre": "Rock",
+          "tempo": 123.5,
+          "energy": 0.791,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 506,
+          "title": "Moths!!!",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 466,
+          "title": "Asterism",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 590,
+          "title": "Stuck",
+          "artist": "Delta Dreambox",
+          "genre": "Jazz",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "consensus": "B",
+      "votes_for_winner": 3,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "B",
+        "hanwen": "B",
+        "lilian": "B"
+      }
+    },
+    {
+      "pair_id": 49,
+      "winner": [
+        {
+          "step": 0,
+          "fma_track_id": 533,
+          "title": "Mango Tree",
+          "artist": "Chandeliers",
+          "genre": "Electronic",
+          "tempo": 105.9,
+          "energy": 0.54,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 719,
+          "title": "Florida Tags",
+          "artist": "Fuzz Unlimited",
+          "genre": "Rock",
+          "tempo": 123.5,
+          "energy": 0.791,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 360,
+          "title": "Radio Jazz with Mr Rhodes",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 167,
+          "title": "Track 12",
+          "artist": "Area C",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 479,
+          "title": "White Shoulders",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 449,
+          "title": "Burlington Goat Factory",
+          "artist": "Bronhard/Going/Public",
+          "genre": "Unknown",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        }
+      ],
+      "loser": [
+        {
+          "step": 0,
+          "fma_track_id": 400,
+          "title": "Electronic Interlude VI",
+          "artist": "Borful Tang",
+          "genre": "Electronic",
+          "tempo": 64.9,
+          "energy": 0.091,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 587,
+          "title": "A+ Cannibal",
+          "artist": "Death Sentence: Panda!",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 586,
+          "title": "War Is What They Got (Epilogue)",
+          "artist": "DJ's of Mass Destruction",
+          "genre": "Hip-Hop",
+          "tempo": 92.1,
+          "energy": 0.543,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 692,
+          "title": "Part 4",
+          "artist": "Flying Luttenbachers",
+          "genre": "Rock",
+          "tempo": 113.3,
+          "energy": 0.911,
+          "key": "C maj",
+          "transition_type": "beatmatch"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 421,
+          "title": "Il bouno, il bruto, il skronko",
+          "artist": "Brian Joseph Davis",
+          "genre": "Experimental",
+          "tempo": 120.0,
+          "energy": 0.5,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 321,
+          "title": "Heart Attack",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 147.5,
+          "energy": 0.272,
+          "key": "C maj",
+          "transition_type": "fade"
+        }
+      ],
+      "consensus": "B",
+      "votes_for_winner": 2,
+      "total_votes": 3,
+      "raw_votes": {
+        "neeraja": "B",
+        "hanwen": "A",
+        "lilian": "B"
+      }
+    }
+  ]
+}

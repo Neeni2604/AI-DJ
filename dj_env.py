@@ -148,6 +148,26 @@ def transition_reward(transition: int, bpm_delta: float, energy_delta: float) ->
 # Database loader
 # ---------------------------------------------------------------------------
 
+_ECHONEST_DEFAULTS = {"tempo": 120.0, "energy": 0.5, "danceability": 0.5}
+
+
+def _has_real_echonest_features(echonest: dict) -> bool:
+    """Return False if all key echonest values are at their fallback defaults.
+
+    Tracks that were never successfully analysed by Echonest end up with
+    tempo=120, energy=0.5, danceability=0.5 — the values returned by
+    _extract_echonest_features when parsing fails.  These tracks act as
+    'honeypots': the proxy reward scores them perfectly because their
+    default key (C major) is harmonically compatible with everything and
+    their default BPM matches most other tracks.  Excluding them makes
+    the track pool meaningful.
+    """
+    return not all(
+        abs(echonest.get(k, v) - v) < 1e-6
+        for k, v in _ECHONEST_DEFAULTS.items()
+    )
+
+
 def load_tracks_from_db(
     db_path: str | Path,
     subset_name: str | None = None,
@@ -158,10 +178,15 @@ def load_tracks_from_db(
     join fma_tracks with fma_track_features, and extract audio features
     from the echonest and librosa JSON blobs.
 
+    Only tracks with real (non-default) echonest features are returned.
+    Tracks whose echonest data was never ingested end up with all-default
+    values and are silently excluded to avoid polluting the track pool.
+
     Args:
         db_path:     Path to the .db file produced by initialize_database()
         subset_name: Optional FMA subset filter ('small', 'medium', etc.)
-        limit:       Optional cap on number of tracks loaded
+        limit:       Optional cap on number of tracks loaded (applied after
+                     quality filtering)
 
     Returns:
         List of track dicts with fields:
@@ -172,6 +197,8 @@ def load_tracks_from_db(
     conn = sqlite3.connect(Path(db_path))
     conn.row_factory = sqlite3.Row
 
+    # Require echonest_json — tracks without it fall back to all-default
+    # feature values and are excluded by the quality filter below.
     query = """
         SELECT
             t.fma_track_id,
@@ -183,7 +210,7 @@ def load_tracks_from_db(
             f.features_json
         FROM fma_tracks t
         LEFT JOIN fma_track_features f ON t.fma_track_id = f.fma_track_id
-        WHERE (f.echonest_json IS NOT NULL OR f.features_json IS NOT NULL)
+        WHERE f.echonest_json IS NOT NULL
     """
     params: list = []
 
@@ -191,16 +218,15 @@ def load_tracks_from_db(
         query += " AND t.subset_name = ?"
         params.append(subset_name)
 
-    if limit:
-        query += f" LIMIT {int(limit)}"
-
     rows = conn.execute(query, params).fetchall()
     conn.close()
 
     tracks = []
     for row in rows:
         echonest = _extract_echonest_features(row["echonest_json"])
-        librosa  = _extract_librosa_features(row["features_json"])
+        if not _has_real_echonest_features(echonest):
+            continue  # skip honeypot tracks with all-default features
+        librosa = _extract_librosa_features(row["features_json"])
         tracks.append({
             "fma_track_id":  row["fma_track_id"],
             "title":         row["title"] or f"Track {row['fma_track_id']}",
@@ -210,6 +236,8 @@ def load_tracks_from_db(
             **echonest,
             **librosa,
         })
+        if limit and len(tracks) >= limit:
+            break
 
     return tracks
 
@@ -266,12 +294,14 @@ class DJEnv(gym.Env):
         limit: int | None = None,
         episode_length: int = 10,
         repeat_track_penalty: float = 0.25,
+        prevent_revisits: bool = True,
         render_mode: str | None = None,
     ):
         super().__init__()
 
         self.episode_length = episode_length
         self.repeat_track_penalty = repeat_track_penalty
+        self.prevent_revisits = prevent_revisits
         self.render_mode    = render_mode
 
         self.tracks = load_tracks_from_db(db_path, subset_name=subset_name, limit=limit)
@@ -351,6 +381,14 @@ class DJEnv(gym.Env):
     def step(self, action):
         next_idx, transition_idx = self._decode_action(action)
 
+        # Hard no-revisit: redirect to a random unvisited track rather than
+        # letting the policy exploit high-scoring tracks it has already played.
+        if self.prevent_revisits and next_idx in set(self._history):
+            visited = set(self._history)
+            unvisited = [i for i in range(self.n_tracks) if i not in visited]
+            if unvisited:
+                next_idx = int(self.np_random.choice(unvisited))
+
         curr = self.tracks[self._current_idx]
         nxt  = self.tracks[next_idx]
 
@@ -362,6 +400,8 @@ class DJEnv(gym.Env):
         energy_flow  = float(np.clip(energy_delta * 2.0, -1.0, 1.0)) * 0.5 + 0.5
 
         base_reward = h_score * 0.4 + b_score * 0.3 + t_score * 0.2 + energy_flow * 0.1
+        # Soft penalty still applies for choosing the immediately preceding track
+        # (catches self-loops when prevent_revisits=False or at episode start).
         repeat_penalty = self.repeat_track_penalty if next_idx == self._current_idx else 0.0
         reward = float(np.clip(base_reward - repeat_penalty, -1.0, 1.0))
 
