@@ -1,0 +1,315 @@
+{
+  "pairs_metadata": {
+    "generated_at": "2026-04-13T12:18:18.282598",
+    "db_path": "fma_db\\data\\fma.db",
+    "track_limit": 500,
+    "sequence_length": 5,
+    "n_pairs": 50,
+    "source_a": "ppo:ppo_ai_dj.zip",
+    "source_b": "random",
+    "seed": 42
+  },
+  "annotator_id": "lilian",
+  "annotations": [
+    {
+      "pair_id": 0,
+      "preference": "A",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:01:48.218251"
+    },
+    {
+      "pair_id": 1,
+      "preference": "A",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:01:48.887453"
+    },
+    {
+      "pair_id": 2,
+      "preference": "B",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:01:49.923026"
+    },
+    {
+      "pair_id": 3,
+      "preference": "B",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:01:50.506740"
+    },
+    {
+      "pair_id": 4,
+      "preference": "A",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:01:51.190903"
+    },
+    {
+      "pair_id": 5,
+      "preference": "A",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:01:52.421097"
+    },
+    {
+      "pair_id": 6,
+      "preference": "B",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:01:52.938322"
+    },
+    {
+      "pair_id": 7,
+      "preference": "A",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:01:53.671751"
+    },
+    {
+      "pair_id": 8,
+      "preference": "B",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:01:54.598663"
+    },
+    {
+      "pair_id": 9,
+      "preference": "B",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:01:55.557922"
+    },
+    {
+      "pair_id": 10,
+      "preference": "A",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:01:56.168012"
+    },
+    {
+      "pair_id": 11,
+      "preference": "A",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:01:56.989596"
+    },
+    {
+      "pair_id": 12,
+      "preference": "B",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:01:57.552175"
+    },
+    {
+      "pair_id": 13,
+      "preference": "A",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:01:58.182384"
+    },
+    {
+      "pair_id": 14,
+      "preference": "B",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:01:58.755780"
+    },
+    {
+      "pair_id": 15,
+      "preference": "A",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:00.439831"
+    },
+    {
+      "pair_id": 16,
+      "preference": "B",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:01.055236"
+    },
+    {
+      "pair_id": 17,
+      "preference": "A",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:01.605991"
+    },
+    {
+      "pair_id": 18,
+      "preference": "B",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:02.461310"
+    },
+    {
+      "pair_id": 19,
+      "preference": "A",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:03.111328"
+    },
+    {
+      "pair_id": 20,
+      "preference": "A",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:03.802296"
+    },
+    {
+      "pair_id": 21,
+      "preference": "B",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:04.722468"
+    },
+    {
+      "pair_id": 22,
+      "preference": "B",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:05.255370"
+    },
+    {
+      "pair_id": 23,
+      "preference": "B",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:06.212353"
+    },
+    {
+      "pair_id": 24,
+      "preference": "B",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:14.430135"
+    },
+    {
+      "pair_id": 25,
+      "preference": "B",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:15.299894"
+    },
+    {
+      "pair_id": 26,
+      "preference": "A",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:16.198387"
+    },
+    {
+      "pair_id": 27,
+      "preference": "B",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:17.144870"
+    },
+    {
+      "pair_id": 28,
+      "preference": "B",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:17.925038"
+    },
+    {
+      "pair_id": 29,
+      "preference": "B",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:18.474339"
+    },
+    {
+      "pair_id": 30,
+      "preference": "B",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:20.002431"
+    },
+    {
+      "pair_id": 31,
+      "preference": "B",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:21.000535"
+    },
+    {
+      "pair_id": 32,
+      "preference": "B",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:21.642176"
+    },
+    {
+      "pair_id": 33,
+      "preference": "A",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:22.191560"
+    },
+    {
+      "pair_id": 34,
+      "preference": "A",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:22.888631"
+    },
+    {
+      "pair_id": 35,
+      "preference": "B",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:23.656100"
+    },
+    {
+      "pair_id": 36,
+      "preference": "A",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:24.209997"
+    },
+    {
+      "pair_id": 37,
+      "preference": "B",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:24.916356"
+    },
+    {
+      "pair_id": 38,
+      "preference": "B",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:25.624750"
+    },
+    {
+      "pair_id": 39,
+      "preference": "B",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:26.209460"
+    },
+    {
+      "pair_id": 40,
+      "preference": "A",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:27.011249"
+    },
+    {
+      "pair_id": 41,
+      "preference": "A",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:27.616505"
+    },
+    {
+      "pair_id": 42,
+      "preference": "A",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:28.285527"
+    },
+    {
+      "pair_id": 43,
+      "preference": "B",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:28.829450"
+    },
+    {
+      "pair_id": 44,
+      "preference": "A",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:29.382255"
+    },
+    {
+      "pair_id": 45,
+      "preference": "B",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:30.058383"
+    },
+    {
+      "pair_id": 46,
+      "preference": "A",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:30.750097"
+    },
+    {
+      "pair_id": 47,
+      "preference": "A",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:31.312528"
+    },
+    {
+      "pair_id": 48,
+      "preference": "A",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:31.875243"
+    },
+    {
+      "pair_id": 49,
+      "preference": "A",
+      "annotator_id": "lilian",
+      "timestamp": "2026-04-13T17:02:32.416495"
+    }
+  ]
+}
