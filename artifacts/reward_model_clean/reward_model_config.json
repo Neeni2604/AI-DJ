@@ -1,0 +1,11 @@
+{
+  "input_dim": 5,
+  "hidden_sizes": [],
+  "dropout": 0.1,
+  "max_steps": 6,
+  "n_features": 5,
+  "best_epoch": 411,
+  "best_val_loss": 0.6430536508560181,
+  "final_model_path": "artifacts\\reward_model_clean\\reward_model.pt",
+  "best_model_path": "artifacts\\reward_model_clean\\reward_model_best.pt"
+}

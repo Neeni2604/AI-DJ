@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-04-13T00:58:35.559480",
+    "generated_at": "2026-04-15T00:18:54.196894",
     "db_path": "fma_db\\data\\fma.db",
     "track_limit": 500,
     "sequence_length": 5,
@@ -28,56 +28,56 @@
         },
         {
           "step": 1,
-          "fma_track_id": 1149,
-          "title": "Sea Monkeys",
-          "artist": "Monoshock",
-          "genre": "Rock",
-          "tempo": 119.4,
-          "energy": 0.476,
+          "fma_track_id": 603,
+          "title": "Lover of Nightmares",
+          "artist": "Dora Bleu",
+          "genre": "Folk",
+          "tempo": 114.4,
+          "energy": 0.066,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 2,
-          "fma_track_id": 627,
-          "title": "Black Bird",
+          "fma_track_id": 206,
+          "title": "Bella Crane",
           "artist": "Ed Askew",
           "genre": "Folk",
-          "tempo": 116.0,
-          "energy": 0.365,
+          "tempo": 119.1,
+          "energy": 0.21,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 3,
-          "fma_track_id": 1157,
-          "title": "Bombshell",
-          "artist": "Mors Ontologica",
+          "fma_track_id": 362,
+          "title": "Starsigns",
+          "artist": "Blah Blah Blah",
           "genre": "Rock",
-          "tempo": 111.5,
-          "energy": 0.928,
+          "tempo": 107.0,
+          "energy": 0.318,
           "key": "C maj",
-          "transition_type": "beatmatch"
+          "transition_type": "cut"
         },
         {
           "step": 4,
-          "fma_track_id": 343,
-          "title": "Cybernetics",
-          "artist": "Blah Blah Blah",
-          "genre": "Rock",
-          "tempo": 124.6,
-          "energy": 0.182,
+          "fma_track_id": 465,
+          "title": "Thinking Of You",
+          "artist": "Cantonement Jazz Band",
+          "genre": "Unknown",
+          "tempo": 122.5,
+          "energy": 0.52,
           "key": "C maj",
-          "transition_type": "beatmatch"
+          "transition_type": "cut"
         },
         {
           "step": 5,
-          "fma_track_id": 1179,
-          "title": "Shoes",
-          "artist": "Mors Ontologica",
-          "genre": "Rock",
-          "tempo": 132.0,
-          "energy": 0.848,
+          "fma_track_id": 463,
+          "title": "I'll Be Blue",
+          "artist": "Cantonement Jazz Band",
+          "genre": "Unknown",
+          "tempo": 115.4,
+          "energy": 0.309,
           "key": "C maj",
           "transition_type": "cut"
         }
@@ -96,12 +96,12 @@
         },
         {
           "step": 1,
-          "fma_track_id": 618,
-          "title": "Smoke",
-          "artist": "Ed Askew",
-          "genre": "Folk",
-          "tempo": 96.0,
-          "energy": 0.328,
+          "fma_track_id": 692,
+          "title": "Part 4",
+          "artist": "Flying Luttenbachers",
+          "genre": "Rock",
+          "tempo": 113.3,
+          "energy": 0.911,
           "key": "C maj",
           "transition_type": "cut"
         },
@@ -129,25 +129,25 @@
         },
         {
           "step": 4,
-          "fma_track_id": 321,
-          "title": "Heart Attack",
-          "artist": "Blah Blah Blah",
-          "genre": "Rock",
-          "tempo": 147.5,
-          "energy": 0.272,
+          "fma_track_id": 403,
+          "title": "Roach",
+          "artist": "Borful Tang",
+          "genre": "Electronic",
+          "tempo": 115.8,
+          "energy": 0.863,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 5,
-          "fma_track_id": 879,
-          "title": "Cancer Trk 5",
-          "artist": "Illusion of Safety",
-          "genre": "Electronic",
-          "tempo": 176.0,
-          "energy": 0.691,
+          "fma_track_id": 722,
+          "title": "Looking For A kiss",
+          "artist": "Fuzz Unlimited",
+          "genre": "Rock",
+          "tempo": 137.3,
+          "energy": 0.834,
           "key": "C maj",
-          "transition_type": "beatmatch"
+          "transition_type": "cut"
         }
       ]
     },
@@ -158,67 +158,67 @@
       "sequence_a": [
         {
           "step": 0,
-          "fma_track_id": 461,
-          "title": "Bessemer",
-          "artist": "Cantonement Jazz Band",
-          "genre": "Unknown",
-          "tempo": 107.2,
-          "energy": 0.32,
+          "fma_track_id": 350,
+          "title": "Gotta Go",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 99.4,
+          "energy": 0.364,
           "key": "C maj",
           "transition_type": null
         },
         {
           "step": 1,
-          "fma_track_id": 147,
-          "title": "Repetitive Motion Sickness",
-          "artist": "Amoebic Ensemble",
-          "genre": "Jazz",
-          "tempo": 120.2,
-          "energy": 0.866,
+          "fma_track_id": 1043,
+          "title": "I'm Shufflin'",
+          "artist": "Little Howlin' Wolf",
+          "genre": "Blues",
+          "tempo": 106.6,
+          "energy": 0.803,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 2,
-          "fma_track_id": 628,
-          "title": "Friday Night",
-          "artist": "Ed Askew",
-          "genre": "Folk",
-          "tempo": 96.1,
-          "energy": 0.286,
+          "fma_track_id": 463,
+          "title": "I'll Be Blue",
+          "artist": "Cantonement Jazz Band",
+          "genre": "Unknown",
+          "tempo": 115.4,
+          "energy": 0.309,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 3,
-          "fma_track_id": 331,
-          "title": "Weatherman",
-          "artist": "Blah Blah Blah",
+          "fma_track_id": 1119,
+          "title": "Steppin Fetchit Again",
+          "artist": "Mike Rep and the Quotas",
           "genre": "Rock",
-          "tempo": 85.5,
-          "energy": 0.255,
+          "tempo": 111.8,
+          "energy": 0.444,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 4,
-          "fma_track_id": 568,
-          "title": "Disconnect",
-          "artist": "Cinwaves",
+          "fma_track_id": 609,
+          "title": "The Psychic",
+          "artist": "Double Dagger",
           "genre": "Rock",
-          "tempo": 86.7,
-          "energy": 0.403,
+          "tempo": 121.8,
+          "energy": 0.98,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 5,
-          "fma_track_id": 1045,
-          "title": "Baltimore Raven",
-          "artist": "Little Howlin' Wolf",
-          "genre": "Blues",
-          "tempo": 110.6,
-          "energy": 0.374,
+          "fma_track_id": 325,
+          "title": "Liquidizing Chickens",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 114.8,
+          "energy": 0.129,
           "key": "C maj",
           "transition_type": "cut"
         }
@@ -226,17 +226,39 @@
       "sequence_b": [
         {
           "step": 0,
-          "fma_track_id": 172,
-          "title": "I Can't Stand You Up-right",
-          "artist": "Argumentix",
-          "genre": "Rock",
-          "tempo": 138.7,
-          "energy": 0.893,
+          "fma_track_id": 659,
+          "title": "side 1 - complaint (knock on wood)",
+          "artist": "Ethan Persoff",
+          "genre": "Electronic",
+          "tempo": 120.1,
+          "energy": 0.215,
           "key": "C maj",
           "transition_type": null
         },
         {
           "step": 1,
+          "fma_track_id": 1194,
+          "title": "Do Not Be Afraid",
+          "artist": "Mount Eerie",
+          "genre": "Folk",
+          "tempo": 109.3,
+          "energy": 0.233,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 859,
+          "title": "Take a Walk",
+          "artist": "I Am the Liquor",
+          "genre": "Rock",
+          "tempo": 101.5,
+          "energy": 0.897,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
           "fma_track_id": 206,
           "title": "Bella Crane",
           "artist": "Ed Askew",
@@ -247,46 +269,24 @@
           "transition_type": "cut"
         },
         {
-          "step": 2,
-          "fma_track_id": 1044,
-          "title": "Last Double Eagle",
-          "artist": "Little Howlin' Wolf",
-          "genre": "Blues",
-          "tempo": 124.4,
-          "energy": 0.643,
-          "key": "C maj",
-          "transition_type": "beatmatch"
-        },
-        {
-          "step": 3,
-          "fma_track_id": 627,
-          "title": "Black Bird",
-          "artist": "Ed Askew",
-          "genre": "Folk",
-          "tempo": 116.0,
-          "energy": 0.365,
+          "step": 4,
+          "fma_track_id": 1119,
+          "title": "Steppin Fetchit Again",
+          "artist": "Mike Rep and the Quotas",
+          "genre": "Rock",
+          "tempo": 111.8,
+          "energy": 0.444,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
-          "step": 4,
-          "fma_track_id": 654,
-          "title": "Side Three - Part Four",
-          "artist": "Ethan Persoff",
-          "genre": "Electronic",
-          "tempo": 129.6,
-          "energy": 0.697,
-          "key": "C maj",
-          "transition_type": "fade"
-        },
-        {
           "step": 5,
-          "fma_track_id": 839,
-          "title": "Just Like A Rose",
-          "artist": "Heroin UK",
+          "fma_track_id": 1131,
+          "title": "Bunny Bought a Spaceship",
+          "artist": "Mink Lungs",
           "genre": "Rock",
-          "tempo": 133.7,
-          "energy": 0.756,
+          "tempo": 112.3,
+          "energy": 0.272,
           "key": "C maj",
           "transition_type": "cut"
         }
@@ -299,23 +299,373 @@
       "sequence_a": [
         {
           "step": 0,
-          "fma_track_id": 341,
-          "title": "Count Dracula's castle",
-          "artist": "Blah Blah Blah",
+          "fma_track_id": 1179,
+          "title": "Shoes",
+          "artist": "Mors Ontologica",
           "genre": "Rock",
-          "tempo": 119.6,
-          "energy": 0.135,
+          "tempo": 132.0,
+          "energy": 0.848,
           "key": "C maj",
           "transition_type": null
         },
         {
           "step": 1,
-          "fma_track_id": 842,
-          "title": "Baby",
-          "artist": "Heroin UK",
+          "fma_track_id": 206,
+          "title": "Bella Crane",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 119.1,
+          "energy": 0.21,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 406,
+          "title": "ELI",
+          "artist": "Borful Tang",
+          "genre": "Electronic",
+          "tempo": 112.4,
+          "energy": 0.57,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 403,
+          "title": "Roach",
+          "artist": "Borful Tang",
+          "genre": "Electronic",
+          "tempo": 115.8,
+          "energy": 0.863,
+          "key": "C maj",
+          "transition_type": "fade"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 213,
+          "title": "Boute",
+          "artist": "Au",
+          "genre": "Pop",
+          "tempo": 142.5,
+          "energy": 0.341,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 147,
+          "title": "Repetitive Motion Sickness",
+          "artist": "Amoebic Ensemble",
+          "genre": "Jazz",
+          "tempo": 120.2,
+          "energy": 0.866,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "sequence_b": [
+        {
+          "step": 0,
+          "fma_track_id": 332,
+          "title": "39th floor Club",
+          "artist": "Blah Blah Blah",
           "genre": "Rock",
-          "tempo": 123.9,
-          "energy": 0.545,
+          "tempo": 101.6,
+          "energy": 0.591,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 362,
+          "title": "Starsigns",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 107.0,
+          "energy": 0.318,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 1131,
+          "title": "Bunny Bought a Spaceship",
+          "artist": "Mink Lungs",
+          "genre": "Rock",
+          "tempo": 112.3,
+          "energy": 0.272,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 659,
+          "title": "side 1 - complaint (knock on wood)",
+          "artist": "Ethan Persoff",
+          "genre": "Electronic",
+          "tempo": 120.1,
+          "energy": 0.215,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 463,
+          "title": "I'll Be Blue",
+          "artist": "Cantonement Jazz Band",
+          "genre": "Unknown",
+          "tempo": 115.4,
+          "energy": 0.309,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 692,
+          "title": "Part 4",
+          "artist": "Flying Luttenbachers",
+          "genre": "Rock",
+          "tempo": 113.3,
+          "energy": 0.911,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ]
+    },
+    {
+      "pair_id": 3,
+      "source_a": "ppo:ppo_rlhf.zip",
+      "source_b": "ppo:ppo_ai_dj.zip",
+      "sequence_a": [
+        {
+          "step": 0,
+          "fma_track_id": 327,
+          "title": "Hands Beckoning",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 110.0,
+          "energy": 0.304,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 659,
+          "title": "side 1 - complaint (knock on wood)",
+          "artist": "Ethan Persoff",
+          "genre": "Electronic",
+          "tempo": 120.1,
+          "energy": 0.215,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 145,
+          "title": "Amoebiasis",
+          "artist": "Amoebic Ensemble",
+          "genre": "Jazz",
+          "tempo": 120.8,
+          "energy": 0.488,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 609,
+          "title": "The Psychic",
+          "artist": "Double Dagger",
+          "genre": "Rock",
+          "tempo": 121.8,
+          "energy": 0.98,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 338,
+          "title": "Cabages in the sunset",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 118.8,
+          "energy": 0.044,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 465,
+          "title": "Thinking Of You",
+          "artist": "Cantonement Jazz Band",
+          "genre": "Unknown",
+          "tempo": 122.5,
+          "energy": 0.52,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "sequence_b": [
+        {
+          "step": 0,
+          "fma_track_id": 821,
+          "title": "Sir",
+          "artist": "Hecuba",
+          "genre": "Pop",
+          "tempo": 105.0,
+          "energy": 0.251,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 1167,
+          "title": "Lazy Suicide",
+          "artist": "Mors Ontologica",
+          "genre": "Rock",
+          "tempo": 109.5,
+          "energy": 0.808,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 603,
+          "title": "Lover of Nightmares",
+          "artist": "Dora Bleu",
+          "genre": "Folk",
+          "tempo": 114.4,
+          "energy": 0.066,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 147,
+          "title": "Repetitive Motion Sickness",
+          "artist": "Amoebic Ensemble",
+          "genre": "Jazz",
+          "tempo": 120.2,
+          "energy": 0.866,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 203,
+          "title": "Song For R",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 122.3,
+          "energy": 0.138,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 609,
+          "title": "The Psychic",
+          "artist": "Double Dagger",
+          "genre": "Rock",
+          "tempo": 121.8,
+          "energy": 0.98,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ]
+    },
+    {
+      "pair_id": 4,
+      "source_a": "ppo:ppo_ai_dj.zip",
+      "source_b": "ppo:ppo_rlhf.zip",
+      "sequence_a": [
+        {
+          "step": 0,
+          "fma_track_id": 694,
+          "title": "Planet Say (featuring Faust)",
+          "artist": "Food For Animals",
+          "genre": "Hip-Hop",
+          "tempo": 98.3,
+          "energy": 0.843,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 1131,
+          "title": "Bunny Bought a Spaceship",
+          "artist": "Mink Lungs",
+          "genre": "Rock",
+          "tempo": 112.3,
+          "energy": 0.272,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 463,
+          "title": "I'll Be Blue",
+          "artist": "Cantonement Jazz Band",
+          "genre": "Unknown",
+          "tempo": 115.4,
+          "energy": 0.309,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 1274,
+          "title": "Stumpf",
+          "artist": "Necropolis",
+          "genre": "Rock",
+          "tempo": 120.4,
+          "energy": 1.0,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 1119,
+          "title": "Steppin Fetchit Again",
+          "artist": "Mike Rep and the Quotas",
+          "genre": "Rock",
+          "tempo": 111.8,
+          "energy": 0.444,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 659,
+          "title": "side 1 - complaint (knock on wood)",
+          "artist": "Ethan Persoff",
+          "genre": "Electronic",
+          "tempo": 120.1,
+          "energy": 0.215,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "sequence_b": [
+        {
+          "step": 0,
+          "fma_track_id": 1147,
+          "title": "Walk To The Fire",
+          "artist": "Monoshock",
+          "genre": "Rock",
+          "tempo": 130.3,
+          "energy": 0.564,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 603,
+          "title": "Lover of Nightmares",
+          "artist": "Dora Bleu",
+          "genre": "Folk",
+          "tempo": 114.4,
+          "energy": 0.066,
           "key": "C maj",
           "transition_type": "cut"
         },
@@ -332,193 +682,6 @@
         },
         {
           "step": 3,
-          "fma_track_id": 778,
-          "title": "Don't Call Me Tonite / Very Good",
-          "artist": "Glove Compartment",
-          "genre": "Rock",
-          "tempo": 105.0,
-          "energy": 0.638,
-          "key": "C maj",
-          "transition_type": "fade"
-        },
-        {
-          "step": 4,
-          "fma_track_id": 403,
-          "title": "Roach",
-          "artist": "Borful Tang",
-          "genre": "Electronic",
-          "tempo": 115.8,
-          "energy": 0.863,
-          "key": "C maj",
-          "transition_type": "beatmatch"
-        },
-        {
-          "step": 5,
-          "fma_track_id": 347,
-          "title": "Down in the pits again",
-          "artist": "Blah Blah Blah",
-          "genre": "Rock",
-          "tempo": 134.0,
-          "energy": 0.348,
-          "key": "C maj",
-          "transition_type": "cut"
-        }
-      ],
-      "sequence_b": [
-        {
-          "step": 0,
-          "fma_track_id": 134,
-          "title": "Street Music",
-          "artist": "AWOL",
-          "genre": "Hip-Hop",
-          "tempo": 114.3,
-          "energy": 0.56,
-          "key": "C maj",
-          "transition_type": null
-        },
-        {
-          "step": 1,
-          "fma_track_id": 247,
-          "title": "A New Map for Kissing",
-          "artist": "Bird Names",
-          "genre": "Rock",
-          "tempo": 133.2,
-          "energy": 0.485,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 2,
-          "fma_track_id": 777,
-          "title": "Relaxing",
-          "artist": "Glove Compartment",
-          "genre": "Rock",
-          "tempo": 110.1,
-          "energy": 0.446,
-          "key": "C maj",
-          "transition_type": "beatmatch"
-        },
-        {
-          "step": 3,
-          "fma_track_id": 1045,
-          "title": "Baltimore Raven",
-          "artist": "Little Howlin' Wolf",
-          "genre": "Blues",
-          "tempo": 110.6,
-          "energy": 0.374,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 4,
-          "fma_track_id": 258,
-          "title": "Eyebone",
-          "artist": "Black Elk",
-          "genre": "Rock",
-          "tempo": 119.8,
-          "energy": 0.939,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 5,
-          "fma_track_id": 778,
-          "title": "Don't Call Me Tonite / Very Good",
-          "artist": "Glove Compartment",
-          "genre": "Rock",
-          "tempo": 105.0,
-          "energy": 0.638,
-          "key": "C maj",
-          "transition_type": "cut"
-        }
-      ]
-    },
-    {
-      "pair_id": 3,
-      "source_a": "ppo:ppo_rlhf.zip",
-      "source_b": "ppo:ppo_ai_dj.zip",
-      "sequence_a": [
-        {
-          "step": 0,
-          "fma_track_id": 325,
-          "title": "Liquidizing Chickens",
-          "artist": "Blah Blah Blah",
-          "genre": "Rock",
-          "tempo": 114.8,
-          "energy": 0.129,
-          "key": "C maj",
-          "transition_type": null
-        },
-        {
-          "step": 1,
-          "fma_track_id": 1044,
-          "title": "Last Double Eagle",
-          "artist": "Little Howlin' Wolf",
-          "genre": "Blues",
-          "tempo": 124.4,
-          "energy": 0.643,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 2,
-          "fma_track_id": 722,
-          "title": "Looking For A kiss",
-          "artist": "Fuzz Unlimited",
-          "genre": "Rock",
-          "tempo": 137.3,
-          "energy": 0.834,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 3,
-          "fma_track_id": 247,
-          "title": "A New Map for Kissing",
-          "artist": "Bird Names",
-          "genre": "Rock",
-          "tempo": 133.2,
-          "energy": 0.485,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 4,
-          "fma_track_id": 1179,
-          "title": "Shoes",
-          "artist": "Mors Ontologica",
-          "genre": "Rock",
-          "tempo": 132.0,
-          "energy": 0.848,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 5,
-          "fma_track_id": 194,
-          "title": "All I want to Do",
-          "artist": "Ed Askew",
-          "genre": "Folk",
-          "tempo": 103.8,
-          "energy": 0.2,
-          "key": "C maj",
-          "transition_type": "cut"
-        }
-      ],
-      "sequence_b": [
-        {
-          "step": 0,
-          "fma_track_id": 690,
-          "title": "Cataclysm",
-          "artist": "Flying Luttenbachers",
-          "genre": "Rock",
-          "tempo": 147.0,
-          "energy": 0.956,
-          "key": "C maj",
-          "transition_type": null
-        },
-        {
-          "step": 1,
           "fma_track_id": 206,
           "title": "Bella Crane",
           "artist": "Ed Askew",
@@ -529,187 +692,24 @@
           "transition_type": "cut"
         },
         {
-          "step": 2,
-          "fma_track_id": 1179,
-          "title": "Shoes",
-          "artist": "Mors Ontologica",
-          "genre": "Rock",
-          "tempo": 132.0,
-          "energy": 0.848,
-          "key": "C maj",
-          "transition_type": "beatmatch"
-        },
-        {
-          "step": 3,
-          "fma_track_id": 134,
-          "title": "Street Music",
-          "artist": "AWOL",
-          "genre": "Hip-Hop",
-          "tempo": 114.3,
-          "energy": 0.56,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
           "step": 4,
-          "fma_track_id": 203,
-          "title": "Song For R",
-          "artist": "Ed Askew",
-          "genre": "Folk",
-          "tempo": 122.3,
-          "energy": 0.138,
+          "fma_track_id": 609,
+          "title": "The Psychic",
+          "artist": "Double Dagger",
+          "genre": "Rock",
+          "tempo": 121.8,
+          "energy": 0.98,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 5,
-          "fma_track_id": 692,
-          "title": "Part 4",
-          "artist": "Flying Luttenbachers",
+          "fma_track_id": 1145,
+          "title": "Since Before Inertia",
+          "artist": "Minmae",
           "genre": "Rock",
-          "tempo": 113.3,
-          "energy": 0.911,
-          "key": "C maj",
-          "transition_type": "fade"
-        }
-      ]
-    },
-    {
-      "pair_id": 4,
-      "source_a": "ppo:ppo_ai_dj.zip",
-      "source_b": "ppo:ppo_rlhf.zip",
-      "sequence_a": [
-        {
-          "step": 0,
-          "fma_track_id": 345,
-          "title": "Ding dang (skat)",
-          "artist": "Blah Blah Blah",
-          "genre": "Rock",
-          "tempo": 82.6,
-          "energy": 0.207,
-          "key": "C maj",
-          "transition_type": null
-        },
-        {
-          "step": 1,
-          "fma_track_id": 1157,
-          "title": "Bombshell",
-          "artist": "Mors Ontologica",
-          "genre": "Rock",
-          "tempo": 111.5,
-          "energy": 0.928,
-          "key": "C maj",
-          "transition_type": "beatmatch"
-        },
-        {
-          "step": 2,
-          "fma_track_id": 247,
-          "title": "A New Map for Kissing",
-          "artist": "Bird Names",
-          "genre": "Rock",
-          "tempo": 133.2,
-          "energy": 0.485,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 3,
-          "fma_track_id": 134,
-          "title": "Street Music",
-          "artist": "AWOL",
-          "genre": "Hip-Hop",
-          "tempo": 114.3,
-          "energy": 0.56,
-          "key": "C maj",
-          "transition_type": "fade"
-        },
-        {
-          "step": 4,
-          "fma_track_id": 197,
-          "title": "Piano 2",
-          "artist": "Ed Askew",
-          "genre": "Folk",
-          "tempo": 128.7,
-          "energy": 0.007,
-          "key": "C maj",
-          "transition_type": "beatmatch"
-        },
-        {
-          "step": 5,
-          "fma_track_id": 1013,
-          "title": "Dawn of Swords",
-          "artist": "Knit Witch",
-          "genre": "Rock",
-          "tempo": 141.0,
-          "energy": 0.88,
-          "key": "C maj",
-          "transition_type": "cut"
-        }
-      ],
-      "sequence_b": [
-        {
-          "step": 0,
-          "fma_track_id": 395,
-          "title": "Transfiguration Boogie",
-          "artist": "Boogie Witch",
-          "genre": "Rock",
-          "tempo": 105.3,
-          "energy": 0.948,
-          "key": "C maj",
-          "transition_type": null
-        },
-        {
-          "step": 1,
-          "fma_track_id": 461,
-          "title": "Bessemer",
-          "artist": "Cantonement Jazz Band",
-          "genre": "Unknown",
-          "tempo": 107.2,
-          "energy": 0.32,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 2,
-          "fma_track_id": 258,
-          "title": "Eyebone",
-          "artist": "Black Elk",
-          "genre": "Rock",
-          "tempo": 119.8,
-          "energy": 0.939,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 3,
-          "fma_track_id": 203,
-          "title": "Song For R",
-          "artist": "Ed Askew",
-          "genre": "Folk",
-          "tempo": 122.3,
-          "energy": 0.138,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 4,
-          "fma_track_id": 134,
-          "title": "Street Music",
-          "artist": "AWOL",
-          "genre": "Hip-Hop",
-          "tempo": 114.3,
-          "energy": 0.56,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 5,
-          "fma_track_id": 386,
-          "title": "Clapartroach",
-          "artist": "Blanketship",
-          "genre": "Electronic",
-          "tempo": 130.5,
-          "energy": 0.783,
+          "tempo": 114.7,
+          "energy": 0.178,
           "key": "C maj",
           "transition_type": "cut"
         }
@@ -722,12 +722,12 @@
       "sequence_a": [
         {
           "step": 0,
-          "fma_track_id": 339,
-          "title": "Chimpanzees disease",
-          "artist": "Blah Blah Blah",
+          "fma_track_id": 1080,
+          "title": "Vacationland",
+          "artist": "Lungs Of A Giant",
           "genre": "Rock",
-          "tempo": 126.3,
-          "energy": 0.098,
+          "tempo": 106.4,
+          "energy": 0.362,
           "key": "C maj",
           "transition_type": null
         },
@@ -740,7 +740,148 @@
           "tempo": 115.8,
           "energy": 0.863,
           "key": "C maj",
-          "transition_type": "beatmatch"
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 203,
+          "title": "Song For R",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 122.3,
+          "energy": 0.138,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 258,
+          "title": "Eyebone",
+          "artist": "Black Elk",
+          "genre": "Rock",
+          "tempo": 119.8,
+          "energy": 0.939,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 206,
+          "title": "Bella Crane",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 119.1,
+          "energy": 0.21,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 465,
+          "title": "Thinking Of You",
+          "artist": "Cantonement Jazz Band",
+          "genre": "Unknown",
+          "tempo": 122.5,
+          "energy": 0.52,
+          "key": "C maj",
+          "transition_type": "fade"
+        }
+      ],
+      "sequence_b": [
+        {
+          "step": 0,
+          "fma_track_id": 198,
+          "title": "It Breaks My Heart",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 107.6,
+          "energy": 0.254,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 852,
+          "title": "Escape From the Organ Chamber",
+          "artist": "Human Host",
+          "genre": "Rock",
+          "tempo": 130.4,
+          "energy": 0.426,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 609,
+          "title": "The Psychic",
+          "artist": "Double Dagger",
+          "genre": "Rock",
+          "tempo": 121.8,
+          "energy": 0.98,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 206,
+          "title": "Bella Crane",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 119.1,
+          "energy": 0.21,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 1274,
+          "title": "Stumpf",
+          "artist": "Necropolis",
+          "genre": "Rock",
+          "tempo": 120.4,
+          "energy": 1.0,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 364,
+          "title": "Sunspot activity",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 109.3,
+          "energy": 0.156,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ]
+    },
+    {
+      "pair_id": 6,
+      "source_a": "ppo:ppo_ai_dj.zip",
+      "source_b": "ppo:ppo_rlhf.zip",
+      "sequence_a": [
+        {
+          "step": 0,
+          "fma_track_id": 535,
+          "title": "Angels Fear To Tread",
+          "artist": "Charles Manson",
+          "genre": "Folk",
+          "tempo": 88.7,
+          "energy": 0.147,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 692,
+          "title": "Part 4",
+          "artist": "Flying Luttenbachers",
+          "genre": "Rock",
+          "tempo": 113.3,
+          "energy": 0.911,
+          "key": "C maj",
+          "transition_type": "cut"
         },
         {
           "step": 2,
@@ -755,74 +896,17 @@
         },
         {
           "step": 3,
-          "fma_track_id": 541,
-          "title": "So We Go Again",
-          "artist": "Charles Manson",
-          "genre": "Folk",
-          "tempo": 105.5,
-          "energy": 0.175,
+          "fma_track_id": 258,
+          "title": "Eyebone",
+          "artist": "Black Elk",
+          "genre": "Rock",
+          "tempo": 119.8,
+          "energy": 0.939,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 4,
-          "fma_track_id": 993,
-          "title": "Or So I've Been Told",
-          "artist": "Jad Fair and Jason Willett",
-          "genre": "Rock",
-          "tempo": 130.5,
-          "energy": 0.689,
-          "key": "C maj",
-          "transition_type": "fade"
-        },
-        {
-          "step": 5,
-          "fma_track_id": 464,
-          "title": "The Way I Feel Today",
-          "artist": "Cantonement Jazz Band",
-          "genre": "Unknown",
-          "tempo": 114.8,
-          "energy": 0.382,
-          "key": "C maj",
-          "transition_type": "cut"
-        }
-      ],
-      "sequence_b": [
-        {
-          "step": 0,
-          "fma_track_id": 353,
-          "title": "In my Grandfather's Clock",
-          "artist": "Blah Blah Blah",
-          "genre": "Rock",
-          "tempo": 126.3,
-          "energy": 0.113,
-          "key": "C maj",
-          "transition_type": null
-        },
-        {
-          "step": 1,
-          "fma_track_id": 134,
-          "title": "Street Music",
-          "artist": "AWOL",
-          "genre": "Hip-Hop",
-          "tempo": 114.3,
-          "energy": 0.56,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 2,
-          "fma_track_id": 247,
-          "title": "A New Map for Kissing",
-          "artist": "Bird Names",
-          "genre": "Rock",
-          "tempo": 133.2,
-          "energy": 0.485,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 3,
           "fma_track_id": 203,
           "title": "Song For R",
           "artist": "Ed Askew",
@@ -833,36 +917,245 @@
           "transition_type": "cut"
         },
         {
-          "step": 4,
-          "fma_track_id": 1122,
-          "title": "For All These Mice",
-          "artist": "Mincemeat or Tenspeed",
+          "step": 5,
+          "fma_track_id": 1167,
+          "title": "Lazy Suicide",
+          "artist": "Mors Ontologica",
+          "genre": "Rock",
+          "tempo": 109.5,
+          "energy": 0.808,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "sequence_b": [
+        {
+          "step": 0,
+          "fma_track_id": 618,
+          "title": "Smoke",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 96.0,
+          "energy": 0.328,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 1167,
+          "title": "Lazy Suicide",
+          "artist": "Mors Ontologica",
+          "genre": "Rock",
+          "tempo": 109.5,
+          "energy": 0.808,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 533,
+          "title": "Mango Tree",
+          "artist": "Chandeliers",
           "genre": "Electronic",
-          "tempo": 137.8,
-          "energy": 0.691,
+          "tempo": 105.9,
+          "energy": 0.54,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 1274,
+          "title": "Stumpf",
+          "artist": "Necropolis",
+          "genre": "Rock",
+          "tempo": 120.4,
+          "energy": 1.0,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 325,
+          "title": "Liquidizing Chickens",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 114.8,
+          "energy": 0.129,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 5,
-          "fma_track_id": 627,
-          "title": "Black Bird",
-          "artist": "Ed Askew",
-          "genre": "Folk",
-          "tempo": 116.0,
-          "energy": 0.365,
+          "fma_track_id": 609,
+          "title": "The Psychic",
+          "artist": "Double Dagger",
+          "genre": "Rock",
+          "tempo": 121.8,
+          "energy": 0.98,
           "key": "C maj",
           "transition_type": "cut"
         }
       ]
     },
     {
-      "pair_id": 6,
-      "source_a": "ppo:ppo_ai_dj.zip",
-      "source_b": "ppo:ppo_rlhf.zip",
+      "pair_id": 7,
+      "source_a": "ppo:ppo_rlhf.zip",
+      "source_b": "ppo:ppo_ai_dj.zip",
       "sequence_a": [
         {
           "step": 0,
+          "fma_track_id": 1015,
+          "title": "My Hands Are Turning To Bricks",
+          "artist": "Kowloon Walled City",
+          "genre": "Rock",
+          "tempo": 135.4,
+          "energy": 0.962,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 1116,
+          "title": "Nautilus",
+          "artist": "Mike Rep and the Quotas",
+          "genre": "Rock",
+          "tempo": 122.6,
+          "energy": 0.047,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 147,
+          "title": "Repetitive Motion Sickness",
+          "artist": "Amoebic Ensemble",
+          "genre": "Jazz",
+          "tempo": 120.2,
+          "energy": 0.866,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 1043,
+          "title": "I'm Shufflin'",
+          "artist": "Little Howlin' Wolf",
+          "genre": "Blues",
+          "tempo": 106.6,
+          "energy": 0.803,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 609,
+          "title": "The Psychic",
+          "artist": "Double Dagger",
+          "genre": "Rock",
+          "tempo": 121.8,
+          "energy": 0.98,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 206,
+          "title": "Bella Crane",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 119.1,
+          "energy": 0.21,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "sequence_b": [
+        {
+          "step": 0,
+          "fma_track_id": 685,
+          "title": "late Night Show",
+          "artist": "Fanatic",
+          "genre": "Hip-Hop",
+          "tempo": 101.4,
+          "energy": 0.441,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 692,
+          "title": "Part 4",
+          "artist": "Flying Luttenbachers",
+          "genre": "Rock",
+          "tempo": 113.3,
+          "energy": 0.911,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 206,
+          "title": "Bella Crane",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 119.1,
+          "energy": 0.21,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 609,
+          "title": "The Psychic",
+          "artist": "Double Dagger",
+          "genre": "Rock",
+          "tempo": 121.8,
+          "energy": 0.98,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 338,
+          "title": "Cabages in the sunset",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 118.8,
+          "energy": 0.044,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 317,
+          "title": "Very Nice",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 113.0,
+          "energy": 0.334,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ]
+    },
+    {
+      "pair_id": 8,
+      "source_a": "ppo:ppo_rlhf.zip",
+      "source_b": "ppo:ppo_ai_dj.zip",
+      "sequence_a": [
+        {
+          "step": 0,
+          "fma_track_id": 847,
+          "title": "Rendered",
+          "artist": "Holzkopf",
+          "genre": "Pop",
+          "tempo": 104.1,
+          "energy": 0.12,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
           "fma_track_id": 523,
           "title": "Black Is the Color of My True Love's Mail",
           "artist": "Celesteville",
@@ -870,49 +1163,320 @@
           "tempo": 126.5,
           "energy": 0.423,
           "key": "C maj",
-          "transition_type": null
-        },
-        {
-          "step": 1,
-          "fma_track_id": 722,
-          "title": "Looking For A kiss",
-          "artist": "Fuzz Unlimited",
-          "genre": "Rock",
-          "tempo": 137.3,
-          "energy": 0.834,
-          "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 2,
-          "fma_track_id": 403,
-          "title": "Roach",
-          "artist": "Borful Tang",
-          "genre": "Electronic",
-          "tempo": 115.8,
-          "energy": 0.863,
+          "fma_track_id": 206,
+          "title": "Bella Crane",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 119.1,
+          "energy": 0.21,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 3,
-          "fma_track_id": 627,
-          "title": "Black Bird",
-          "artist": "Ed Askew",
-          "genre": "Folk",
-          "tempo": 116.0,
-          "energy": 0.365,
+          "fma_track_id": 147,
+          "title": "Repetitive Motion Sickness",
+          "artist": "Amoebic Ensemble",
+          "genre": "Jazz",
+          "tempo": 120.2,
+          "energy": 0.866,
           "key": "C maj",
-          "transition_type": "fade"
+          "transition_type": "cut"
         },
         {
           "step": 4,
-          "fma_track_id": 1157,
-          "title": "Bombshell",
-          "artist": "Mors Ontologica",
+          "fma_track_id": 609,
+          "title": "The Psychic",
+          "artist": "Double Dagger",
           "genre": "Rock",
-          "tempo": 111.5,
-          "energy": 0.928,
+          "tempo": 121.8,
+          "energy": 0.98,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 1131,
+          "title": "Bunny Bought a Spaceship",
+          "artist": "Mink Lungs",
+          "genre": "Rock",
+          "tempo": 112.3,
+          "energy": 0.272,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "sequence_b": [
+        {
+          "step": 0,
+          "fma_track_id": 236,
+          "title": "Push Am (Left, Right)",
+          "artist": "Banana Clipz",
+          "genre": "Unknown",
+          "tempo": 120.1,
+          "energy": 0.445,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 533,
+          "title": "Mango Tree",
+          "artist": "Chandeliers",
+          "genre": "Electronic",
+          "tempo": 105.9,
+          "energy": 0.54,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 206,
+          "title": "Bella Crane",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 119.1,
+          "energy": 0.21,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 546,
+          "title": "If You Have No One",
+          "artist": "Charles Manson",
+          "genre": "Folk",
+          "tempo": 98.0,
+          "energy": 0.213,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 1274,
+          "title": "Stumpf",
+          "artist": "Necropolis",
+          "genre": "Rock",
+          "tempo": 120.4,
+          "energy": 1.0,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 145,
+          "title": "Amoebiasis",
+          "artist": "Amoebic Ensemble",
+          "genre": "Jazz",
+          "tempo": 120.8,
+          "energy": 0.488,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ]
+    },
+    {
+      "pair_id": 9,
+      "source_a": "ppo:ppo_rlhf.zip",
+      "source_b": "ppo:ppo_ai_dj.zip",
+      "sequence_a": [
+        {
+          "step": 0,
+          "fma_track_id": 145,
+          "title": "Amoebiasis",
+          "artist": "Amoebic Ensemble",
+          "genre": "Jazz",
+          "tempo": 120.8,
+          "energy": 0.488,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 606,
+          "title": "Attack of the Clones",
+          "artist": "Double Dagger",
+          "genre": "Rock",
+          "tempo": 108.2,
+          "energy": 0.94,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 406,
+          "title": "ELI",
+          "artist": "Borful Tang",
+          "genre": "Electronic",
+          "tempo": 112.4,
+          "energy": 0.57,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 325,
+          "title": "Liquidizing Chickens",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 114.8,
+          "energy": 0.129,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 842,
+          "title": "Baby",
+          "artist": "Heroin UK",
+          "genre": "Rock",
+          "tempo": 123.9,
+          "energy": 0.545,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 885,
+          "title": "Live Lisbon two 2-19-08",
+          "artist": "Illusion of Safety",
+          "genre": "Electronic",
+          "tempo": 123.5,
+          "energy": 0.708,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "sequence_b": [
+        {
+          "step": 0,
+          "fma_track_id": 654,
+          "title": "Side Three - Part Four",
+          "artist": "Ethan Persoff",
+          "genre": "Electronic",
+          "tempo": 129.6,
+          "energy": 0.697,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 203,
+          "title": "Song For R",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 122.3,
+          "energy": 0.138,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 778,
+          "title": "Don't Call Me Tonite / Very Good",
+          "artist": "Glove Compartment",
+          "genre": "Rock",
+          "tempo": 105.0,
+          "energy": 0.638,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 1274,
+          "title": "Stumpf",
+          "artist": "Necropolis",
+          "genre": "Rock",
+          "tempo": 120.4,
+          "energy": 1.0,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 1045,
+          "title": "Baltimore Raven",
+          "artist": "Little Howlin' Wolf",
+          "genre": "Blues",
+          "tempo": 110.6,
+          "energy": 0.374,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 677,
+          "title": "The_Tension",
+          "artist": "Fanatic",
+          "genre": "Hip-Hop",
+          "tempo": 109.5,
+          "energy": 0.538,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ]
+    },
+    {
+      "pair_id": 10,
+      "source_a": "ppo:ppo_rlhf.zip",
+      "source_b": "ppo:ppo_ai_dj.zip",
+      "sequence_a": [
+        {
+          "step": 0,
+          "fma_track_id": 814,
+          "title": "Motion Passings",
+          "artist": "Hall Of Fame",
+          "genre": "Folk",
+          "tempo": 101.0,
+          "energy": 0.101,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 1049,
+          "title": "Les Jardins (De L'bouli)",
+          "artist": "LO MOdA",
+          "genre": "Rock",
+          "tempo": 93.6,
+          "energy": 0.608,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 406,
+          "title": "ELI",
+          "artist": "Borful Tang",
+          "genre": "Electronic",
+          "tempo": 112.4,
+          "energy": 0.57,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 206,
+          "title": "Bella Crane",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 119.1,
+          "energy": 0.21,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 842,
+          "title": "Baby",
+          "artist": "Heroin UK",
+          "genre": "Rock",
+          "tempo": 123.9,
+          "energy": 0.545,
           "key": "C maj",
           "transition_type": "cut"
         },
@@ -931,123 +1495,17 @@
       "sequence_b": [
         {
           "step": 0,
-          "fma_track_id": 1087,
-          "title": "Tell The Police The Truth",
-          "artist": "Mahjongg",
+          "fma_track_id": 308,
+          "title": "The Hotel",
+          "artist": "Blah Blah Blah",
           "genre": "Rock",
-          "tempo": 132.9,
-          "energy": 0.815,
+          "tempo": 93.0,
+          "energy": 0.035,
           "key": "C maj",
           "transition_type": null
         },
         {
           "step": 1,
-          "fma_track_id": 247,
-          "title": "A New Map for Kissing",
-          "artist": "Bird Names",
-          "genre": "Rock",
-          "tempo": 133.2,
-          "energy": 0.485,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 2,
-          "fma_track_id": 147,
-          "title": "Repetitive Motion Sickness",
-          "artist": "Amoebic Ensemble",
-          "genre": "Jazz",
-          "tempo": 120.2,
-          "energy": 0.866,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 3,
-          "fma_track_id": 842,
-          "title": "Baby",
-          "artist": "Heroin UK",
-          "genre": "Rock",
-          "tempo": 123.9,
-          "energy": 0.545,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 4,
-          "fma_track_id": 134,
-          "title": "Street Music",
-          "artist": "AWOL",
-          "genre": "Hip-Hop",
-          "tempo": 114.3,
-          "energy": 0.56,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 5,
-          "fma_track_id": 1149,
-          "title": "Sea Monkeys",
-          "artist": "Monoshock",
-          "genre": "Rock",
-          "tempo": 119.4,
-          "energy": 0.476,
-          "key": "C maj",
-          "transition_type": "cut"
-        }
-      ]
-    },
-    {
-      "pair_id": 7,
-      "source_a": "ppo:ppo_rlhf.zip",
-      "source_b": "ppo:ppo_ai_dj.zip",
-      "sequence_a": [
-        {
-          "step": 0,
-          "fma_track_id": 711,
-          "title": "Kamikaze!",
-          "artist": "The Functional Blackouts",
-          "genre": "Rock",
-          "tempo": 141.0,
-          "energy": 0.984,
-          "key": "C maj",
-          "transition_type": null
-        },
-        {
-          "step": 1,
-          "fma_track_id": 247,
-          "title": "A New Map for Kissing",
-          "artist": "Bird Names",
-          "genre": "Rock",
-          "tempo": 133.2,
-          "energy": 0.485,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 2,
-          "fma_track_id": 627,
-          "title": "Black Bird",
-          "artist": "Ed Askew",
-          "genre": "Folk",
-          "tempo": 116.0,
-          "energy": 0.365,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 3,
-          "fma_track_id": 1144,
-          "title": "Spring Trajedy",
-          "artist": "Minmae",
-          "genre": "Rock",
-          "tempo": 110.1,
-          "energy": 0.47,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 4,
           "fma_track_id": 206,
           "title": "Bella Crane",
           "artist": "Ed Askew",
@@ -1058,284 +1516,35 @@
           "transition_type": "cut"
         },
         {
-          "step": 5,
-          "fma_track_id": 134,
-          "title": "Street Music",
-          "artist": "AWOL",
-          "genre": "Hip-Hop",
-          "tempo": 114.3,
-          "energy": 0.56,
-          "key": "C maj",
-          "transition_type": "cut"
-        }
-      ],
-      "sequence_b": [
-        {
-          "step": 0,
-          "fma_track_id": 843,
-          "title": "Today",
-          "artist": "Heroin UK",
-          "genre": "Rock",
-          "tempo": 134.4,
-          "energy": 0.726,
-          "key": "C maj",
-          "transition_type": null
-        },
-        {
-          "step": 1,
-          "fma_track_id": 258,
-          "title": "Eyebone",
-          "artist": "Black Elk",
-          "genre": "Rock",
-          "tempo": 119.8,
-          "energy": 0.939,
-          "key": "C maj",
-          "transition_type": "beatmatch"
-        },
-        {
           "step": 2,
-          "fma_track_id": 203,
-          "title": "Song For R",
-          "artist": "Ed Askew",
-          "genre": "Folk",
-          "tempo": 122.3,
-          "energy": 0.138,
+          "fma_track_id": 609,
+          "title": "The Psychic",
+          "artist": "Double Dagger",
+          "genre": "Rock",
+          "tempo": 121.8,
+          "energy": 0.98,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 3,
-          "fma_track_id": 319,
-          "title": "Complete Shakespeare",
-          "artist": "Blah Blah Blah",
-          "genre": "Rock",
-          "tempo": 133.9,
-          "energy": 0.06,
-          "key": "C maj",
-          "transition_type": "beatmatch"
-        },
-        {
-          "step": 4,
-          "fma_track_id": 339,
-          "title": "Chimpanzees disease",
-          "artist": "Blah Blah Blah",
-          "genre": "Rock",
-          "tempo": 126.3,
-          "energy": 0.098,
-          "key": "C maj",
-          "transition_type": "fade"
-        },
-        {
-          "step": 5,
-          "fma_track_id": 147,
-          "title": "Repetitive Motion Sickness",
-          "artist": "Amoebic Ensemble",
-          "genre": "Jazz",
-          "tempo": 120.2,
-          "energy": 0.866,
-          "key": "C maj",
-          "transition_type": "cut"
-        }
-      ]
-    },
-    {
-      "pair_id": 8,
-      "source_a": "ppo:ppo_rlhf.zip",
-      "source_b": "ppo:ppo_ai_dj.zip",
-      "sequence_a": [
-        {
-          "step": 0,
-          "fma_track_id": 845,
-          "title": "Things You Say",
-          "artist": "Heroin UK",
-          "genre": "Rock",
-          "tempo": 132.5,
-          "energy": 0.561,
-          "key": "C maj",
-          "transition_type": null
-        },
-        {
-          "step": 1,
-          "fma_track_id": 347,
-          "title": "Down in the pits again",
-          "artist": "Blah Blah Blah",
-          "genre": "Rock",
-          "tempo": 134.0,
-          "energy": 0.348,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 2,
-          "fma_track_id": 623,
-          "title": "The Cup Bearer (Jony Mede)",
+          "fma_track_id": 625,
+          "title": "Climbing To The Top",
           "artist": "Ed Askew",
           "genre": "Folk",
-          "tempo": 106.5,
-          "energy": 0.058,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 3,
-          "fma_track_id": 523,
-          "title": "Black Is the Color of My True Love's Mail",
-          "artist": "Celesteville",
-          "genre": "Rock",
-          "tempo": 126.5,
-          "energy": 0.423,
+          "tempo": 92.7,
+          "energy": 0.294,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 4,
-          "fma_track_id": 627,
-          "title": "Black Bird",
-          "artist": "Ed Askew",
-          "genre": "Folk",
-          "tempo": 116.0,
-          "energy": 0.365,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 5,
-          "fma_track_id": 692,
-          "title": "Part 4",
-          "artist": "Flying Luttenbachers",
+          "fma_track_id": 778,
+          "title": "Don't Call Me Tonite / Very Good",
+          "artist": "Glove Compartment",
           "genre": "Rock",
-          "tempo": 113.3,
-          "energy": 0.911,
-          "key": "C maj",
-          "transition_type": "cut"
-        }
-      ],
-      "sequence_b": [
-        {
-          "step": 0,
-          "fma_track_id": 368,
-          "title": "Vampires",
-          "artist": "Blah Blah Blah",
-          "genre": "Rock",
-          "tempo": 135.8,
-          "energy": 0.116,
-          "key": "C maj",
-          "transition_type": null
-        },
-        {
-          "step": 1,
-          "fma_track_id": 1280,
-          "title": "history",
-          "artist": "Newagehillbilly",
-          "genre": "Rock",
-          "tempo": 139.1,
-          "energy": 0.769,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 2,
-          "fma_track_id": 247,
-          "title": "A New Map for Kissing",
-          "artist": "Bird Names",
-          "genre": "Rock",
-          "tempo": 133.2,
-          "energy": 0.485,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 3,
-          "fma_track_id": 206,
-          "title": "Bella Crane",
-          "artist": "Ed Askew",
-          "genre": "Folk",
-          "tempo": 119.1,
-          "energy": 0.21,
-          "key": "C maj",
-          "transition_type": "beatmatch"
-        },
-        {
-          "step": 4,
-          "fma_track_id": 1045,
-          "title": "Baltimore Raven",
-          "artist": "Little Howlin' Wolf",
-          "genre": "Blues",
-          "tempo": 110.6,
-          "energy": 0.374,
-          "key": "C maj",
-          "transition_type": "beatmatch"
-        },
-        {
-          "step": 5,
-          "fma_track_id": 623,
-          "title": "The Cup Bearer (Jony Mede)",
-          "artist": "Ed Askew",
-          "genre": "Folk",
-          "tempo": 106.5,
-          "energy": 0.058,
-          "key": "C maj",
-          "transition_type": "fade"
-        }
-      ]
-    },
-    {
-      "pair_id": 9,
-      "source_a": "ppo:ppo_rlhf.zip",
-      "source_b": "ppo:ppo_ai_dj.zip",
-      "sequence_a": [
-        {
-          "step": 0,
-          "fma_track_id": 1140,
-          "title": "The Future of Lint",
-          "artist": "Minmae",
-          "genre": "Rock",
-          "tempo": 94.1,
-          "energy": 0.24,
-          "key": "C maj",
-          "transition_type": null
-        },
-        {
-          "step": 1,
-          "fma_track_id": 1149,
-          "title": "Sea Monkeys",
-          "artist": "Monoshock",
-          "genre": "Rock",
-          "tempo": 119.4,
-          "energy": 0.476,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 2,
-          "fma_track_id": 206,
-          "title": "Bella Crane",
-          "artist": "Ed Askew",
-          "genre": "Folk",
-          "tempo": 119.1,
-          "energy": 0.21,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 3,
-          "fma_track_id": 567,
-          "title": "Liberty's Bell",
-          "artist": "Cinwaves",
-          "genre": "Rock",
-          "tempo": 120.1,
-          "energy": 0.376,
-          "key": "C maj",
-          "transition_type": "fade"
-        },
-        {
-          "step": 4,
-          "fma_track_id": 147,
-          "title": "Repetitive Motion Sickness",
-          "artist": "Amoebic Ensemble",
-          "genre": "Jazz",
-          "tempo": 120.2,
-          "energy": 0.866,
+          "tempo": 105.0,
+          "energy": 0.638,
           "key": "C maj",
           "transition_type": "cut"
         },
@@ -1347,215 +1556,6 @@
           "genre": "Folk",
           "tempo": 122.3,
           "energy": 0.138,
-          "key": "C maj",
-          "transition_type": "cut"
-        }
-      ],
-      "sequence_b": [
-        {
-          "step": 0,
-          "fma_track_id": 1186,
-          "title": "Demon Inc",
-          "artist": "Mors Ontologica",
-          "genre": "Rock",
-          "tempo": 147.2,
-          "energy": 0.655,
-          "key": "C maj",
-          "transition_type": null
-        },
-        {
-          "step": 1,
-          "fma_track_id": 258,
-          "title": "Eyebone",
-          "artist": "Black Elk",
-          "genre": "Rock",
-          "tempo": 119.8,
-          "energy": 0.939,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 2,
-          "fma_track_id": 386,
-          "title": "Clapartroach",
-          "artist": "Blanketship",
-          "genre": "Electronic",
-          "tempo": 130.5,
-          "energy": 0.783,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 3,
-          "fma_track_id": 10,
-          "title": "Freeway",
-          "artist": "Kurt Vile",
-          "genre": "Pop",
-          "tempo": 111.6,
-          "energy": 0.925,
-          "key": "C maj",
-          "transition_type": "beatmatch"
-        },
-        {
-          "step": 4,
-          "fma_track_id": 1044,
-          "title": "Last Double Eagle",
-          "artist": "Little Howlin' Wolf",
-          "genre": "Blues",
-          "tempo": 124.4,
-          "energy": 0.643,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 5,
-          "fma_track_id": 247,
-          "title": "A New Map for Kissing",
-          "artist": "Bird Names",
-          "genre": "Rock",
-          "tempo": 133.2,
-          "energy": 0.485,
-          "key": "C maj",
-          "transition_type": "cut"
-        }
-      ]
-    },
-    {
-      "pair_id": 10,
-      "source_a": "ppo:ppo_rlhf.zip",
-      "source_b": "ppo:ppo_ai_dj.zip",
-      "sequence_a": [
-        {
-          "step": 0,
-          "fma_track_id": 238,
-          "title": "France Attacks",
-          "artist": "Barnacled",
-          "genre": "Jazz",
-          "tempo": 81.9,
-          "energy": 0.287,
-          "key": "C maj",
-          "transition_type": null
-        },
-        {
-          "step": 1,
-          "fma_track_id": 604,
-          "title": "Real Prisons",
-          "artist": "Dora Bleu",
-          "genre": "Folk",
-          "tempo": 91.8,
-          "energy": 0.02,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 2,
-          "fma_track_id": 401,
-          "title": "Modesto",
-          "artist": "Borful Tang",
-          "genre": "Electronic",
-          "tempo": 106.1,
-          "energy": 0.456,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 3,
-          "fma_track_id": 203,
-          "title": "Song For R",
-          "artist": "Ed Askew",
-          "genre": "Folk",
-          "tempo": 122.3,
-          "energy": 0.138,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 4,
-          "fma_track_id": 1045,
-          "title": "Baltimore Raven",
-          "artist": "Little Howlin' Wolf",
-          "genre": "Blues",
-          "tempo": 110.6,
-          "energy": 0.374,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 5,
-          "fma_track_id": 627,
-          "title": "Black Bird",
-          "artist": "Ed Askew",
-          "genre": "Folk",
-          "tempo": 116.0,
-          "energy": 0.365,
-          "key": "C maj",
-          "transition_type": "cut"
-        }
-      ],
-      "sequence_b": [
-        {
-          "step": 0,
-          "fma_track_id": 1029,
-          "title": "Wilder Climes",
-          "artist": "Lazy Magnet",
-          "genre": "Rock",
-          "tempo": 87.8,
-          "energy": 0.459,
-          "key": "C maj",
-          "transition_type": null
-        },
-        {
-          "step": 1,
-          "fma_track_id": 134,
-          "title": "Street Music",
-          "artist": "AWOL",
-          "genre": "Hip-Hop",
-          "tempo": 114.3,
-          "energy": 0.56,
-          "key": "C maj",
-          "transition_type": "beatmatch"
-        },
-        {
-          "step": 2,
-          "fma_track_id": 567,
-          "title": "Liberty's Bell",
-          "artist": "Cinwaves",
-          "genre": "Rock",
-          "tempo": 120.1,
-          "energy": 0.376,
-          "key": "C maj",
-          "transition_type": "beatmatch"
-        },
-        {
-          "step": 3,
-          "fma_track_id": 197,
-          "title": "Piano 2",
-          "artist": "Ed Askew",
-          "genre": "Folk",
-          "tempo": 128.7,
-          "energy": 0.007,
-          "key": "C maj",
-          "transition_type": "beatmatch"
-        },
-        {
-          "step": 4,
-          "fma_track_id": 1138,
-          "title": "In Abstracted Fashion",
-          "artist": "Minmae",
-          "genre": "Rock",
-          "tempo": 98.7,
-          "energy": 0.321,
-          "key": "C maj",
-          "transition_type": "beatmatch"
-        },
-        {
-          "step": 5,
-          "fma_track_id": 1045,
-          "title": "Baltimore Raven",
-          "artist": "Little Howlin' Wolf",
-          "genre": "Blues",
-          "tempo": 110.6,
-          "energy": 0.374,
           "key": "C maj",
           "transition_type": "cut"
         }
@@ -1568,56 +1568,56 @@
       "sequence_a": [
         {
           "step": 0,
-          "fma_track_id": 310,
-          "title": "Going Down to Soho",
-          "artist": "Blah Blah Blah",
-          "genre": "Rock",
-          "tempo": 142.6,
-          "energy": 0.425,
+          "fma_track_id": 1047,
+          "title": "Astral Blue",
+          "artist": "Little Howlin' Wolf",
+          "genre": "Blues",
+          "tempo": 97.1,
+          "energy": 0.764,
           "key": "C maj",
           "transition_type": null
         },
         {
           "step": 1,
-          "fma_track_id": 465,
-          "title": "Thinking Of You",
-          "artist": "Cantonement Jazz Band",
-          "genre": "Unknown",
-          "tempo": 122.5,
-          "energy": 0.52,
+          "fma_track_id": 567,
+          "title": "Liberty's Bell",
+          "artist": "Cinwaves",
+          "genre": "Rock",
+          "tempo": 120.1,
+          "energy": 0.376,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 2,
+          "fma_track_id": 1131,
+          "title": "Bunny Bought a Spaceship",
+          "artist": "Mink Lungs",
+          "genre": "Rock",
+          "tempo": 112.3,
+          "energy": 0.272,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 1119,
+          "title": "Steppin Fetchit Again",
+          "artist": "Mike Rep and the Quotas",
+          "genre": "Rock",
+          "tempo": 111.8,
+          "energy": 0.444,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
           "fma_track_id": 203,
           "title": "Song For R",
           "artist": "Ed Askew",
           "genre": "Folk",
           "tempo": 122.3,
           "energy": 0.138,
-          "key": "C maj",
-          "transition_type": "beatmatch"
-        },
-        {
-          "step": 3,
-          "fma_track_id": 1045,
-          "title": "Baltimore Raven",
-          "artist": "Little Howlin' Wolf",
-          "genre": "Blues",
-          "tempo": 110.6,
-          "energy": 0.374,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 4,
-          "fma_track_id": 627,
-          "title": "Black Bird",
-          "artist": "Ed Askew",
-          "genre": "Folk",
-          "tempo": 116.0,
-          "energy": 0.365,
           "key": "C maj",
           "transition_type": "cut"
         },
@@ -1636,69 +1636,69 @@
       "sequence_b": [
         {
           "step": 0,
-          "fma_track_id": 653,
-          "title": "Side Three - Part Three",
-          "artist": "Ethan Persoff",
-          "genre": "Electronic",
-          "tempo": 151.3,
-          "energy": 0.74,
+          "fma_track_id": 681,
+          "title": "Sunshine",
+          "artist": "Fanatic",
+          "genre": "Hip-Hop",
+          "tempo": 151.0,
+          "energy": 0.399,
           "key": "C maj",
           "transition_type": null
         },
         {
           "step": 1,
-          "fma_track_id": 247,
-          "title": "A New Map for Kissing",
-          "artist": "Bird Names",
+          "fma_track_id": 523,
+          "title": "Black Is the Color of My True Love's Mail",
+          "artist": "Celesteville",
           "genre": "Rock",
-          "tempo": 133.2,
-          "energy": 0.485,
+          "tempo": 126.5,
+          "energy": 0.423,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 2,
-          "fma_track_id": 1122,
-          "title": "For All These Mice",
-          "artist": "Mincemeat or Tenspeed",
-          "genre": "Electronic",
-          "tempo": 137.8,
-          "energy": 0.691,
+          "fma_track_id": 206,
+          "title": "Bella Crane",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 119.1,
+          "energy": 0.21,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 3,
-          "fma_track_id": 464,
-          "title": "The Way I Feel Today",
-          "artist": "Cantonement Jazz Band",
-          "genre": "Unknown",
-          "tempo": 114.8,
-          "energy": 0.382,
+          "fma_track_id": 609,
+          "title": "The Psychic",
+          "artist": "Double Dagger",
+          "genre": "Rock",
+          "tempo": 121.8,
+          "energy": 0.98,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 4,
-          "fma_track_id": 777,
-          "title": "Relaxing",
-          "artist": "Glove Compartment",
-          "genre": "Rock",
-          "tempo": 110.1,
-          "energy": 0.446,
+          "fma_track_id": 203,
+          "title": "Song For R",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 122.3,
+          "energy": 0.138,
           "key": "C maj",
-          "transition_type": "fade"
+          "transition_type": "cut"
         },
         {
           "step": 5,
-          "fma_track_id": 661,
-          "title": "side 3 - hidden speaking powers!",
-          "artist": "Ethan Persoff",
-          "genre": "Electronic",
-          "tempo": 114.8,
-          "energy": 0.302,
+          "fma_track_id": 147,
+          "title": "Repetitive Motion Sickness",
+          "artist": "Amoebic Ensemble",
+          "genre": "Jazz",
+          "tempo": 120.2,
+          "energy": 0.866,
           "key": "C maj",
-          "transition_type": "cut"
+          "transition_type": "fade"
         }
       ]
     },
@@ -1709,12 +1709,12 @@
       "sequence_a": [
         {
           "step": 0,
-          "fma_track_id": 887,
-          "title": "Rules of the game (pt 1)",
-          "artist": "Illusion of Safety",
-          "genre": "Electronic",
-          "tempo": 133.0,
-          "energy": 0.782,
+          "fma_track_id": 568,
+          "title": "Disconnect",
+          "artist": "Cinwaves",
+          "genre": "Rock",
+          "tempo": 86.7,
+          "energy": 0.403,
           "key": "C maj",
           "transition_type": null
         },
@@ -1727,49 +1727,49 @@
           "tempo": 110.6,
           "energy": 0.374,
           "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 2,
-          "fma_track_id": 147,
-          "title": "Repetitive Motion Sickness",
-          "artist": "Amoebic Ensemble",
-          "genre": "Jazz",
-          "tempo": 120.2,
-          "energy": 0.866,
-          "key": "C maj",
           "transition_type": "fade"
         },
         {
-          "step": 3,
-          "fma_track_id": 1149,
-          "title": "Sea Monkeys",
-          "artist": "Monoshock",
+          "step": 2,
+          "fma_track_id": 1119,
+          "title": "Steppin Fetchit Again",
+          "artist": "Mike Rep and the Quotas",
           "genre": "Rock",
-          "tempo": 119.4,
-          "energy": 0.476,
+          "tempo": 111.8,
+          "energy": 0.444,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 1131,
+          "title": "Bunny Bought a Spaceship",
+          "artist": "Mink Lungs",
+          "genre": "Rock",
+          "tempo": 112.3,
+          "energy": 0.272,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 4,
-          "fma_track_id": 627,
-          "title": "Black Bird",
-          "artist": "Ed Askew",
-          "genre": "Folk",
-          "tempo": 116.0,
-          "energy": 0.365,
+          "fma_track_id": 842,
+          "title": "Baby",
+          "artist": "Heroin UK",
+          "genre": "Rock",
+          "tempo": 123.9,
+          "energy": 0.545,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 5,
-          "fma_track_id": 169,
-          "title": "Boss of Goth",
-          "artist": "Argumentix",
+          "fma_track_id": 258,
+          "title": "Eyebone",
+          "artist": "Black Elk",
           "genre": "Rock",
-          "tempo": 94.3,
-          "energy": 0.723,
+          "tempo": 119.8,
+          "energy": 0.939,
           "key": "C maj",
           "transition_type": "cut"
         }
@@ -1777,34 +1777,107 @@
       "sequence_b": [
         {
           "step": 0,
-          "fma_track_id": 777,
-          "title": "Relaxing",
-          "artist": "Glove Compartment",
+          "fma_track_id": 1171,
+          "title": "Black Market",
+          "artist": "Mors Ontologica",
           "genre": "Rock",
-          "tempo": 110.1,
-          "energy": 0.446,
+          "tempo": 147.0,
+          "energy": 0.942,
           "key": "C maj",
           "transition_type": null
         },
         {
           "step": 1,
-          "fma_track_id": 406,
-          "title": "ELI",
-          "artist": "Borful Tang",
+          "fma_track_id": 659,
+          "title": "side 1 - complaint (knock on wood)",
+          "artist": "Ethan Persoff",
           "genre": "Electronic",
-          "tempo": 112.4,
-          "energy": 0.57,
+          "tempo": 120.1,
+          "energy": 0.215,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 2,
-          "fma_track_id": 464,
-          "title": "The Way I Feel Today",
+          "fma_track_id": 465,
+          "title": "Thinking Of You",
           "artist": "Cantonement Jazz Band",
           "genre": "Unknown",
-          "tempo": 114.8,
-          "energy": 0.382,
+          "tempo": 122.5,
+          "energy": 0.52,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 206,
+          "title": "Bella Crane",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 119.1,
+          "energy": 0.21,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 778,
+          "title": "Don't Call Me Tonite / Very Good",
+          "artist": "Glove Compartment",
+          "genre": "Rock",
+          "tempo": 105.0,
+          "energy": 0.638,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 331,
+          "title": "Weatherman",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 85.5,
+          "energy": 0.255,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ]
+    },
+    {
+      "pair_id": 13,
+      "source_a": "ppo:ppo_rlhf.zip",
+      "source_b": "ppo:ppo_ai_dj.zip",
+      "sequence_a": [
+        {
+          "step": 0,
+          "fma_track_id": 1183,
+          "title": "Vampires In My Neighborhood",
+          "artist": "Mors Ontologica",
+          "genre": "Rock",
+          "tempo": 145.5,
+          "energy": 0.855,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 147,
+          "title": "Repetitive Motion Sickness",
+          "artist": "Amoebic Ensemble",
+          "genre": "Jazz",
+          "tempo": 120.2,
+          "energy": 0.866,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 885,
+          "title": "Live Lisbon two 2-19-08",
+          "artist": "Illusion of Safety",
+          "genre": "Electronic",
+          "tempo": 123.5,
+          "energy": 0.708,
           "key": "C maj",
           "transition_type": "cut"
         },
@@ -1821,12 +1894,153 @@
         },
         {
           "step": 4,
-          "fma_track_id": 169,
-          "title": "Boss of Goth",
-          "artist": "Argumentix",
+          "fma_track_id": 146,
+          "title": "Gimme a Buck or I'll Touch You / Boilermaker",
+          "artist": "Amoebic Ensemble",
+          "genre": "Jazz",
+          "tempo": 135.5,
+          "energy": 0.476,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 1167,
+          "title": "Lazy Suicide",
+          "artist": "Mors Ontologica",
           "genre": "Rock",
-          "tempo": 94.3,
-          "energy": 0.723,
+          "tempo": 109.5,
+          "energy": 0.808,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "sequence_b": [
+        {
+          "step": 0,
+          "fma_track_id": 1077,
+          "title": "Polluted Man",
+          "artist": "Lungs Of A Giant",
+          "genre": "Rock",
+          "tempo": 86.5,
+          "energy": 0.561,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 1131,
+          "title": "Bunny Bought a Spaceship",
+          "artist": "Mink Lungs",
+          "genre": "Rock",
+          "tempo": 112.3,
+          "energy": 0.272,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 603,
+          "title": "Lover of Nightmares",
+          "artist": "Dora Bleu",
+          "genre": "Folk",
+          "tempo": 114.4,
+          "energy": 0.066,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 609,
+          "title": "The Psychic",
+          "artist": "Double Dagger",
+          "genre": "Rock",
+          "tempo": 121.8,
+          "energy": 0.98,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 208,
+          "title": "Safe Harbor",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 110.6,
+          "energy": 0.363,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 1167,
+          "title": "Lazy Suicide",
+          "artist": "Mors Ontologica",
+          "genre": "Rock",
+          "tempo": 109.5,
+          "energy": 0.808,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ]
+    },
+    {
+      "pair_id": 14,
+      "source_a": "ppo:ppo_ai_dj.zip",
+      "source_b": "ppo:ppo_rlhf.zip",
+      "sequence_a": [
+        {
+          "step": 0,
+          "fma_track_id": 779,
+          "title": "Causing Disturbances",
+          "artist": "Glove Compartment",
+          "genre": "Rock",
+          "tempo": 106.8,
+          "energy": 0.324,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 623,
+          "title": "The Cup Bearer (Jony Mede)",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 106.5,
+          "energy": 0.058,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 1043,
+          "title": "I'm Shufflin'",
+          "artist": "Little Howlin' Wolf",
+          "genre": "Blues",
+          "tempo": 106.6,
+          "energy": 0.803,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 533,
+          "title": "Mango Tree",
+          "artist": "Chandeliers",
+          "genre": "Electronic",
+          "tempo": 105.9,
+          "energy": 0.54,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 403,
+          "title": "Roach",
+          "artist": "Borful Tang",
+          "genre": "Electronic",
+          "tempo": 115.8,
+          "energy": 0.863,
           "key": "C maj",
           "transition_type": "cut"
         },
@@ -1839,17 +2053,479 @@
           "tempo": 119.1,
           "energy": 0.21,
           "key": "C maj",
-          "transition_type": "fade"
+          "transition_type": "cut"
+        }
+      ],
+      "sequence_b": [
+        {
+          "step": 0,
+          "fma_track_id": 204,
+          "title": "My Dream",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 105.0,
+          "energy": 0.226,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 353,
+          "title": "In my Grandfather's Clock",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 126.3,
+          "energy": 0.113,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 145,
+          "title": "Amoebiasis",
+          "artist": "Amoebic Ensemble",
+          "genre": "Jazz",
+          "tempo": 120.8,
+          "energy": 0.488,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 1167,
+          "title": "Lazy Suicide",
+          "artist": "Mors Ontologica",
+          "genre": "Rock",
+          "tempo": 109.5,
+          "energy": 0.808,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 338,
+          "title": "Cabages in the sunset",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 118.8,
+          "energy": 0.044,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 147,
+          "title": "Repetitive Motion Sickness",
+          "artist": "Amoebic Ensemble",
+          "genre": "Jazz",
+          "tempo": 120.2,
+          "energy": 0.866,
+          "key": "C maj",
+          "transition_type": "cut"
         }
       ]
     },
     {
-      "pair_id": 13,
+      "pair_id": 15,
+      "source_a": "ppo:ppo_ai_dj.zip",
+      "source_b": "ppo:ppo_rlhf.zip",
+      "sequence_a": [
+        {
+          "step": 0,
+          "fma_track_id": 1157,
+          "title": "Bombshell",
+          "artist": "Mors Ontologica",
+          "genre": "Rock",
+          "tempo": 111.5,
+          "energy": 0.928,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 203,
+          "title": "Song For R",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 122.3,
+          "energy": 0.138,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 1274,
+          "title": "Stumpf",
+          "artist": "Necropolis",
+          "genre": "Rock",
+          "tempo": 120.4,
+          "energy": 1.0,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 465,
+          "title": "Thinking Of You",
+          "artist": "Cantonement Jazz Band",
+          "genre": "Unknown",
+          "tempo": 122.5,
+          "energy": 0.52,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 206,
+          "title": "Bella Crane",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 119.1,
+          "energy": 0.21,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 1173,
+          "title": "Voice Of Degeneration",
+          "artist": "Mors Ontologica",
+          "genre": "Rock",
+          "tempo": 127.6,
+          "energy": 0.568,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "sequence_b": [
+        {
+          "step": 0,
+          "fma_track_id": 531,
+          "title": "Night Air, Portland",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 130.2,
+          "energy": 0.385,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 147,
+          "title": "Repetitive Motion Sickness",
+          "artist": "Amoebic Ensemble",
+          "genre": "Jazz",
+          "tempo": 120.2,
+          "energy": 0.866,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 317,
+          "title": "Very Nice",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 113.0,
+          "energy": 0.334,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 208,
+          "title": "Safe Harbor",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 110.6,
+          "energy": 0.363,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 1188,
+          "title": "Lasarus",
+          "artist": "Mors Ontologica",
+          "genre": "Rock",
+          "tempo": 130.0,
+          "energy": 0.462,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 1119,
+          "title": "Steppin Fetchit Again",
+          "artist": "Mike Rep and the Quotas",
+          "genre": "Rock",
+          "tempo": 111.8,
+          "energy": 0.444,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ]
+    },
+    {
+      "pair_id": 16,
       "source_a": "ppo:ppo_rlhf.zip",
       "source_b": "ppo:ppo_ai_dj.zip",
       "sequence_a": [
         {
           "step": 0,
+          "fma_track_id": 805,
+          "title": "Haymaker",
+          "artist": "Guinea Worms",
+          "genre": "Rock",
+          "tempo": 97.6,
+          "energy": 0.663,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 206,
+          "title": "Bella Crane",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 119.1,
+          "energy": 0.21,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 465,
+          "title": "Thinking Of You",
+          "artist": "Cantonement Jazz Band",
+          "genre": "Unknown",
+          "tempo": 122.5,
+          "energy": 0.52,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 692,
+          "title": "Part 4",
+          "artist": "Flying Luttenbachers",
+          "genre": "Rock",
+          "tempo": 113.3,
+          "energy": 0.911,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 320,
+          "title": "The Natives are Restless",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 126.7,
+          "energy": 0.117,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 1043,
+          "title": "I'm Shufflin'",
+          "artist": "Little Howlin' Wolf",
+          "genre": "Blues",
+          "tempo": 106.6,
+          "energy": 0.803,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ],
+      "sequence_b": [
+        {
+          "step": 0,
+          "fma_track_id": 395,
+          "title": "Transfiguration Boogie",
+          "artist": "Boogie Witch",
+          "genre": "Rock",
+          "tempo": 105.3,
+          "energy": 0.948,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 206,
+          "title": "Bella Crane",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 119.1,
+          "energy": 0.21,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 362,
+          "title": "Starsigns",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 107.0,
+          "energy": 0.318,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 317,
+          "title": "Very Nice",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 113.0,
+          "energy": 0.334,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 147,
+          "title": "Repetitive Motion Sickness",
+          "artist": "Amoebic Ensemble",
+          "genre": "Jazz",
+          "tempo": 120.2,
+          "energy": 0.866,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 1131,
+          "title": "Bunny Bought a Spaceship",
+          "artist": "Mink Lungs",
+          "genre": "Rock",
+          "tempo": 112.3,
+          "energy": 0.272,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ]
+    },
+    {
+      "pair_id": 17,
+      "source_a": "ppo:ppo_ai_dj.zip",
+      "source_b": "ppo:ppo_rlhf.zip",
+      "sequence_a": [
+        {
+          "step": 0,
+          "fma_track_id": 606,
+          "title": "Attack of the Clones",
+          "artist": "Double Dagger",
+          "genre": "Rock",
+          "tempo": 108.2,
+          "energy": 0.94,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 206,
+          "title": "Bella Crane",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 119.1,
+          "energy": 0.21,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 1131,
+          "title": "Bunny Bought a Spaceship",
+          "artist": "Mink Lungs",
+          "genre": "Rock",
+          "tempo": 112.3,
+          "energy": 0.272,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 885,
+          "title": "Live Lisbon two 2-19-08",
+          "artist": "Illusion of Safety",
+          "genre": "Electronic",
+          "tempo": 123.5,
+          "energy": 0.708,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 623,
+          "title": "The Cup Bearer (Jony Mede)",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 106.5,
+          "energy": 0.058,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 362,
+          "title": "Starsigns",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 107.0,
+          "energy": 0.318,
+          "key": "C maj",
+          "transition_type": "fade"
+        }
+      ],
+      "sequence_b": [
+        {
+          "step": 0,
+          "fma_track_id": 313,
+          "title": "Think Things Of You",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 101.1,
+          "energy": 0.131,
+          "key": "C maj",
+          "transition_type": null
+        },
+        {
+          "step": 1,
+          "fma_track_id": 1167,
+          "title": "Lazy Suicide",
+          "artist": "Mors Ontologica",
+          "genre": "Rock",
+          "tempo": 109.5,
+          "energy": 0.808,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 2,
+          "fma_track_id": 520,
+          "title": "Invisible Tape",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 103.8,
+          "energy": 0.413,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 3,
+          "fma_track_id": 533,
+          "title": "Mango Tree",
+          "artist": "Chandeliers",
+          "genre": "Electronic",
+          "tempo": 105.9,
+          "energy": 0.54,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
           "fma_track_id": 717,
           "title": "Tyranny",
           "artist": "Fursaxa",
@@ -1857,49 +2533,78 @@
           "tempo": 124.1,
           "energy": 0.126,
           "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 5,
+          "fma_track_id": 463,
+          "title": "I'll Be Blue",
+          "artist": "Cantonement Jazz Band",
+          "genre": "Unknown",
+          "tempo": 115.4,
+          "energy": 0.309,
+          "key": "C maj",
+          "transition_type": "cut"
+        }
+      ]
+    },
+    {
+      "pair_id": 18,
+      "source_a": "ppo:ppo_ai_dj.zip",
+      "source_b": "ppo:ppo_rlhf.zip",
+      "sequence_a": [
+        {
+          "step": 0,
+          "fma_track_id": 1193,
+          "title": "Wooly Mammoth's Absence",
+          "artist": "Mount Eerie",
+          "genre": "Folk",
+          "tempo": 115.3,
+          "energy": 0.272,
+          "key": "C maj",
           "transition_type": null
         },
         {
           "step": 1,
-          "fma_track_id": 247,
-          "title": "A New Map for Kissing",
-          "artist": "Bird Names",
+          "fma_track_id": 1167,
+          "title": "Lazy Suicide",
+          "artist": "Mors Ontologica",
           "genre": "Rock",
-          "tempo": 133.2,
-          "energy": 0.485,
+          "tempo": 109.5,
+          "energy": 0.808,
           "key": "C maj",
           "transition_type": "fade"
         },
         {
           "step": 2,
-          "fma_track_id": 315,
-          "title": "Interference",
+          "fma_track_id": 317,
+          "title": "Very Nice",
           "artist": "Blah Blah Blah",
           "genre": "Rock",
-          "tempo": 107.1,
-          "energy": 0.168,
+          "tempo": 113.0,
+          "energy": 0.334,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 3,
-          "fma_track_id": 134,
-          "title": "Street Music",
-          "artist": "AWOL",
-          "genre": "Hip-Hop",
-          "tempo": 114.3,
-          "energy": 0.56,
+          "fma_track_id": 1119,
+          "title": "Steppin Fetchit Again",
+          "artist": "Mike Rep and the Quotas",
+          "genre": "Rock",
+          "tempo": 111.8,
+          "energy": 0.444,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 4,
-          "fma_track_id": 842,
-          "title": "Baby",
-          "artist": "Heroin UK",
-          "genre": "Rock",
-          "tempo": 123.9,
-          "energy": 0.545,
+          "fma_track_id": 203,
+          "title": "Song For R",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 122.3,
+          "energy": 0.138,
           "key": "C maj",
           "transition_type": "cut"
         },
@@ -1918,513 +2623,39 @@
       "sequence_b": [
         {
           "step": 0,
-          "fma_track_id": 521,
-          "title": "A River Frozen In Place",
-          "artist": "Celesteville",
+          "fma_track_id": 790,
+          "title": "Up, Two?",
+          "artist": "Glove Compartment",
           "genre": "Rock",
-          "tempo": 89.0,
-          "energy": 0.542,
+          "tempo": 96.8,
+          "energy": 0.491,
           "key": "C maj",
           "transition_type": null
         },
         {
           "step": 1,
-          "fma_track_id": 461,
-          "title": "Bessemer",
-          "artist": "Cantonement Jazz Band",
-          "genre": "Unknown",
-          "tempo": 107.2,
-          "energy": 0.32,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 2,
-          "fma_track_id": 197,
-          "title": "Piano 2",
-          "artist": "Ed Askew",
-          "genre": "Folk",
-          "tempo": 128.7,
-          "energy": 0.007,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 3,
-          "fma_track_id": 147,
-          "title": "Repetitive Motion Sickness",
-          "artist": "Amoebic Ensemble",
-          "genre": "Jazz",
-          "tempo": 120.2,
-          "energy": 0.866,
-          "key": "C maj",
-          "transition_type": "beatmatch"
-        },
-        {
-          "step": 4,
-          "fma_track_id": 1159,
-          "title": "Lovesick",
-          "artist": "Mors Ontologica",
-          "genre": "Rock",
-          "tempo": 126.2,
-          "energy": 0.991,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 5,
-          "fma_track_id": 1119,
-          "title": "Steppin Fetchit Again",
-          "artist": "Mike Rep and the Quotas",
-          "genre": "Rock",
-          "tempo": 111.8,
-          "energy": 0.444,
-          "key": "C maj",
-          "transition_type": "cut"
-        }
-      ]
-    },
-    {
-      "pair_id": 14,
-      "source_a": "ppo:ppo_ai_dj.zip",
-      "source_b": "ppo:ppo_rlhf.zip",
-      "sequence_a": [
-        {
-          "step": 0,
-          "fma_track_id": 840,
-          "title": "Explosions",
-          "artist": "Heroin UK",
-          "genre": "Rock",
-          "tempo": 122.3,
-          "energy": 0.896,
-          "key": "C maj",
-          "transition_type": null
-        },
-        {
-          "step": 1,
-          "fma_track_id": 339,
-          "title": "Chimpanzees disease",
+          "fma_track_id": 317,
+          "title": "Very Nice",
           "artist": "Blah Blah Blah",
           "genre": "Rock",
-          "tempo": 126.3,
-          "energy": 0.098,
+          "tempo": 113.0,
+          "energy": 0.334,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 2,
-          "fma_track_id": 1122,
-          "title": "For All These Mice",
-          "artist": "Mincemeat or Tenspeed",
-          "genre": "Electronic",
-          "tempo": 137.8,
-          "energy": 0.691,
+          "fma_track_id": 609,
+          "title": "The Psychic",
+          "artist": "Double Dagger",
+          "genre": "Rock",
+          "tempo": 121.8,
+          "energy": 0.98,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 3,
-          "fma_track_id": 247,
-          "title": "A New Map for Kissing",
-          "artist": "Bird Names",
-          "genre": "Rock",
-          "tempo": 133.2,
-          "energy": 0.485,
-          "key": "C maj",
-          "transition_type": "fade"
-        },
-        {
-          "step": 4,
-          "fma_track_id": 461,
-          "title": "Bessemer",
-          "artist": "Cantonement Jazz Band",
-          "genre": "Unknown",
-          "tempo": 107.2,
-          "energy": 0.32,
-          "key": "C maj",
-          "transition_type": "fade"
-        },
-        {
-          "step": 5,
-          "fma_track_id": 1108,
-          "title": "Song 4",
-          "artist": "Mayor Daley",
-          "genre": "Rock",
-          "tempo": 99.5,
-          "energy": 0.954,
-          "key": "C maj",
-          "transition_type": "cut"
-        }
-      ],
-      "sequence_b": [
-        {
-          "step": 0,
-          "fma_track_id": 1188,
-          "title": "Lasarus",
-          "artist": "Mors Ontologica",
-          "genre": "Rock",
-          "tempo": 130.0,
-          "energy": 0.462,
-          "key": "C maj",
-          "transition_type": null
-        },
-        {
-          "step": 1,
-          "fma_track_id": 885,
-          "title": "Live Lisbon two 2-19-08",
-          "artist": "Illusion of Safety",
-          "genre": "Electronic",
-          "tempo": 123.5,
-          "energy": 0.708,
-          "key": "C maj",
-          "transition_type": "fade"
-        },
-        {
-          "step": 2,
-          "fma_track_id": 464,
-          "title": "The Way I Feel Today",
-          "artist": "Cantonement Jazz Band",
-          "genre": "Unknown",
-          "tempo": 114.8,
-          "energy": 0.382,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 3,
-          "fma_track_id": 134,
-          "title": "Street Music",
-          "artist": "AWOL",
-          "genre": "Hip-Hop",
-          "tempo": 114.3,
-          "energy": 0.56,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 4,
-          "fma_track_id": 778,
-          "title": "Don't Call Me Tonite / Very Good",
-          "artist": "Glove Compartment",
-          "genre": "Rock",
-          "tempo": 105.0,
-          "energy": 0.638,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 5,
-          "fma_track_id": 247,
-          "title": "A New Map for Kissing",
-          "artist": "Bird Names",
-          "genre": "Rock",
-          "tempo": 133.2,
-          "energy": 0.485,
-          "key": "C maj",
-          "transition_type": "cut"
-        }
-      ]
-    },
-    {
-      "pair_id": 15,
-      "source_a": "ppo:ppo_ai_dj.zip",
-      "source_b": "ppo:ppo_rlhf.zip",
-      "sequence_a": [
-        {
-          "step": 0,
-          "fma_track_id": 368,
-          "title": "Vampires",
-          "artist": "Blah Blah Blah",
-          "genre": "Rock",
-          "tempo": 135.8,
-          "energy": 0.116,
-          "key": "C maj",
-          "transition_type": null
-        },
-        {
-          "step": 1,
-          "fma_track_id": 403,
-          "title": "Roach",
-          "artist": "Borful Tang",
-          "genre": "Electronic",
-          "tempo": 115.8,
-          "energy": 0.863,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 2,
-          "fma_track_id": 1045,
-          "title": "Baltimore Raven",
-          "artist": "Little Howlin' Wolf",
-          "genre": "Blues",
-          "tempo": 110.6,
-          "energy": 0.374,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 3,
-          "fma_track_id": 1179,
-          "title": "Shoes",
-          "artist": "Mors Ontologica",
-          "genre": "Rock",
-          "tempo": 132.0,
-          "energy": 0.848,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 4,
-          "fma_track_id": 247,
-          "title": "A New Map for Kissing",
-          "artist": "Bird Names",
-          "genre": "Rock",
-          "tempo": 133.2,
-          "energy": 0.485,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 5,
-          "fma_track_id": 203,
-          "title": "Song For R",
-          "artist": "Ed Askew",
-          "genre": "Folk",
-          "tempo": 122.3,
-          "energy": 0.138,
-          "key": "C maj",
-          "transition_type": "cut"
-        }
-      ],
-      "sequence_b": [
-        {
-          "step": 0,
-          "fma_track_id": 1050,
-          "title": "Electric World",
-          "artist": "LO MOdA",
-          "genre": "Rock",
-          "tempo": 88.0,
-          "energy": 0.375,
-          "key": "C maj",
-          "transition_type": null
-        },
-        {
-          "step": 1,
-          "fma_track_id": 10,
-          "title": "Freeway",
-          "artist": "Kurt Vile",
-          "genre": "Pop",
-          "tempo": 111.6,
-          "energy": 0.925,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 2,
-          "fma_track_id": 206,
-          "title": "Bella Crane",
-          "artist": "Ed Askew",
-          "genre": "Folk",
-          "tempo": 119.1,
-          "energy": 0.21,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 3,
-          "fma_track_id": 1047,
-          "title": "Astral Blue",
-          "artist": "Little Howlin' Wolf",
-          "genre": "Blues",
-          "tempo": 97.1,
-          "energy": 0.764,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 4,
-          "fma_track_id": 627,
-          "title": "Black Bird",
-          "artist": "Ed Askew",
-          "genre": "Folk",
-          "tempo": 116.0,
-          "energy": 0.365,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 5,
-          "fma_track_id": 1167,
-          "title": "Lazy Suicide",
-          "artist": "Mors Ontologica",
-          "genre": "Rock",
-          "tempo": 109.5,
-          "energy": 0.808,
-          "key": "C maj",
-          "transition_type": "cut"
-        }
-      ]
-    },
-    {
-      "pair_id": 16,
-      "source_a": "ppo:ppo_rlhf.zip",
-      "source_b": "ppo:ppo_ai_dj.zip",
-      "sequence_a": [
-        {
-          "step": 0,
-          "fma_track_id": 1145,
-          "title": "Since Before Inertia",
-          "artist": "Minmae",
-          "genre": "Rock",
-          "tempo": 114.7,
-          "energy": 0.178,
-          "key": "C maj",
-          "transition_type": null
-        },
-        {
-          "step": 1,
-          "fma_track_id": 627,
-          "title": "Black Bird",
-          "artist": "Ed Askew",
-          "genre": "Folk",
-          "tempo": 116.0,
-          "energy": 0.365,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 2,
-          "fma_track_id": 783,
-          "title": "Puffy Onyx",
-          "artist": "Glove Compartment",
-          "genre": "Rock",
-          "tempo": 94.5,
-          "energy": 0.207,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 3,
-          "fma_track_id": 147,
-          "title": "Repetitive Motion Sickness",
-          "artist": "Amoebic Ensemble",
-          "genre": "Jazz",
-          "tempo": 120.2,
-          "energy": 0.866,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 4,
-          "fma_track_id": 197,
-          "title": "Piano 2",
-          "artist": "Ed Askew",
-          "genre": "Folk",
-          "tempo": 128.7,
-          "energy": 0.007,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 5,
-          "fma_track_id": 134,
-          "title": "Street Music",
-          "artist": "AWOL",
-          "genre": "Hip-Hop",
-          "tempo": 114.3,
-          "energy": 0.56,
-          "key": "C maj",
-          "transition_type": "cut"
-        }
-      ],
-      "sequence_b": [
-        {
-          "step": 0,
-          "fma_track_id": 1160,
-          "title": "Getting Up",
-          "artist": "Mors Ontologica",
-          "genre": "Rock",
-          "tempo": 137.4,
-          "energy": 0.633,
-          "key": "C maj",
-          "transition_type": null
-        },
-        {
-          "step": 1,
-          "fma_track_id": 403,
-          "title": "Roach",
-          "artist": "Borful Tang",
-          "genre": "Electronic",
-          "tempo": 115.8,
-          "energy": 0.863,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 2,
-          "fma_track_id": 146,
-          "title": "Gimme a Buck or I'll Touch You / Boilermaker",
-          "artist": "Amoebic Ensemble",
-          "genre": "Jazz",
-          "tempo": 135.5,
-          "energy": 0.476,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 3,
-          "fma_track_id": 654,
-          "title": "Side Three - Part Four",
-          "artist": "Ethan Persoff",
-          "genre": "Electronic",
-          "tempo": 129.6,
-          "energy": 0.697,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 4,
-          "fma_track_id": 386,
-          "title": "Clapartroach",
-          "artist": "Blanketship",
-          "genre": "Electronic",
-          "tempo": 130.5,
-          "energy": 0.783,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 5,
-          "fma_track_id": 147,
-          "title": "Repetitive Motion Sickness",
-          "artist": "Amoebic Ensemble",
-          "genre": "Jazz",
-          "tempo": 120.2,
-          "energy": 0.866,
-          "key": "C maj",
-          "transition_type": "cut"
-        }
-      ]
-    },
-    {
-      "pair_id": 17,
-      "source_a": "ppo:ppo_ai_dj.zip",
-      "source_b": "ppo:ppo_rlhf.zip",
-      "sequence_a": [
-        {
-          "step": 0,
-          "fma_track_id": 783,
-          "title": "Puffy Onyx",
-          "artist": "Glove Compartment",
-          "genre": "Rock",
-          "tempo": 94.5,
-          "energy": 0.207,
-          "key": "C maj",
-          "transition_type": null
-        },
-        {
-          "step": 1,
           "fma_track_id": 338,
           "title": "Cabages in the sunset",
           "artist": "Blah Blah Blah",
@@ -2435,103 +2666,86 @@
           "transition_type": "cut"
         },
         {
-          "step": 2,
-          "fma_track_id": 203,
-          "title": "Song For R",
-          "artist": "Ed Askew",
-          "genre": "Folk",
-          "tempo": 122.3,
-          "energy": 0.138,
-          "key": "C maj",
-          "transition_type": "fade"
-        },
-        {
-          "step": 3,
-          "fma_track_id": 654,
-          "title": "Side Three - Part Four",
-          "artist": "Ethan Persoff",
-          "genre": "Electronic",
-          "tempo": 129.6,
-          "energy": 0.697,
-          "key": "C maj",
-          "transition_type": "fade"
-        },
-        {
           "step": 4,
-          "fma_track_id": 1044,
-          "title": "Last Double Eagle",
-          "artist": "Little Howlin' Wolf",
-          "genre": "Blues",
-          "tempo": 124.4,
-          "energy": 0.643,
+          "fma_track_id": 325,
+          "title": "Liquidizing Chickens",
+          "artist": "Blah Blah Blah",
+          "genre": "Rock",
+          "tempo": 114.8,
+          "energy": 0.129,
           "key": "C maj",
-          "transition_type": "beatmatch"
+          "transition_type": "cut"
         },
         {
           "step": 5,
-          "fma_track_id": 660,
-          "title": "side 2 - dear mary elizabeth",
-          "artist": "Ethan Persoff",
-          "genre": "Electronic",
-          "tempo": 104.9,
-          "energy": 0.55,
+          "fma_track_id": 520,
+          "title": "Invisible Tape",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 103.8,
+          "energy": 0.413,
           "key": "C maj",
           "transition_type": "cut"
         }
-      ],
-      "sequence_b": [
+      ]
+    },
+    {
+      "pair_id": 19,
+      "source_a": "ppo:ppo_rlhf.zip",
+      "source_b": "ppo:ppo_ai_dj.zip",
+      "sequence_a": [
         {
           "step": 0,
-          "fma_track_id": 852,
-          "title": "Escape From the Organ Chamber",
-          "artist": "Human Host",
-          "genre": "Rock",
-          "tempo": 130.4,
-          "energy": 0.426,
+          "fma_track_id": 465,
+          "title": "Thinking Of You",
+          "artist": "Cantonement Jazz Band",
+          "genre": "Unknown",
+          "tempo": 122.5,
+          "energy": 0.52,
           "key": "C maj",
           "transition_type": null
         },
         {
           "step": 1,
-          "fma_track_id": 146,
-          "title": "Gimme a Buck or I'll Touch You / Boilermaker",
-          "artist": "Amoebic Ensemble",
-          "genre": "Jazz",
-          "tempo": 135.5,
-          "energy": 0.476,
+          "fma_track_id": 1145,
+          "title": "Since Before Inertia",
+          "artist": "Minmae",
+          "genre": "Rock",
+          "tempo": 114.7,
+          "energy": 0.178,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 2,
-          "fma_track_id": 247,
-          "title": "A New Map for Kissing",
-          "artist": "Bird Names",
+          "fma_track_id": 338,
+          "title": "Cabages in the sunset",
+          "artist": "Blah Blah Blah",
           "genre": "Rock",
-          "tempo": 133.2,
-          "energy": 0.485,
+          "tempo": 118.8,
+          "energy": 0.044,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 3,
-          "fma_track_id": 1119,
-          "title": "Steppin Fetchit Again",
-          "artist": "Mike Rep and the Quotas",
-          "genre": "Rock",
-          "tempo": 111.8,
-          "energy": 0.444,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 4,
           "fma_track_id": 1167,
           "title": "Lazy Suicide",
           "artist": "Mors Ontologica",
           "genre": "Rock",
           "tempo": 109.5,
           "energy": 0.808,
+          "key": "C maj",
+          "transition_type": "cut"
+        },
+        {
+          "step": 4,
+          "fma_track_id": 203,
+          "title": "Song For R",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 122.3,
+          "energy": 0.138,
           "key": "C maj",
           "transition_type": "cut"
         },
@@ -2546,144 +2760,71 @@
           "key": "C maj",
           "transition_type": "cut"
         }
-      ]
-    },
-    {
-      "pair_id": 18,
-      "source_a": "ppo:ppo_ai_dj.zip",
-      "source_b": "ppo:ppo_rlhf.zip",
-      "sequence_a": [
-        {
-          "step": 0,
-          "fma_track_id": 172,
-          "title": "I Can't Stand You Up-right",
-          "artist": "Argumentix",
-          "genre": "Rock",
-          "tempo": 138.7,
-          "energy": 0.893,
-          "key": "C maj",
-          "transition_type": null
-        },
-        {
-          "step": 1,
-          "fma_track_id": 247,
-          "title": "A New Map for Kissing",
-          "artist": "Bird Names",
-          "genre": "Rock",
-          "tempo": 133.2,
-          "energy": 0.485,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 2,
-          "fma_track_id": 461,
-          "title": "Bessemer",
-          "artist": "Cantonement Jazz Band",
-          "genre": "Unknown",
-          "tempo": 107.2,
-          "energy": 0.32,
-          "key": "C maj",
-          "transition_type": "fade"
-        },
-        {
-          "step": 3,
-          "fma_track_id": 134,
-          "title": "Street Music",
-          "artist": "AWOL",
-          "genre": "Hip-Hop",
-          "tempo": 114.3,
-          "energy": 0.56,
-          "key": "C maj",
-          "transition_type": "cut"
-        },
-        {
-          "step": 4,
-          "fma_track_id": 197,
-          "title": "Piano 2",
-          "artist": "Ed Askew",
-          "genre": "Folk",
-          "tempo": 128.7,
-          "energy": 0.007,
-          "key": "C maj",
-          "transition_type": "beatmatch"
-        },
-        {
-          "step": 5,
-          "fma_track_id": 1179,
-          "title": "Shoes",
-          "artist": "Mors Ontologica",
-          "genre": "Rock",
-          "tempo": 132.0,
-          "energy": 0.848,
-          "key": "C maj",
-          "transition_type": "cut"
-        }
       ],
       "sequence_b": [
         {
           "step": 0,
-          "fma_track_id": 1042,
-          "title": "Big Ole Bear",
-          "artist": "Little Howlin' Wolf",
-          "genre": "Blues",
-          "tempo": 137.2,
-          "energy": 0.702,
+          "fma_track_id": 657,
+          "title": "Side Four - Record Label Track / Conclusion",
+          "artist": "Ethan Persoff",
+          "genre": "Electronic",
+          "tempo": 118.4,
+          "energy": 0.503,
           "key": "C maj",
           "transition_type": null
         },
         {
           "step": 1,
-          "fma_track_id": 247,
-          "title": "A New Map for Kissing",
-          "artist": "Bird Names",
-          "genre": "Rock",
-          "tempo": 133.2,
-          "energy": 0.485,
+          "fma_track_id": 659,
+          "title": "side 1 - complaint (knock on wood)",
+          "artist": "Ethan Persoff",
+          "genre": "Electronic",
+          "tempo": 120.1,
+          "energy": 0.215,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 2,
-          "fma_track_id": 146,
-          "title": "Gimme a Buck or I'll Touch You / Boilermaker",
-          "artist": "Amoebic Ensemble",
-          "genre": "Jazz",
-          "tempo": 135.5,
-          "energy": 0.476,
+          "fma_track_id": 203,
+          "title": "Song For R",
+          "artist": "Ed Askew",
+          "genre": "Folk",
+          "tempo": 122.3,
+          "energy": 0.138,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 3,
-          "fma_track_id": 1043,
-          "title": "I'm Shufflin'",
-          "artist": "Little Howlin' Wolf",
-          "genre": "Blues",
-          "tempo": 106.6,
-          "energy": 0.803,
+          "fma_track_id": 1131,
+          "title": "Bunny Bought a Spaceship",
+          "artist": "Mink Lungs",
+          "genre": "Rock",
+          "tempo": 112.3,
+          "energy": 0.272,
           "key": "C maj",
           "transition_type": "cut"
         },
         {
           "step": 4,
-          "fma_track_id": 656,
-          "title": "Side Four - Easy Slow and Easy (finale)",
-          "artist": "Ethan Persoff",
-          "genre": "Electronic",
-          "tempo": 116.8,
-          "energy": 0.588,
+          "fma_track_id": 523,
+          "title": "Black Is the Color of My True Love's Mail",
+          "artist": "Celesteville",
+          "genre": "Rock",
+          "tempo": 126.5,
+          "energy": 0.423,
           "key": "C maj",
-          "transition_type": "cut"
+          "transition_type": "fade"
         },
         {
           "step": 5,
-          "fma_track_id": 387,
-          "title": "I wish I wish",
-          "artist": "Blanketship",
-          "genre": "Electronic",
-          "tempo": 136.3,
-          "energy": 0.553,
+          "fma_track_id": 1188,
+          "title": "Lasarus",
+          "artist": "Mors Ontologica",
+          "genre": "Rock",
+          "tempo": 130.0,
+          "energy": 0.462,
           "key": "C maj",
           "transition_type": "cut"
         }

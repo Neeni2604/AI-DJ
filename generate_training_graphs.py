@@ -44,8 +44,11 @@ def load_summaries() -> list[RunSummary]:
 
 
 def load_reward_history() -> list[dict[str, Any]]:
-    history_path = ARTIFACTS_DIR / "reward_model" / "reward_model_history.json"
-    return json.loads(history_path.read_text(encoding="utf-8"))
+    for sub in ("reward_model_clean", "reward_model"):
+        history_path = ARTIFACTS_DIR / sub / "reward_model_history.json"
+        if history_path.exists():
+            return json.loads(history_path.read_text(encoding="utf-8"))
+    raise FileNotFoundError("No reward_model_history.json found.")
 
 
 def select_latest_run(summaries: list[RunSummary], run_type: str) -> RunSummary:
@@ -106,7 +109,7 @@ def plot_learning_curve(summary: RunSummary, filename: str, title: str, ylabel: 
     ax.set_title(title)
     ax.set_xlabel("Training timesteps")
     ax.set_ylabel(ylabel)
-    ax.legend()
+    ax.legend(loc="lower right")
     save_plot(filename)
 
 
@@ -118,11 +121,11 @@ def plot_reward_model_loss(history: list[dict[str, Any]]) -> None:
     fig, ax = plt.subplots()
     ax.plot(frame["epoch"], frame["train_loss"], label="Train loss", linewidth=2.0)
     ax.plot(frame["epoch"], frame["val_loss"], label="Validation loss", linewidth=2.0)
-    ax.scatter([best_row["epoch"]], [best_row["val_loss"]], s=50, label="Best val epoch")
+    ax.scatter([best_row["epoch"]], [best_row["val_loss"]], s=50, label="Best val epoch", zorder=5)
     ax.set_title("Reward Model Loss")
     ax.set_xlabel("Epoch")
     ax.set_ylabel("Binary cross-entropy loss")
-    ax.legend()
+    ax.legend(loc="upper right")
     save_plot("reward_model_loss.png")
 
 
@@ -136,25 +139,20 @@ def plot_ppo_run_comparison(summaries: list[RunSummary]) -> None:
                 "run_name": summary.run_name,
                 "trained_mean_reward": summary.data.get("trained_mean_reward"),
                 "baseline_mean_reward": summary.data.get("baseline_mean_reward"),
-                "heuristic_mean_reward": summary.data.get("heuristic_mean_reward"),
             }
         )
-    frame = pd.DataFrame(rows).sort_values("run_name")
+    frame = pd.DataFrame(rows).sort_values("run_name").reset_index(drop=True)
 
     fig, ax = plt.subplots()
     x = range(len(frame))
-    width = 0.24
-    ax.bar([i - width for i in x], frame["baseline_mean_reward"].fillna(0.0), width=width, label="Random baseline")
-    ax.bar(x, frame["trained_mean_reward"].fillna(0.0), width=width, label="Trained PPO")
-    ax.bar([i + width for i in x], frame["heuristic_mean_reward"].fillna(0.0), width=width, label="Heuristic")
-    ax.set_xticks(list(x), frame["run_name"], rotation=20, ha="right")
+    width = 0.35
+    ax.bar([i - width / 2 for i in x], frame["baseline_mean_reward"].fillna(0.0), width=width, label="Random baseline")
+    ax.bar([i + width / 2 for i in x], frame["trained_mean_reward"].fillna(0.0), width=width, label="Trained PPO")
+    ax.set_xticks(list(x), [f"Run {i+1}" for i in x])
     ax.set_title("PPO Policy Quality Across Saved Runs")
-    ax.set_xlabel("Run")
+    ax.set_xlabel("PPO Run")
     ax.set_ylabel("Mean proxy reward")
-    ax.legend()
-    for idx, value in enumerate(frame["heuristic_mean_reward"]):
-        if pd.isna(value):
-            ax.text(idx + width, 0.1, "n/a", ha="center", va="bottom", fontsize=8, rotation=90)
+    ax.legend(loc="upper left")
     save_plot("ppo_run_comparison.png")
 
 
@@ -171,25 +169,19 @@ def plot_rlhf_run_comparison(summaries: list[RunSummary]) -> None:
                 "rlhf_score_after": summary.data["rlhf_score_after"],
             }
         )
-    frame = pd.DataFrame(rows).sort_values("run_name")
+    frame = pd.DataFrame(rows).sort_values("run_name").reset_index(drop=True)
 
-    fig, axes = plt.subplots(1, 2, figsize=(14, 5.5))
+    fig, ax = plt.subplots()
     x = range(len(frame))
-    width = 0.34
+    width = 0.35
 
-    axes[0].bar([i - width / 2 for i in x], frame["proxy_score_before"], width=width, label="Before RLHF")
-    axes[0].bar([i + width / 2 for i in x], frame["proxy_score_after"], width=width, label="After RLHF")
-    axes[0].set_xticks(list(x), frame["run_name"], rotation=20, ha="right")
-    axes[0].set_title("Proxy Reward Before vs After RLHF")
-    axes[0].set_xlabel("Run")
-    axes[0].set_ylabel("Mean proxy reward")
-    axes[0].legend()
-
-    axes[1].bar(frame["run_name"], frame["rlhf_score_after"])
-    axes[1].set_title("Terminal Reward-Model Score After RLHF")
-    axes[1].set_xlabel("Run")
-    axes[1].set_ylabel("Mean RLHF reward")
-    axes[1].tick_params(axis="x", rotation=20)
+    ax.bar([i - width / 2 for i in x], frame["proxy_score_before"], width=width, label="Before RLHF")
+    ax.bar([i + width / 2 for i in x], frame["proxy_score_after"], width=width, label="After RLHF")
+    ax.set_xticks(list(x), [f"Run {i+1}" for i in x])
+    ax.set_title("Proxy Reward Before vs After RLHF")
+    ax.set_xlabel("RLHF Run")
+    ax.set_ylabel("Mean proxy reward")
+    ax.legend(loc="upper left")
 
     save_plot("rlhf_run_comparison.png")
 
@@ -199,15 +191,11 @@ def plot_latest_pipeline_summary(latest_ppo: RunSummary, latest_rlhf: RunSummary
     rlhf = latest_rlhf.data
     labels = [
         "Random",
-        "Heuristic",
-        "PPO\n(latest)",
         "PPO before\nRLHF",
         "RLHF fine-tuned",
     ]
     values = [
         ppo["baseline_mean_reward"],
-        ppo["heuristic_mean_reward"],
-        ppo["trained_mean_reward"],
         rlhf["proxy_score_before"],
         rlhf["proxy_score_after"],
     ]
@@ -261,14 +249,14 @@ def main() -> None:
     plot_learning_curve(
         latest_ppo,
         filename="ppo_latest_learning_curve.png",
-        title=f"PPO Learning Curve ({latest_ppo.run_name})",
+        title="PPO Learning Curve",
         ylabel="Proxy reward",
     )
     plot_learning_curve(
         latest_rlhf,
         filename="rlhf_latest_learning_curve.png",
-        title=f"RLHF Fine-Tuning Curve ({latest_rlhf.run_name})",
-        ylabel="Reward-model terminal reward",
+        title="RLHF Fine-Tuning Curve",
+        ylabel="Blended reward (proxy + RLHF)",
     )
     plot_reward_model_loss(reward_history)
     plot_ppo_run_comparison(summaries)

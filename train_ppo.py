@@ -51,8 +51,6 @@ class TrainingSummary:
     evaluation_sampling_mode: str
     baseline_mean_reward: float
     baseline_reward_std: float
-    heuristic_mean_reward: float
-    heuristic_reward_std: float
     trained_mean_reward: float
     trained_reward_std: float
     episode_count: int
@@ -281,7 +279,6 @@ def run_demo_episode(
                     "genre": info["genre"],
                     "transition_type": info["transition_type"],
                     "reward": float(reward),
-                    "harmonic_score": float(info["harmonic_score"]),
                     "bpm_score": float(info["bpm_score"]),
                     "transition_score": float(info["transition_score"]),
                     "energy_flow": float(info["energy_flow"]),
@@ -439,11 +436,6 @@ def main() -> None:
             n_eval_episodes=args.eval_episodes,
             seed=args.seed,
         )
-        heuristic_mean_reward, heuristic_reward_std = evaluate_heuristic_policy(
-            eval_env,
-            n_eval_episodes=args.eval_episodes,
-            seed=args.seed,
-        )
         model.learn(total_timesteps=args.timesteps)
         trained_mean_reward, trained_reward_std = evaluate_policy(
             model,
@@ -498,8 +490,6 @@ def main() -> None:
         evaluation_sampling_mode="stochastic",
         baseline_mean_reward=float(baseline_mean_reward),
         baseline_reward_std=float(baseline_reward_std),
-        heuristic_mean_reward=float(heuristic_mean_reward),
-        heuristic_reward_std=float(heuristic_reward_std),
         trained_mean_reward=float(trained_mean_reward),
         trained_reward_std=float(trained_reward_std),
         episode_count=len(monitor_rows),
