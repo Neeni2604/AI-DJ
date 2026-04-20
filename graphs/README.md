@@ -3,7 +3,7 @@
 Generated from saved artifacts in `artifacts/`.
 
 - Latest PPO run: `ppo_20260414_224350`
-- Latest RLHF run: `rlhf_20260415_000643`
+- Latest RLHF run: `rlhf_20260420_172659`
 
 Files:
 - `ppo_latest_learning_curve.png`: raw and smoothed episode reward for the latest PPO run.
