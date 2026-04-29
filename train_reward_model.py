@@ -2,22 +2,24 @@ from __future__ import annotations
 
 """Train a preference reward model from merged human annotation data.
 
-The model is a small MLP that takes a flattened sequence of audio features
-and outputs a scalar reward score. It is trained with a Bradley-Terry pairwise
-ranking loss: for each (winner, loser) pair the model is penalised whenever it
-scores the loser higher than the winner.
+The model is a small MLP that maps aggregate sequence statistics to a scalar
+reward score. It is trained with a Bradley-Terry pairwise ranking loss.
 
-Feature encoding (5 values per track × 6 tracks = 30 inputs by default):
-  - tempo:          normalised to [0, 1] using range [40, 220]
-  - energy:         already in [0, 1]
-  - transition_cut:       1 if cut,       else 0  (0 for the first track)
-  - transition_fade:      1 if fade,      else 0
-  - transition_beatmatch: 1 if beatmatch, else 0
+Aggregate feature encoding (5 features per sequence):
+  - mean_tempo:          mean tempo normalised to [0, 1]
+  - tempo_smoothness:    1 - mean(|delta_bpm| / 30), higher = smoother transitions
+  - mean_energy:         mean energy across tracks
+  - energy_trend:        mean per-step energy change, normalised to [0, 1]
+  - beatmatch_fraction:  fraction of transitions that are beatmatch
+
+Using aggregate features instead of per-step features dramatically reduces
+input dimensionality (5 vs 30), which improves generalisation when the
+annotation dataset is small.
 
 Usage
 -----
-python train_reward_model.py --merged-labels merged_labels.json
-python train_reward_model.py --merged-labels merged_labels.json --epochs 100 --lr 1e-3
+python train_reward_model.py --merged-labels merged_labels_clean.json
+python train_reward_model.py --merged-labels merged_labels_clean.json merged_labels_h2.json
 """
 
 import argparse
@@ -37,31 +39,54 @@ import torch.optim as optim
 # ---------------------------------------------------------------------------
 
 TEMPO_MIN, TEMPO_MAX = 40.0, 220.0
-TRANSITION_TYPES = ["cut", "fade", "beatmatch"]
-FEATURES_PER_STEP = 5  # tempo, energy, cut, fade, beatmatch
+MAX_BPM_DELTA = 30.0
+N_FEATURES = 5  # aggregate features per sequence
 
 
-def _encode_step(step: dict[str, Any]) -> list[float]:
-    tempo = float(np.clip((step.get("tempo", 120.0) - TEMPO_MIN) / (TEMPO_MAX - TEMPO_MIN), 0.0, 1.0))
-    energy = float(np.clip(step.get("energy", 0.5), 0.0, 1.0))
+def encode_sequence(steps: list[dict[str, Any]], max_steps: int = 6) -> np.ndarray:
+    """Encode a sequence into 5 aggregate features.
 
-    transition = step.get("transition_type")
-    t_cut       = 1.0 if transition == "cut"       else 0.0
-    t_fade      = 1.0 if transition == "fade"      else 0.0
-    t_beatmatch = 1.0 if transition == "beatmatch" else 0.0
+    max_steps is accepted for API compatibility with train_rlhf.py but unused.
+    """
+    if not steps:
+        return np.zeros(N_FEATURES, dtype=np.float32)
 
-    return [tempo, energy, t_cut, t_fade, t_beatmatch]
+    tempos = [float(s.get("tempo", 120.0)) for s in steps]
+    energies = [float(s.get("energy", 0.5)) for s in steps]
+    transitions = [s.get("transition_type") for s in steps[1:]]
 
+    # 1. Mean tempo (normalised)
+    mean_tempo = float(np.clip((np.mean(tempos) - TEMPO_MIN) / (TEMPO_MAX - TEMPO_MIN), 0.0, 1.0))
 
-def encode_sequence(steps: list[dict[str, Any]], max_steps: int) -> np.ndarray:
-    """Encode a sequence of track steps into a flat feature vector."""
-    features: list[float] = []
-    for step in steps[:max_steps]:
-        features.extend(_encode_step(step))
-    # zero-pad if shorter than max_steps
-    pad = max_steps - min(len(steps), max_steps)
-    features.extend([0.0] * (pad * FEATURES_PER_STEP))
-    return np.array(features, dtype=np.float32)
+    # 2. Tempo smoothness: 1 = perfectly smooth, 0 = max BPM jumps
+    if len(tempos) > 1:
+        bpm_deltas = [abs(tempos[i] - tempos[i - 1]) for i in range(1, len(tempos))]
+        mean_delta = float(np.mean(bpm_deltas))
+        tempo_smoothness = float(np.clip(1.0 - mean_delta / MAX_BPM_DELTA, 0.0, 1.0))
+    else:
+        tempo_smoothness = 1.0
+
+    # 3. Mean energy
+    mean_energy = float(np.clip(np.mean(energies), 0.0, 1.0))
+
+    # 4. Energy trend: positive = building energy (mapped to [0, 1])
+    if len(energies) > 1:
+        deltas = [energies[i] - energies[i - 1] for i in range(1, len(energies))]
+        raw_trend = float(np.mean(deltas))  # in [-1, 1]
+        energy_trend = float(np.clip((raw_trend + 1.0) / 2.0, 0.0, 1.0))
+    else:
+        energy_trend = 0.5
+
+    # 5. Beatmatch fraction
+    beatmatch_fraction = (
+        sum(1 for t in transitions if t == "beatmatch") / len(transitions)
+        if transitions else 0.0
+    )
+
+    return np.array(
+        [mean_tempo, tempo_smoothness, mean_energy, energy_trend, beatmatch_fraction],
+        dtype=np.float32,
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -69,9 +94,9 @@ def encode_sequence(steps: list[dict[str, Any]], max_steps: int) -> np.ndarray:
 # ---------------------------------------------------------------------------
 
 class RewardModel(nn.Module):
-    """MLP that maps a flat sequence feature vector to a scalar reward."""
+    """MLP that maps aggregate sequence features to a scalar reward."""
 
-    def __init__(self, input_dim: int, hidden_sizes: list[int], dropout: float = 0.3) -> None:
+    def __init__(self, input_dim: int, hidden_sizes: list[int], dropout: float = 0.1) -> None:
         super().__init__()
         layers: list[nn.Module] = []
         prev = input_dim
@@ -105,7 +130,7 @@ class TrainConfig:
     lr: float
     val_split: float
     seed: int
-    merged_labels_path: str
+    merged_labels_paths: list[str]
     output_dir: str
 
 
@@ -113,11 +138,11 @@ def _build_dataset(
     training_pairs: list[dict[str, Any]],
     max_steps: int,
 ) -> tuple[np.ndarray, np.ndarray]:
-    """Return (winners, losers) as float32 arrays of shape (N, input_dim)."""
+    """Return (winners, losers) as float32 arrays of shape (N, N_FEATURES)."""
     winners, losers = [], []
     for pair in training_pairs:
         winners.append(encode_sequence(pair["winner"], max_steps))
-        losers.append(encode_sequence(pair["loser"],  max_steps))
+        losers.append(encode_sequence(pair["loser"], max_steps))
     return np.stack(winners), np.stack(losers)
 
 
@@ -129,12 +154,14 @@ def train(config: TrainConfig) -> dict[str, Any]:
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Device: {device}")
 
-    # Load data
-    data = json.loads(Path(config.merged_labels_path).read_text(encoding="utf-8"))
-    training_pairs: list[dict[str, Any]] = data["training_pairs"]
-    print(f"Training pairs: {len(training_pairs)}")
+    # Load and combine all label files
+    all_pairs: list[dict[str, Any]] = []
+    for path in config.merged_labels_paths:
+        data = json.loads(Path(path).read_text(encoding="utf-8"))
+        all_pairs.extend(data["training_pairs"])
+    print(f"Training pairs: {len(all_pairs)}")
 
-    winners_np, losers_np = _build_dataset(training_pairs, config.max_steps)
+    winners_np, losers_np = _build_dataset(all_pairs, config.max_steps)
 
     # Train / val split
     n = len(winners_np)
@@ -145,11 +172,11 @@ def train(config: TrainConfig) -> dict[str, Any]:
 
     def _tensors(idx: list[int]) -> tuple[torch.Tensor, torch.Tensor]:
         w = torch.tensor(winners_np[idx], dtype=torch.float32, device=device)
-        l = torch.tensor(losers_np[idx],  dtype=torch.float32, device=device)
+        l = torch.tensor(losers_np[idx], dtype=torch.float32, device=device)
         return w, l
 
     w_train, l_train = _tensors(train_idx)
-    w_val,   l_val   = _tensors(val_idx)
+    w_val, l_val = _tensors(val_idx)
 
     print(f"Train: {len(train_idx)}  Val: {len(val_idx)}")
 
@@ -189,17 +216,15 @@ def train(config: TrainConfig) -> dict[str, Any]:
 
     print(f"\nBest val loss {best_val_loss:.4f} at epoch {best_epoch}")
 
-    # Save final model (last epoch)
     final_model_path = out_dir / "reward_model.pt"
     torch.save(model.state_dict(), final_model_path)
 
-    # Save config so the model can be reloaded later
     model_config = {
         "input_dim": config.input_dim,
         "hidden_sizes": config.hidden_sizes,
         "dropout": config.dropout,
         "max_steps": config.max_steps,
-        "features_per_step": FEATURES_PER_STEP,
+        "n_features": N_FEATURES,
         "best_epoch": best_epoch,
         "best_val_loss": best_val_loss,
         "final_model_path": str(final_model_path),
@@ -208,13 +233,12 @@ def train(config: TrainConfig) -> dict[str, Any]:
     config_path = out_dir / "reward_model_config.json"
     config_path.write_text(json.dumps(model_config, indent=2), encoding="utf-8")
 
-    # Save training history
     history_path = out_dir / "reward_model_history.json"
     history_path.write_text(json.dumps(history, indent=2), encoding="utf-8")
 
-    print(f"Saved model     → {final_model_path}")
-    print(f"Saved best      → {best_model_path}")
-    print(f"Saved config    → {config_path}")
+    print(f"Saved model  -> {final_model_path}")
+    print(f"Saved best   -> {best_model_path}")
+    print(f"Saved config -> {config_path}")
     return model_config
 
 
@@ -242,25 +266,26 @@ def parse_args() -> argparse.Namespace:
         description="Train a preference reward model on merged annotation data.",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
-    parser.add_argument("--merged-labels", default="merged_labels.json")
+    parser.add_argument(
+        "--merged-labels",
+        nargs="+",
+        default=["merged_labels.json"],
+        metavar="FILE",
+        help="One or more merged label JSON files to combine for training.",
+    )
     parser.add_argument("--output-dir", default="artifacts/reward_model")
     parser.add_argument("--epochs", type=int, default=200)
     parser.add_argument("--lr", type=float, default=3e-4)
     parser.add_argument(
         "--hidden-sizes",
         type=int,
-        nargs="+",
-        default=[32, 16],
-        help="Hidden layer widths, e.g. --hidden-sizes 32 16",
+        nargs="*",
+        default=[8, 4],
+        help="Hidden layer widths. Pass with no values for pure linear (logistic regression).",
     )
-    parser.add_argument("--dropout", type=float, default=0.3, help="Dropout rate.")
-    parser.add_argument("--weight-decay", type=float, default=1e-2, help="L2 regularisation.")
-    parser.add_argument(
-        "--max-steps",
-        type=int,
-        default=6,
-        help="Max tracks per sequence (sequence_length + 1). Must match pairs.json.",
-    )
+    parser.add_argument("--dropout", type=float, default=0.1)
+    parser.add_argument("--weight-decay", type=float, default=1e-2)
+    parser.add_argument("--max-steps", type=int, default=6)
     parser.add_argument("--val-split", type=float, default=0.2)
     parser.add_argument("--seed", type=int, default=42)
     return parser.parse_args()
@@ -268,10 +293,9 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
-    input_dim = args.max_steps * FEATURES_PER_STEP
 
     config = TrainConfig(
-        input_dim=input_dim,
+        input_dim=N_FEATURES,
         hidden_sizes=args.hidden_sizes,
         dropout=args.dropout,
         weight_decay=args.weight_decay,
@@ -280,7 +304,7 @@ def main() -> None:
         lr=args.lr,
         val_split=args.val_split,
         seed=args.seed,
-        merged_labels_path=args.merged_labels,
+        merged_labels_paths=args.merged_labels,
         output_dir=args.output_dir,
     )
     train(config)

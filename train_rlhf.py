@@ -66,10 +66,13 @@ def _track_to_step(track: dict, transition_type: str | None, step: int) -> dict:
 # ---------------------------------------------------------------------------
 
 class RLHFDJEnv(gym.Wrapper):
-    """DJEnv wrapper that swaps proxy rewards for preference-model terminal rewards.
+    """DJEnv wrapper that blends proxy rewards with a preference-model terminal reward.
 
-    reward(t) = 0                          for t < episode_length
-    reward(t) = reward_model(sequence)     at termination
+    reward(t) = proxy_reward(t) * proxy_weight                              for t < episode_length
+    reward(t) = proxy_reward(t) * proxy_weight + rlhf_score * rlhf_weight  at termination
+
+    Blending prevents the policy from diverging from musically coherent
+    transitions while still optimising for human preferences.
     """
 
     def __init__(
@@ -78,11 +81,14 @@ class RLHFDJEnv(gym.Wrapper):
         reward_model: torch.nn.Module,
         model_config: dict,
         device: torch.device,
+        proxy_weight: float = 0.5,
     ) -> None:
         super().__init__(env)
         self._reward_model = reward_model
         self._model_config = model_config
         self._device = device
+        self._proxy_weight = proxy_weight
+        self._rlhf_weight = 1.0 - proxy_weight
         self._steps: list[dict] = []
 
     def reset(self, **kwargs):
@@ -93,12 +99,14 @@ class RLHFDJEnv(gym.Wrapper):
         return obs, info
 
     def step(self, action):
-        obs, _proxy_reward, terminated, truncated, info = self.env.step(action)
+        obs, proxy_reward, terminated, truncated, info = self.env.step(action)
         inner: DJEnv = self.env.unwrapped
         track = inner.tracks[inner._current_idx]
         self._steps.append(_track_to_step(track, info.get("transition_type"), info["step"]))
 
-        reward = self._score() if (terminated or truncated) else 0.0
+        reward = proxy_reward * self._proxy_weight
+        if terminated or truncated:
+            reward += self._score() * self._rlhf_weight
         return obs, reward, terminated, truncated, info
 
     def _score(self) -> float:
@@ -122,6 +130,7 @@ def _build_rlhf_env(
     reward_model: torch.nn.Module,
     model_config: dict,
     device: torch.device,
+    proxy_weight: float = 0.5,
     monitor_path: Path | None = None,
 ) -> Monitor:
     inner = DJEnv(
@@ -130,7 +139,7 @@ def _build_rlhf_env(
         episode_length=episode_length,
         repeat_track_penalty=repeat_track_penalty,
     )
-    wrapped = RLHFDJEnv(inner, reward_model, model_config, device)
+    wrapped = RLHFDJEnv(inner, reward_model, model_config, device, proxy_weight=proxy_weight)
     return Monitor(wrapped, str(monitor_path)) if monitor_path else Monitor(wrapped)
 
 
@@ -198,7 +207,6 @@ def run_demo_episode(
                     "genre": info["genre"],
                     "transition_type": info["transition_type"],
                     "reward": float(reward),
-                    "harmonic_score": float(info["harmonic_score"]),
                     "bpm_score": float(info["bpm_score"]),
                     "transition_score": float(info["transition_score"]),
                     "energy_flow": float(info["energy_flow"]),
@@ -242,6 +250,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--seed", type=int, default=7)
     parser.add_argument("--output-dir", default=None)
     parser.add_argument("--verbose", type=int, default=1)
+    parser.add_argument(
+        "--proxy-weight", type=float, default=0.5,
+        help="Weight for proxy reward in blended reward (0=pure RLHF, 1=pure proxy). Default 0.5.",
+    )
     return parser.parse_args()
 
 
@@ -319,6 +331,7 @@ def main() -> None:
         reward_model=reward_model,
         model_config=rm_config,
         device=device,
+        proxy_weight=args.proxy_weight,
         monitor_path=monitor_path,
     )
     proxy_eval_env = _build_proxy_env(
@@ -335,6 +348,7 @@ def main() -> None:
         reward_model=reward_model,
         model_config=rm_config,
         device=device,
+        proxy_weight=args.proxy_weight,
     )
 
     try:

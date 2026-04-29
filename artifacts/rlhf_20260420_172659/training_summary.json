@@ -1,0 +1,22 @@
+{
+  "db_path": "fma_db\\data\\fma.db",
+  "starting_model": "artifacts/ppo_20260414_224350/ppo_ai_dj.zip",
+  "reward_model_config": "artifacts\\reward_model_clean\\reward_model_config.json",
+  "model_path": "artifacts\\rlhf_20260420_172659\\ppo_rlhf.zip",
+  "total_timesteps": 65536,
+  "episode_length": 12,
+  "track_limit": 500,
+  "eval_episodes": 10,
+  "proxy_score_before": 7.467354899999999,
+  "proxy_score_before_std": 0.8712466557216103,
+  "proxy_score_after": 8.2459133,
+  "proxy_score_after_std": 0.6340095723288489,
+  "proxy_improvement": 0.7785584000000005,
+  "rlhf_score_after": 5.845233500000001,
+  "rlhf_score_after_std": 0.31470754813675833,
+  "episode_count": 5461,
+  "initial_window_mean": 5.219118264541821,
+  "final_window_mean": 5.413380414399999,
+  "curve_improvement": 0.19426214985817758,
+  "rolling_slope": 3.172100326146472e-05
+}

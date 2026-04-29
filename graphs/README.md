@@ -2,11 +2,10 @@
 
 Generated from saved artifacts in `artifacts/`.
 
-- Latest PPO run: `ppo_20260413_004855`
-- Latest RLHF run: `rlhf_20260413_005446`
+- Latest PPO run: `ppo_20260414_224350`
+- Latest RLHF run: `rlhf_20260420_172659`
 
 Files:
-- `pipeline_diagrams.md`: Mermaid diagrams and numbered steps for the end-to-end algorithm pipeline.
 - `ppo_latest_learning_curve.png`: raw and smoothed episode reward for the latest PPO run.
 - `rlhf_latest_learning_curve.png`: raw and smoothed reward-model episode reward for the latest RLHF run.
 - `reward_model_loss.png`: reward-model train/validation loss by epoch.
